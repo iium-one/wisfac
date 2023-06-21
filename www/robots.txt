@@ -1,0 +1,17 @@
+User-agent: *
+Allow:/
+Disallow: /adm/ 
+Disallow: /data/
+Disallow: /extend/
+Disallow: /install/
+Disallow: /js/
+Disallow: /lib/
+Disallow: /plugin/
+Disallow: /skin/
+Disallow: /theme/
+Disallow: *.doc
+Disallow: *.xls
+Disallow: *.xlsx
+Disallow: *.hwp
+Disallow: *.zip
+

@@ -1,0 +1,19 @@
+#header {position: fixed; top: 0; left: 0; z-index: 500; width: 100%; background-color: #fff;}
+#hd_top-inner {position: relative; z-index: 50; height: 100px;}
+#hd_top-inner {display: flex; flex-flow: row wrap; align-items: center; justify-content: space-between;}
+#hd_top-inner .hd-logo {width: 178px;}
+
+#hd_top-inner .gnb {position: absolute; top: 50%; left: 50%; z-index: 10; transform: translate(-50%, -50%);}
+#hd_top-inner .gnb-dep1 {display: flex; flex-flow: row wrap; align-items: center; justify-content: center; gap: 0 100px;}
+#hd_top-inner .gnb-dep1 > li {}
+#hd_top-inner .gnb-dep1 > li > a {display: block; font-size: 20px; font-weight: 500; color: #0f0f0f; line-height: 100px;}
+
+#hd_top-inner .hd-sub {display: flex; flex-flow: row wrap; align-items: center; justify-content: center; gap: 0 27px;}
+#hd_top-inner .lang-sel {height: 40px; padding-left: 14px; padding-right: 30px; background-color: #333;}
+#hd_top-inner .lang-sel:after {width: 7px; height: 7px; margin-top: -4.5px; border-bottom: 1px solid #fff; border-right: 1px solid #fff;}
+#hd_top-inner .lang-sel .current {font-size: 16px; font-weight: 400; color: #fff;}
+#hd_top-inner .all_menu-btn {display: block; position: relative; width: 23px; height: 20px; border: 0; background: none; font-size: 0; text-align: right;}
+#hd_top-inner .all_menu-btn span {display: inline-block; height: 2px; background-color: #222;}
+#hd_top-inner .all_menu-btn span:nth-child(1) {width: 100%;}
+#hd_top-inner .all_menu-btn span:nth-child(2) {width: calc(100% - 6px); margin: 6px 0;}
+#hd_top-inner .all_menu-btn span:nth-child(3) {width: 100%;}
