@@ -36,15 +36,62 @@ if(defined('_INDEX_')) { // index에서만 실행
           <ul class="gnb-dep1">
             <li>
               <a href="">위스팩소개</a>
+              <ul class="gnb-dep2">
+                <li>
+                  <a href="">회사소개</a>
+                </li>
+                <li>
+                  <a href="">사업소개</a>
+                </li>
+                <li>
+                  <a href="">CEO인사말</a>
+                </li>
+                <li>
+                  <a href="">글로벌 네트워크</a>
+                </li>
+                <li>
+                  <a href="">오시는 길</a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="">제품소개</a>
+              <ul class="gnb-dep2">
+                <li>
+                  <a href="">Edge/Surface</a>
+                </li>
+                <li>
+                  <a href="">Air Pocket(IR)</a>
+                </li>
+                <li>
+                  <a href="">Other</a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="">고객지원</a>
+              <ul class="gnb-dep2">
+                <li>
+                  <a href="">문의하기</a>
+                </li>
+                <li>
+                  <a href="">회사소식</a>
+                </li>
+                <li>
+                  <a href="">공지사항</a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="">인재채용</a>
+              <ul class="gnb-dep2">
+                <li>
+                  <a href="">채용안내</a>
+                </li>
+                <li>
+                  <a href="">인사/복지제도</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
