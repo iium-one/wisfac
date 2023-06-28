@@ -68,7 +68,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
     </div>
   </section>
 
-  <section class="main-product">
+  <section class="main-product" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
       <div class="wrapper">
         <div class="main-product_ct">
@@ -108,7 +108,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
   </section>
 
   <section class="main-contact">
-    <div class="main-contact_box main-contact_lt">
+    <div class="main-contact_box main-contact_lt" data-aos="fade-right" data-aos-duration="1000">
       <div class="main-contact_ct">
         <div class="main-contact_ct_inner">
           <p class="main-contact-title">위스팩 소개</p>
@@ -122,7 +122,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
         </div>
       </div>
     </div>
-    <div class="main-contact_box main-contact_rt">
+    <div class="main-contact_box main-contact_rt" data-aos="fade-left" data-aos-duration="1000">
       <div class="main-contact_ct">
         <div class="main-contact_ct_inner">
           <p class="main-contact-title">고객문의</p>
@@ -138,7 +138,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
     </div>
   </section>
 
-  <section class="main-board">
+  <section class="main-board" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
       <div class="wrapper">
         <div class="main-board_ct">
@@ -181,7 +181,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
     </div>
   </section>
 
-  <section class="main-banner">
+  <section class="main-banner" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
       <div class="wrapper">
         <div class="main-banner_ct">

@@ -109,7 +109,7 @@ mainBoardTabButtons.forEach(button => {
 });
 
 $(document).ready(function(){
-  // [plugin.NiceSelect]
+  // [plugin-NiceSelect]
   if($(".nc-sel").length > 0){
     const $ncSelect = $(".nc-sel");
 
@@ -117,4 +117,7 @@ $(document).ready(function(){
       $(this).niceSelect();
     })
   }
+
+  // [plugin-AOS]
+  AOS.init();
 }); //End Document
