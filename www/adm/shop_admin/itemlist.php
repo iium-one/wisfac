@@ -105,9 +105,11 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
 <select name="sfl" id="sfl">
     <option value="it_name" <?php echo get_selected($sfl, 'it_name'); ?>>상품명</option>
     <option value="it_id" <?php echo get_selected($sfl, 'it_id'); ?>>상품코드</option>
+    <!--
     <option value="it_maker" <?php echo get_selected($sfl, 'it_maker'); ?>>제조사</option>
     <option value="it_origin" <?php echo get_selected($sfl, 'it_origin'); ?>>원산지</option>
     <option value="it_sell_email" <?php echo get_selected($sfl, 'it_sell_email'); ?>>판매자 e-mail</option>
+    -->
 </select>
 
 <label for="stx" class="sound_only">검색어</label>
@@ -133,26 +135,30 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
             <label for="chkall" class="sound_only">상품 전체</label>
             <input type="checkbox" name="chkall" value="1" id="chkall" onclick="check_all(this.form)">
         </th>
-        <th scope="col" rowspan="3"><?php echo subject_sort_link('it_id', 'sca='.$sca); ?>상품코드</a></th>
-        <th scope="col" colspan="5">분류</th>
-        <th scope="col" rowspan="3"><?php echo subject_sort_link('it_order', 'sca='.$sca); ?>순서</a></th>
-        <th scope="col" rowspan="3"><?php echo subject_sort_link('it_use', 'sca='.$sca, 1); ?>판매</a></th>
-        <th scope="col" rowspan="3"><?php echo subject_sort_link('it_soldout', 'sca='.$sca, 1); ?>품절</a></th>
-        <th scope="col" rowspan="3"><?php echo subject_sort_link('it_hit', 'sca='.$sca, 1); ?>조회</a></th>
-        <th scope="col" rowspan="3">관리</th>
+        <th scope="col" rowspan="2"><?php echo subject_sort_link('it_id', 'sca='.$sca); ?>상품코드</a></th>
+        <th scope="col" id="th_img" rowspan="2">이미지</th>
+        <th scope="col">분류</th>
+        <th scope="col" rowspan="2"><?php echo subject_sort_link('it_order', 'sca='.$sca); ?>순서</a></th>
+        <th scope="col" rowspan="2"><?php echo subject_sort_link('it_use', 'sca='.$sca, 1); ?>노출</a></th>
+        <!--<th scope="col" rowspan="3"><?php echo subject_sort_link('it_soldout', 'sca='.$sca, 1); ?>품절</a></th>-->
+        <th scope="col" rowspan="2"><?php echo subject_sort_link('it_hit', 'sca='.$sca, 1); ?>조회</a></th>
+        <th scope="col" rowspan="2">관리</th>
     </tr>
     <tr>
-        <th scope="col" rowspan="2" id="th_img">이미지</th>
-        <th scope="col" rowspan="2" id="th_pc_title"><?php echo subject_sort_link('it_name', 'sca='.$sca); ?>상품명</a></th>
+        <th scope="col" id="th_pc_title"><?php echo subject_sort_link('it_name', 'sca='.$sca); ?>상품명</a></th>
+        <!--
         <th scope="col" id="th_amt"><?php echo subject_sort_link('it_price', 'sca='.$sca); ?>판매가격</a></th>
         <th scope="col" id="th_camt"><?php echo subject_sort_link('it_cust_price', 'sca='.$sca); ?>시중가격</a></th>
         <th scope="col" id="th_skin">PC스킨</th>
+        -->
     </tr>
+    <!--
     <tr>
         <th scope="col" id="th_pt"><?php echo subject_sort_link('it_point', 'sca='.$sca); ?>포인트</a></th>
         <th scope="col" id="th_qty"><?php echo subject_sort_link('it_stock_qty', 'sca='.$sca); ?>재고</a></th>
         <th scope="col" id="th_mskin">모바일스킨</th>
     </tr>
+    -->
     </thead>
     <tbody>
     <?php
@@ -166,19 +172,21 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
             $it_point .= '%';
     ?>
     <tr class="<?php echo $bg; ?>">
-        <td rowspan="3" class="td_chk">
+        <td rowspan="2" class="td_chk">
             <label for="chk_<?php echo $i; ?>" class="sound_only"><?php echo get_text($row['it_name']); ?></label>
             <input type="checkbox" name="chk[]" value="<?php echo $i ?>" id="chk_<?php echo $i; ?>">
         </td>
-        <td rowspan="3" class="td_num">
+        <td rowspan="2" class="td_num">
             <input type="hidden" name="it_id[<?php echo $i; ?>]" value="<?php echo $row['it_id']; ?>">
             <?php echo $row['it_id']; ?>
         </td>
-        <td colspan="5" class="td_sort">
+        <td rowspan="2" class="td_img"><a href="<?php echo $href; ?>"><?php echo get_it_image($row['it_id'], 50, 50); ?></a></td>
+        <td class="td_sort">
             <label for="ca_id_<?php echo $i; ?>" class="sound_only"><?php echo get_text($row['it_name']); ?> 기본분류</label>
-            <select name="ca_id[<?php echo $i; ?>]" id="ca_id_<?php echo $i; ?>">
+            <select name="ca_id[<?php echo $i; ?>]" id="ca_id_<?php echo $i; ?>" style="width: 100%;">
                 <?php echo conv_selected_option($ca_list, $row['ca_id']); ?>
             </select>
+            <!--
             <label for="ca_id2_<?php echo $i; ?>" class="sound_only"><?php echo get_text($row['it_name']); ?> 2차분류</label>
             <select name="ca_id2[<?php echo $i; ?>]" id="ca_id2_<?php echo $i; ?>">
                 <?php echo conv_selected_option($ca_list, $row['ca_id2']); ?>
@@ -187,32 +195,35 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
             <select name="ca_id3[<?php echo $i; ?>]" id="ca_id3_<?php echo $i; ?>">
                 <?php echo conv_selected_option($ca_list, $row['ca_id3']); ?>
             </select>
+            -->
         </td>
-        <td rowspan="3" class="td_num">
+        <td rowspan="2" class="td_num">
             <label for="order_<?php echo $i; ?>" class="sound_only">순서</label>
             <input type="text" name="it_order[<?php echo $i; ?>]" value="<?php echo $row['it_order']; ?>" id="order_<?php echo $i; ?>" class="tbl_input" size="3">
         </td>
-        <td rowspan="3">
-            <label for="use_<?php echo $i; ?>" class="sound_only">판매여부</label>
+        <td rowspan="2">
+            <label for="use_<?php echo $i; ?>" class="sound_only">노출여부</label>
             <input type="checkbox" name="it_use[<?php echo $i; ?>]" <?php echo ($row['it_use'] ? 'checked' : ''); ?> value="1" id="use_<?php echo $i; ?>">
         </td>
+        <!--
         <td rowspan="3">
             <label for="soldout_<?php echo $i; ?>" class="sound_only">품절</label>
             <input type="checkbox" name="it_soldout[<?php echo $i; ?>]" <?php echo ($row['it_soldout'] ? 'checked' : ''); ?> value="1" id="soldout_<?php echo $i; ?>">
         </td>
-        <td rowspan="3" class="td_num"><?php echo $row['it_hit']; ?></td>
-        <td rowspan="3" class="td_mng td_mng_s">
+        -->
+        <td rowspan="2" class="td_num"><?php echo $row['it_hit']; ?></td>
+        <td rowspan="2" class="td_mng td_mng_s">
             <a href="./itemform.php?w=u&amp;it_id=<?php echo $row['it_id']; ?>&amp;ca_id=<?php echo $row['ca_id']; ?>&amp;<?php echo $qstr; ?>" class="btn btn_03"><span class="sound_only"><?php echo htmlspecialchars2(cut_str($row['it_name'],250, "")); ?> </span>수정</a>
             <a href="./itemcopy.php?it_id=<?php echo $row['it_id']; ?>&amp;ca_id=<?php echo $row['ca_id']; ?>" class="itemcopy btn btn_02" target="_blank"><span class="sound_only"><?php echo htmlspecialchars2(cut_str($row['it_name'],250, "")); ?> </span>복사</a>
-            <a href="<?php echo $href; ?>" class="btn btn_02"><span class="sound_only"><?php echo htmlspecialchars2(cut_str($row['it_name'],250, "")); ?> </span>보기</a>
+            <!--<a href="<?php echo $href; ?>" class="btn btn_02"><span class="sound_only"><?php echo htmlspecialchars2(cut_str($row['it_name'],250, "")); ?> </span>보기</a>-->
         </td>
     </tr>
     <tr class="<?php echo $bg; ?>">
-        <td rowspan="2" class="td_img"><a href="<?php echo $href; ?>"><?php echo get_it_image($row['it_id'], 50, 50); ?></a></td>
-        <td headers="th_pc_title" rowspan="2" class="td_input">
+        <td headers="th_pc_title" class="td_input">
             <label for="name_<?php echo $i; ?>" class="sound_only">상품명</label>
             <input type="text" name="it_name[<?php echo $i; ?>]" value="<?php echo htmlspecialchars2(cut_str($row['it_name'],250, "")); ?>" id="name_<?php echo $i; ?>" required class="tbl_input required" size="30">
         </td>
+        <!--
         <td headers="th_amt" class="td_numbig td_input">
             <label for="price_<?php echo $i; ?>" class="sound_only">판매가격</label>
             <input type="text" name="it_price[<?php echo $i; ?>]" value="<?php echo $row['it_price']; ?>" id="price_<?php echo $i; ?>" class="tbl_input sit_amt" size="7">
@@ -225,7 +236,9 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
             <label for="it_skin_<?php echo $i; ?>" class="sound_only">PC 스킨</label>
             <?php echo get_skin_select('shop', 'it_skin_'.$i, 'it_skin['.$i.']', $row['it_skin']); ?>
         </td>
+        -->
     </tr>
+    <!--
     <tr class="<?php echo $bg; ?>">
         <td headers="th_pt" class="td_numbig td_input"><?php echo $it_point; ?></td>
         <td headers="th_qty" class="td_numbig td_input">
@@ -237,6 +250,7 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
             <?php echo get_mobile_skin_select('shop', 'it_mobile_skin_'.$i, 'it_mobile_skin['.$i.']', $row['it_mobile_skin']); ?>
         </td>
     </tr>
+    -->
     <?php
     }
     if ($i == 0)

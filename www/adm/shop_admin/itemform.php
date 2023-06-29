@@ -180,16 +180,8 @@ if(!sql_query(" select ec_mall_pid from {$g5['g5_shop_item_table']} limit 1 ", f
 
 $pg_anchor ='<ul class="anchor">
 <li><a href="#anc_sitfrm_cate">상품분류</a></li>
-<li><a href="#anc_sitfrm_skin">스킨설정</a></li>
 <li><a href="#anc_sitfrm_ini">기본정보</a></li>
-<li><a href="#anc_sitfrm_compact">요약정보</a></li>
-<li><a href="#anc_sitfrm_cost">가격 및 재고</a></li>
-<li><a href="#anc_sitfrm_sendcost">배송비</a></li>
 <li><a href="#anc_sitfrm_img">상품이미지</a></li>
-<li><a href="#anc_sitfrm_relation">관련상품</a></li>
-<li><a href="#anc_sitfrm_event">관련이벤트</a></li>
-<li><a href="#anc_sitfrm_optional">상세설명설정</a></li>
-<li><a href="#anc_sitfrm_extra">여분필드</a></li>
 </ul>
 ';
 
@@ -256,6 +248,7 @@ if(!sql_query(" select it_skin from {$g5['g5_shop_item_table']} limit 1", false)
                 </script>
             </td>
         </tr>
+        <!--
         <?php for ($i=2; $i<=3; $i++) { ?>
         <tr>
             <th scope="row"><label for="ca_id<?php echo $i; ?>"><?php echo $i; ?>차 분류</label></th>
@@ -268,12 +261,13 @@ if(!sql_query(" select it_skin from {$g5['g5_shop_item_table']} limit 1", false)
             </td>
         </tr>
         <?php } ?>
+        -->
         </tbody>
         </table>
     </div>
 </section>
 
-
+<!--
 <section id="anc_sitfrm_skin">
     <h2 class="h2_frm">스킨설정</h2>
     <?php echo $pg_anchor; ?>
@@ -314,6 +308,7 @@ if(!sql_query(" select it_skin from {$g5['g5_shop_item_table']} limit 1", false)
         </table>
     </div>
 </section>
+-->
 
 
 <section id="anc_sitfrm_ini">
@@ -376,6 +371,7 @@ if(!sql_query(" select it_skin from {$g5['g5_shop_item_table']} limit 1", false)
                 <label for="chk_all_it_order">전체적용</label>
             </td>
         </tr>
+        <!--
         <tr>
             <th scope="row">상품유형</th>
             <td>
@@ -463,10 +459,12 @@ if(!sql_query(" select it_skin from {$g5['g5_shop_item_table']} limit 1", false)
                 <label for="chk_all_it_tel_inq">전체적용</label>
             </td>
         </tr>
+        -->
         <tr>
-            <th scope="row"><label for="it_use">판매가능</label></th>
+            <th scope="row"><label for="it_use">노출여부</label></th>
             <td>
-                <?php echo help("잠시 판매를 중단하거나 재고가 없을 경우에 체크를 해제해 놓으면 출력되지 않으며, 주문도 받지 않습니다."); ?>
+                <!--<?php echo help("잠시 판매를 중단하거나 재고가 없을 경우에 체크를 해제해 놓으면 출력되지 않으며, 주문도 받지 않습니다."); ?>-->
+                <?php echo help("상품 노출 여부를 선택합니다."); ?>
                 <input type="checkbox" name="it_use" value="1" id="it_use" <?php echo ($it['it_use']) ? "checked" : ""; ?>> 예
             </td>
             <td class="td_grpset">
@@ -476,6 +474,7 @@ if(!sql_query(" select it_skin from {$g5['g5_shop_item_table']} limit 1", false)
                 <label for="chk_all_it_use">전체적용</label>
             </td>
         </tr>
+        <!--
         <tr>
             <th scope="row"><label for="it_nocoupon">쿠폰적용안함</label></th>
             <td>
@@ -496,10 +495,12 @@ if(!sql_query(" select it_skin from {$g5['g5_shop_item_table']} limit 1", false)
                 <input type="text" name="ec_mall_pid" value="<?php echo get_text($it['ec_mall_pid']); ?>" id="ec_mall_pid" class="frm_input" size="20">
             </td>
         </tr>
+        -->
         <tr>
             <th scope="row">상품설명</th>
             <td colspan="2"> <?php echo editor_html('it_explan', get_text(html_purifier($it['it_explan']), 0)); ?></td>
         </tr>
+        <!--
         <tr>
             <th scope="row">모바일 상품설명</th>
             <td colspan="2"> <?php echo editor_html('it_mobile_explan', get_text(html_purifier($it['it_mobile_explan']), 0)); ?></td>
@@ -527,12 +528,13 @@ if(!sql_query(" select it_skin from {$g5['g5_shop_item_table']} limit 1", false)
                 <label for="chk_all_it_shop_memo">전체적용</label>
             </td>
         </tr>
+        -->
         </tbody>
         </table>
     </div>
 </section>
 
-
+<!--
 <section id="anc_sitfrm_compact">
     <h2 class="h2_frm">상품요약정보</h2>
     <?php echo $pg_anchor; ?>
@@ -556,6 +558,7 @@ if(!sql_query(" select it_skin from {$g5['g5_shop_item_table']} limit 1", false)
     </div>
     <div id="sit_compact_fields"><?php include_once(G5_ADMIN_PATH.'/shop_admin/iteminfo.php'); ?></div>
 </section>
+-->
 
 
 <script>
@@ -573,6 +576,7 @@ $(function(){
 });
 </script>
 
+<!--
 <section id="anc_sitfrm_cost">
     <h2 class="h2_frm">가격 및 재고</h2>
     <?php echo $pg_anchor; ?>
@@ -1156,8 +1160,9 @@ $(function(){
         </table>
     </div>
 </section>
+-->
 
-
+<!--
 <section id="anc_sitfrm_sendcost">
     <h2 class="h2_frm">배송비</h2>
     <?php echo $pg_anchor; ?>
@@ -1312,6 +1317,7 @@ $(function(){
     });
     </script>
 </section>
+-->
 
 
 <section id="anc_sitfrm_img">
@@ -1358,7 +1364,7 @@ $(function(){
     </div>
 </section>
 
-
+<!--
 <section id="anc_sitfrm_relation" class="srel">
     <h2 class="h2_frm">관련상품</h2>
     <?php echo $pg_anchor; ?>
@@ -1507,8 +1513,9 @@ $(function(){
     </div>
 
 </section>
+-->
 
-
+<!--
 <section id="anc_sitfrm_event" class="srel">
     <h2 class="h2_frm">관련이벤트</h2>
     <?php echo $pg_anchor; ?>
@@ -1621,8 +1628,9 @@ $(function(){
     </div>
 
 </section>
+-->
 
-
+<!--
 <section id="anc_sitfrm_optional">
     <h2 class="h2_frm">상세설명설정</h2>
     <?php echo $pg_anchor; ?>
@@ -1731,6 +1739,7 @@ $(function(){
         </table>
     </div>
 </section>
+-->
 
 <div class="btn_fixed_top">
     <a href="./itemlist.php?<?php echo $qstr; ?>" class="btn btn_02">목록</a>
