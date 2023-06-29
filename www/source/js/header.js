@@ -16,6 +16,6 @@ hdAllMenuBtn.addEventListener('click', function() {
     hdAllMenuBtn.classList.add('act')
     hdLogo.setAttribute('src', '/source/img/logo-white.svg');
     allMenu.classList.add('act')
-    $(".all_menu-nav").matchHeight();
+    $(".all_menu-nav").matchHeight().addClass('act');
   }
 });
