@@ -59,39 +59,39 @@ $sb_menus = [
   [
     'id' => 'cs',
     'name' => '고객지원',
-    'link' => '#',
+    'link' => '/sub/contact',
     'sb_2menus' => [
       [
         'id' => 'inquiry',
         'name' => '문의하기',
-        'link' => '#'
+        'link' => '/sub/contact'
       ],
       [
         'id' => 'news',
         'name' => '회사소식',
-        'link' => '#'
+        'link' => '/news'
       ],
       [
         'id' => 'notice',
         'name' => '공지사항',
-        'link' => '#'
+        'link' => '/notice'
       ]
     ]
   ],
   [
     'id' => 'employ',
     'name' => '인재채용',
-    'link' => '#',
+    'link' => '/sub/announce',
     'sb_2menus' => [
       [
         'id' => 'announce',
         'name' => '채용안내',
-        'link' => '#'
+        'link' => '/sub/announce'
       ],
       [
         'id' => 'welfare',
         'name' => '인사/복지재도',
-        'link' => '#'
+        'link' => '/sub/welfare'
       ]
     ]
   ]
