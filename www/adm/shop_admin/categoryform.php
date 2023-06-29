@@ -187,7 +187,7 @@ else {
                 <input type="hidden" name="ca_id" value="<?php echo $ca['ca_id']; ?>">
                 <span class="frm_ca_id"><?php echo $ca['ca_id']; ?></span>
                 <a href="<?php echo shop_category_url($ca_id); ?>" class="btn_frmline">미리보기</a>
-                <a href="./categoryform.php?ca_id=<?php echo $ca_id; ?>&amp;<?php echo $qstr; ?>" class="btn_frmline">하위분류 추가</a>
+                <!--<a href="./categoryform.php?ca_id=<?php echo $ca_id; ?>&amp;<?php echo $qstr; ?>" class="btn_frmline">하위분류 추가</a>-->
                 <a href="./itemlist.php?sca=<?php echo $ca['ca_id']; ?>" class="btn_frmline">상품리스트</a>
             <?php } ?>
             </td>
@@ -203,6 +203,7 @@ else {
                 <input type="text" name="ca_order" value="<?php echo $ca['ca_order']; ?>" id="ca_order" class="frm_input" size="12">
             </td>
         </tr>
+        <!--
         <tr>
             <th scope="row"><?php if ($is_admin == 'super') { ?><label for="ca_mb_id"><?php } ?>관리 회원아이디<?php if ($is_admin == 'super') { ?></label><?php } ?></th>
             <td>
@@ -348,13 +349,15 @@ else {
                 예
             </td>
         </tr>
+        -->
         </tbody>
         </table>
     </div>
-    <button type="button" class="shop_category btn_02 btn">테마설정 가져오기</button>
+    <!--<button type="button" class="shop_category btn_02 btn">테마설정 가져오기</button>-->
 </section>
 
 
+<!--
 <section id="anc_scatefrm_optional">
     <h2 class="h2_frm">선택 입력</h2>
     <?php echo $pg_anchor; ?>
@@ -429,8 +432,9 @@ else {
         </table>
     </div>
 </section>
+-->
 
-
+<!--
 <section id="anc_scatefrm_extra">
     <h2>여분필드 설정</h2>
     <?php echo $pg_anchor ?>
@@ -457,9 +461,11 @@ else {
         </table>
     </div>
 </section>
+-->
 
 
 <?php if ($w == "u") { ?>
+<!--
 <section id="frm_etc">
     <h2 class="h2_frm">기타설정</h2>
     <?php echo $pg_anchor; ?>
@@ -484,6 +490,7 @@ else {
         </table>
     </div>
 </section>
+-->
 
 <?php } ?>
 <div class="btn_fixed_top">
