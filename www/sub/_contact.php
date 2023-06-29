@@ -13,11 +13,11 @@
           <div class="inquiry-cont">
             <div class="i-ccol-0 mail-input-wrap">
               <div class="mail-input-li">
-                <input type="text" name="inq_main01">
+                <input type="text" name="inq_mail01">
               </div>
               <div class="mail-input-li">@</div>
               <div class="mail-input-li">
-                <input type="text" name="inq_main02">
+                <input type="text" name="inq_mail02">
               </div>
             </div>
           </div>
