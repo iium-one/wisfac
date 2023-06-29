@@ -120,6 +120,9 @@
 .sb_top {overflow: hidden; width: 100%;}
 .sb_top_ct {display: flex; flex-flow: column wrap; align-items: flex-start; justify-content: flex-end; height: 450px; padding-bottom: 60px;}
 .sb_top.introduce_top {background: url('/source/img/sb-top-bg-introduce.jpg') no-repeat center/cover;}
+.sb_top.product_top {background: url('/source/img/sb-top-bg-product.jpg') no-repeat center/cover;}
+.sb_top.cs_top {background: url('/source/img/sb-top-bg-cs.jpg') no-repeat center/cover;}
+.sb_top.employ_top {background: url('/source/img/sb-top-bg-employ.jpg') no-repeat center/cover;}
 .sb_title {font-size: 55px; font-weight: 700; color: #fff; line-height: 1;}
 
 .sb_2menus {margin-top: 40px;}
@@ -127,3 +130,10 @@
 .sb_2menus_wrap > li {}
 .sb_2menus_wrap > li > a {display: block; padding-bottom: 4px; font-size: 18px; font-weight: 500; color: #fff; line-height: 1.45;}
 .sb_2menus_wrap > li.act > a {font-weight: 700; color: var(--sub-color1); border-bottom: 2px solid var(--sub-color1);}
+
+#sb-contents {margin-top: 120px;}
+
+.sb_top-title-text1 {font-size: 50px; font-weight: 300; color: #0f0f0f; line-height: 1.24;}
+.sb_top-title-text1 b {font-weight: 700;}
+.sb_top-title-text2 {margin-top: 18px; font-size: 20px; font-weight: 300; color: #666; line-height: 1.6;}
+.sb_top-title-text2 b {font-weight: 500;}

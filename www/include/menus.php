@@ -1,6 +1,21 @@
 <?php
 include_once('./_common.php');
 
+/*$sql = " SELECT 
+          wr_id, wr_subject, wr_content, wr_datetime
+          FROM {$board_name} ";
+$result = sql_query($sql);
+
+$data = array();
+for($i=0; $row=sql_fetch_array($result); $i++){
+  $data[] = $row;
+}*/
+
+$cate_table = G5_TABLE_PREFIX.'g5_shop_category';
+$prd_table = G5_TABLE_PREFIX.'g5_shop_item';
+
+$sql = " select * from {$cate_table} a left join {$prd_table} b on (a.ca_id=b.ca_id) where b.it_use = 1 ";
+
 $sb_menus = [
   [
     'id' => 'introduce',
