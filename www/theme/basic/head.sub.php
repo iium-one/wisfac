@@ -120,6 +120,7 @@ add_stylesheet('<link rel="stylesheet" href="/source/plugin/swiper/swiper-bundle
 add_stylesheet('<link rel="stylesheet" href="/source/css/fonts.css">', 0);
 add_stylesheet('<link rel="stylesheet" href="/source/css/common.css">', 0);
 add_stylesheet('<link rel="stylesheet" href="/source/css/header.css">', 0);
+add_stylesheet('<link rel="stylesheet" href="/source/css/footer.css">', 0);
 add_stylesheet('<link rel="stylesheet" href="/source/css/contents.css">', 0);
 
 
