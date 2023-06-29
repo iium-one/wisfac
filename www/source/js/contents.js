@@ -45,14 +45,14 @@ const mainVisualSwiper = new Swiper('.main-visual-wrapper', {
 
 const mainVisualStopBtn = document.querySelector(".main-visual-stop");
 
-mainVisualStopBtn.addEventListener("click", function(){
+mainVisualStopBtn?.addEventListener("click", function(){
   mainVisualTimebar('init')
   mainVisualSwiper.autoplay.stop();
 })
 
 const mainVisualPlayBtn = document.querySelector(".main-visual-play");
 
-mainVisualPlayBtn.addEventListener("click", function(){
+mainVisualPlayBtn?.addEventListener("click", function(){
   mainVisualSwiper.autoplay.start();
   mainVisualTimebar('ing')
 })
@@ -71,8 +71,9 @@ const mainBoardSwiper = new Swiper('.main-board-wrapper', {
 });
 
 //메인 게시글 불러오기
+const mainBoardWrap = document.querySelector(".main-board-slider");
+
 const mainBoardRender = (board, posts) => {
-  const mainBoardWrap = document.querySelector(".main-board-slider");
   let mainBoardHtml = "";
 
   posts?.map((post, index)=>{
@@ -95,7 +96,9 @@ const mainBoardData = async(board) =>{
   mainBoardRender(board, data)
 }
 
-mainBoardData('notice'); //초기 데이터
+if(mainBoardWrap){
+  mainBoardData('notice'); //초기 데이터
+}
 
 // 메인 게시글 영역 탭 버튼 클릭 이벤트 처리
 const mainBoardTabButtons = document.querySelectorAll('.main-boarad-tabs .tabs-btn');
@@ -109,6 +112,11 @@ mainBoardTabButtons.forEach(button => {
 });
 
 $(document).ready(function(){
+  // [plugin-Match Height]
+  if($(".match-height").length > 0){
+    $(".match-height > *").matchHeight();
+  }
+
   // [plugin-NiceSelect]
   if($(".nc-sel").length > 0){
     const $ncSelect = $(".nc-sel");

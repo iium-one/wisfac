@@ -98,6 +98,8 @@ add_javascript('<script src="'.G5_JS_URL.'/common.js?ver='.G5_JS_VER.'"></script
 add_javascript('<script src="'.G5_JS_URL.'/wrest.js?ver='.G5_JS_VER.'"></script>', 0);
 add_javascript('<script src="'.G5_JS_URL.'/placeholders.min.js"></script>', 0);
 /*Plug-in, Library {*/
+add_javascript('<script src="/source/plugin/prefixfree.min.js" defer></script>', 0);
+add_javascript('<script src="/source/plugin/jquery.matchHeight.js" defer></script>', 0);
 add_javascript('<script src="/source/plugin/aos/aos.js" defer></script>', 0);
 add_javascript('<script src="/source/plugin/scrollbar/lenis.js" defer></script>', 0);
 add_javascript('<script src="/source/plugin/niceselect/jquery.nice-select.min.js" defer></script>', 0);
