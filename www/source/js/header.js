@@ -11,6 +11,7 @@ hdAllMenuBtn.addEventListener('click', function() {
     hdAllMenuBtn.classList.remove('act')
     hdLogo.setAttribute('src', '/source/img/logo.svg');
     allMenu.classList.remove('act')
+    $(".all_menu-nav").removeClass('act');
   } else {
     hd.classList.add('act')
     hdAllMenuBtn.classList.add('act')
