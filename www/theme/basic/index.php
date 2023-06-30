@@ -151,9 +151,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
             </div>
             <a href="" class="i-arrow-btn01">
               Learn more
-              <span class="icon">
-                <img src="/source/img/arrow-right-gray.png" alt="공지사항 링크이동">
-              </span>
+              <span class="icon"></span>
             </a>
           </div>
           <div class="main-board_wrap">

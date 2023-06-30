@@ -8,8 +8,9 @@
 
 /* UI */
 .highlight {color: var(--main-color);}
-.i-arrow-btn01 {display: flex; justify-content: space-between; align-items: center; width: 220px; height: 58px; line-height: 58px; padding: 0 30px; border: 1px solid rgba(255,255,255,0.7); border-radius: 30px; font-size: 18px; font-weight: 600; color: #fff;}
+.i-arrow-btn01 {display: flex; justify-content: space-between; align-items: center; width: 220px; height: 58px; line-height: 58px; padding: 0 30px; border: 1px solid rgba(255,255,255,0.7); border-radius: 30px; font-size: 18px; font-weight: 600; color: #fff; transition: 0.3s ease-in-out;}
 .i-arrow-btn01 .icon {width: 11px;}
+.i-arrow-btn01:hover {border-color: var(--main-color) !important; background-color: var(--main-color) !important; color: #fff !important;}
 
 .tabs {display: flex; flex-flow: row wrap; align-items: center; gap: 10px 25px;}
 .tabs-btn {position: relative; border: 0; font-size: 20px; font-weight: 400; color: #999; line-height: 1.3; background: none;}
@@ -86,8 +87,10 @@
 .main-board {margin-top: 88px;}
 .main-boarad-tabs {margin-top: 30px;}
 .main-board .i-arrow-btn01 {position: absolute; bottom: -6px; right: 0; z-index: 10; color: #999; border-color: rgba(153,153,153,0.7);}
-.main-board_wrap {position: relative; display: flex; flex-flow: row wrap; margin-top: 42px; border-radius: 5px; box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);}
+.main-board .i-arrow-btn01 .icon {width: 11px; height: 19px; background: url('/source/img/arrow-right-gray.png') no-repeat center/contain; transition: 0.3s;}
+.main-board .i-arrow-btn01:hover .icon {background: url('/source/img/arrow-right-white.png') no-repeat center/contain;}
 
+.main-board_wrap {position: relative; display: flex; flex-flow: row wrap; margin-top: 42px; border-radius: 5px; box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);}
 .main-board_wrap .swiper-button-prev {width: 37px; height: 37px; position: absolute; top: 50%; left: -4%; z-index: 50; margin-top: -18.5px; border: 1px solid #bbb; border-radius: 50%; background: #fff;}
 .main-board_wrap .swiper-button-prev:after {display: none;}
 .main-board_wrap .swiper-button-prev img {width: 10px;}
