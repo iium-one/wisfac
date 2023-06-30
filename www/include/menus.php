@@ -1,21 +1,6 @@
 <?php
 include_once('./_common.php');
 
-/*$sql = " SELECT 
-          wr_id, wr_subject, wr_content, wr_datetime
-          FROM {$board_name} ";
-$result = sql_query($sql);
-
-$data = array();
-for($i=0; $row=sql_fetch_array($result); $i++){
-  $data[] = $row;
-}*/
-
-$cate_table = G5_TABLE_PREFIX.'g5_shop_category';
-$prd_table = G5_TABLE_PREFIX.'g5_shop_item';
-
-$sql = " select * from {$cate_table} a left join {$prd_table} b on (a.ca_id=b.ca_id) where b.it_use = 1 ";
-
 $sb_menus = [
   [
     'id' => 'introduce',
@@ -25,7 +10,19 @@ $sb_menus = [
       [
         'id' => 'aboutus',
         'name' => '회사소개',
-        'link' => '/sub/aboutus'
+        'link' => '/sub/aboutus?v=vision',
+        'sb_3menus' => [
+          [
+            'id' => 'vision',
+            'name' => '비전',
+            'link' => '/sub/aboutus?v=vision'
+          ],
+          [
+            'id' => 'organization',
+            'name' => '조직도',
+            'link' => '/sub/aboutus?v=organization'
+          ]
+        ]
       ],
       [
         'id' => 'business',
@@ -53,23 +50,7 @@ $sb_menus = [
     'id' => 'product',
     'name' => '제품소개',
     'link' => '#',
-    'sb_2menus' => [
-      [
-        'id' => 'edge',
-        'name' => 'Edge/Surface',
-        'link' => '#'
-      ],
-      [
-        'id' => 'IR',
-        'name' => 'Air Pocket(IR)',
-        'link' => '#'
-      ],
-      [
-        'id' => 'other',
-        'name' => 'Other',
-        'link' => '#'
-      ]
-    ]
+    'sb_2menus' => []
   ],
   [
     'id' => 'cs',
@@ -111,4 +92,29 @@ $sb_menus = [
     ]
   ]
 ];
+
+//제품 카테고리 DB 데이터 가져오기 + 메뉴 배열에 할당
+$cate_table = G5_TABLE_PREFIX.'shop_category';
+$prd_table = G5_TABLE_PREFIX.'shop_item';
+$prd_cate_sql = " select ca_id, ca_name from {$cate_table} ";
+$prd_cate_result = sql_query($prd_cate_sql);
+$prd_cate = array();
+for($i=0; $prd_cate_row=sql_fetch_array($prd_cate_result); $i++){
+  $sb_menus[1]['sb_2menus'][] = [
+    'id' => $prd_cate_row['ca_id'],
+    'name' => $prd_cate_row['ca_name'],
+    'link' => '#',
+  ];
+
+  $prd_item_sql = " select it_id, it_name from {$prd_table} where ca_id = '{$prd_cate_row['ca_id']}' ";
+  $prd_item_result = sql_query($prd_item_sql);
+  $prd_item = array();
+  for($k=0; $prd_item_row=sql_fetch_array($prd_item_result); $k++){
+    $sb_menus[1]['sb_2menus'][$i]['sb_3menus'][] = [
+      'id' => $prd_item_row['it_id'],
+      'name' => $prd_item_row['it_name'],
+      'link' => '#',
+    ];
+  }
+}
 ?>

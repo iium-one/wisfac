@@ -119,6 +119,30 @@ if(defined('_INDEX_')) { // index에서만 실행
   <div class="container">
     <div class="wrapper">
       <div class="all_menu_ct">
+        <?php foreach ($sb_menus as $menu) { ?>
+        <nav class="all_menu-nav">
+          <ul class="all_menu-dep1">
+            <li>
+              <a href="<?php echo $menu['link'];?>"><?php echo $menu['name'];?></a>
+              <ul class="all_menu-dep2">
+                <?php foreach ($menu['sb_2menus'] as $menu2) { ?>
+                <li>
+                  <a href=""><?php echo $menu2['name'];?></a>
+                  <ul class="all_menu-dep3">
+                    <?php foreach ($menu2['sb_3menus'] as $menu3) { ?>
+                    <li>
+                      <a href=""><?php echo $menu3['name'];?></a>
+                    </li>
+                    <?php } ?>
+                  </ul>
+                </li>
+                <?php } ?>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <?php } ?>
+        <!--
         <nav class="all_menu-nav">
           <ul class="all_menu-dep1">
             <li>
@@ -202,6 +226,7 @@ if(defined('_INDEX_')) { // index에서만 실행
             </li>
           </ul>
         </nav>
+        -->
       </div>
     </div>
   </div>
