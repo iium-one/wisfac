@@ -111,6 +111,18 @@ mainBoardTabButtons.forEach(button => {
   });
 });
 
+// 위스팩소개 > 회사소개 : 비전/조직도 탭 버튼 클릭 이벤트 처리
+const aboutTabButtons = document.querySelectorAll('.aboutus-pg-tabs .tabs-btn');
+aboutTabButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    let contentID = button.getAttribute("data-id");
+    console.log(contentID)
+    tabAddOnClass(this, function(){
+      $(`#${contentID}`).addClass('on').siblings().removeClass('on');
+    });
+  });
+});
+
 $(document).ready(function(){
   // [plugin-Match Height]
   if($(".match-height").length > 0){
