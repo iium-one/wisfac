@@ -127,11 +127,11 @@ if(defined('_INDEX_')) { // index에서만 실행
               <ul class="all_menu-dep2">
                 <?php foreach ($menu['sb_2menus'] as $menu2) { ?>
                 <li>
-                  <a href=""><?php echo $menu2['name'];?></a>
+                  <a href="<?php echo $menu2['link'];?>"><?php echo $menu2['name'];?></a>
                   <ul class="all_menu-dep3">
                     <?php foreach ($menu2['sb_3menus'] as $menu3) { ?>
                     <li>
-                      <a href=""><?php echo $menu3['name'];?></a>
+                      <a href="<?php echo $menu3['link'];?>"><?php echo $menu3['name'];?></a>
                     </li>
                     <?php } ?>
                   </ul>
