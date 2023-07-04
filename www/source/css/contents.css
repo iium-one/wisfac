@@ -162,3 +162,17 @@
 .aboutus-pg-tabs {margin-top: 60px;}
 .aboutus-tab-ct {display: none;}
 .aboutus-tab-ct.on {display: block;}
+.aboutus-tab-ct .sec_ct {margin-top: 100px;}
+
+.vision_text1 {font-size: 50px; font-weight: 700; color: #0f0f0f; line-height: 1;}
+.vision_text2 {margin-top: 30px; font-size: 20px; font-weight: 300; color: #666; line-height: 1.6;}
+.vision_text2 b {font-weight: 500;}
+
+.vision-slo {display: flex; flex-flow: row wrap; align-items: flex-start; gap: 30px; margin-top: 60px;}
+.vision-slo-item {display: flex; flex-direction: column; justify-content: center; overflow: hidden; position: relative; width: calc(33.333% - 20px); min-height: 240px; padding: 20px; border-radius: 120px; background: #fff; text-align: center;}
+.vision-slo-item:after {content: ""; display: block; position: absolute; top: 15px; left: 15px; z-index: 10; width: calc(100% - 30px); height: calc(100% - 30px); border: 2px dashed #fff; border-radius: 105px; opacity: 0.2;}
+.vision-slo-item.item1 {background: url('/source/img/vision-slo-bg1.jpg') no-repeat center/cover;}
+.vision-slo-item.item2 {background: url('/source/img/vision-slo-bg2.jpg') no-repeat center/cover;}
+.vision-slo-item.item3 {background: url('/source/img/vision-slo-bg3.jpg') no-repeat center/cover;}
+.vision-slo-text1 {font-size: 26px; font-weight: 600; color: var(--sub-color1); line-height: 1.153;}
+.vision-slo-text2 {margin-top: 15px; font-size: 16px; font-weight: 300; color: #fff; line-height: 1.5;}

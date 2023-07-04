@@ -61,7 +61,26 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
       <div class="container">
         <div class="wrapper">
           <div class="sec_ct">
-            <p>We are always ready to help you.</p>
+            <p class="vision_text1">We are always ready to help you.</p>
+            <p class="vision_text2">
+            위스팩은 <b>인재와 핵심기술 확보에 집중하여 역량을 극대화</b>함으로서 <br/>
+            제품 차별화와 신제품 개발에 더욱 박차를 가해 세계 <b>최고의 기술력을 보유한 기술 집약적인 기업으로 성장</b>하고 있습니다. <br/>
+            초일류 기업으로 세계시장의 <b>새로운 문화를 창조하며 고객의 이익을 최우선으로 하는 글로벌 최고의 전문기업</b>이 되겠습니다.
+            </p>
+            <div class="match-height vision-slo">
+              <div class="vision-slo-item item1">
+                <p class="vision-slo-text1">첨단 기술의 위스팩</p>
+                <p class="vision-slo-text2">하드웨어 및 소프트웨어 기술을 통합하여 <br/>첨단 검사 장비 최고 수준의 기술을 <br/>겸비한 기업</p>
+              </div>
+              <div class="vision-slo-item item2">
+                <p class="vision-slo-text1">고객 가치창조</p>
+                <p class="vision-slo-text2">무한한 책임감으로 고객의 가치를 <br/>최고로 높이는 기업</p>
+              </div>
+              <div class="vision-slo-item item3">
+                <p class="vision-slo-text1">IBS HA의 위스팩</p>
+                <p class="vision-slo-text2">인텔리전트 빌딩 시스템 및 홀 오토케이션의 <br/>최고 기술 및 제품을 개발하여 미래사회의 <br/>새로운 문화를 창조하는 기업</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
