@@ -112,7 +112,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
       <div class="main-contact_ct">
         <div class="main-contact_ct_inner">
           <p class="main-contact-title">위스팩 소개</p>
-          <p class="main-contact-expl">세계가 인정하는 기술과 제품 <b>위스팩이 궁금</b>하신가요?</p>
+          <p class="main-contact-expl">세계가 인정하는 기술과 제품 <br/><b>위스팩이 궁금</b>하신가요?</p>
           <a href="" class="i-arrow-btn01">
             회사소개
             <span class="icon">
@@ -126,7 +126,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
       <div class="main-contact_ct">
         <div class="main-contact_ct_inner">
           <p class="main-contact-title">고객문의</p>
-          <p class="main-contact-expl">제품에 대해 <b>궁금한 내용</b>이 있으신가요?</p>
+          <p class="main-contact-expl">제품에 대해 <b>궁금한 내용</b>이 <br/>있으신가요?</p>
           <a href="" class="i-arrow-btn01">
             문의하기
             <span class="icon">
