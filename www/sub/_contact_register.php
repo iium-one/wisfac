@@ -7,7 +7,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
 
   <div id="sb-contents">
     <section class="board-write">
-      <h2 class="sound_only">검색 및 작성버튼</h2>
+      <h2 class="sound_only">문의하기 작성페이지</h2>
       <div class="container">
         <div class="wrapper">
           <div class="sec_ct">
