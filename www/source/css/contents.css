@@ -148,6 +148,52 @@
 .sb_top-title-text2 {margin-top: 18px; font-size: 20px; font-weight: 300; color: #666; line-height: 1.6;}
 .sb_top-title-text2 b {font-weight: 500;}
 
+.board-top .sec_ct {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center;}
+.board-top .sch_wrap {display: flex; flex-flow: row wrap; align-items: center; position: relative; max-width: 100%; height: 52px; border: 1px solid #eee; border-radius: 10px;}
+.board-top .sch-select {display: flex; align-items: center; width: 160px; height: 100%; padding-left: 20px; padding-right: 25px; border: 0; border-radius: 10px 0 0 10px; font-size: 16px; font-weight: 400; color: #666;}
+.board-top .sch-keyword {width: 338px; height: 100%; padding: 0 50px 0 20px; border: 0; border-radius: 0 10px 10px 0; font-size: 16px; font-weight: 300; color: #0f0f0f;}
+.board-top .sch-keyword::placeholder {color: #999;}
+.board-top .sch-keyword:focus {width: 400px; border: 0 !important; box-shadow: none !important; background: #f9f9f9;}
+.board-top .sch-submit {position: absolute; top: 6px; right: 7px; z-index: 10; width: 40px; height: 40px; border: 0; border-radius: 10px; background: #bbb url('/source/img/search-icon-white.png') no-repeat center/19px auto;}
+.board-top .sch-keyword:focus + .sch-submit,
+.board-top .sch-submit:focus,
+.board-top .sch-submit:hover {background-color: var(--main-color);}
+.board-top .write-btn {min-width: 150px; height: 52px; line-height: 52px; border-radius: 26px; font-size: 18px; font-weight: 400; color: #fff; background-color: var(--sub-color1); text-align: center;}
+
+.board-list {margin-top: 18px;}
+
+.textType-a .board-list-item {display: flex; flex-flow: row wrap; align-items: center; overflow: hidden; position: relative; margin-top: 10px; padding: 39px 0; border-radius: 10px; background-color: #fff; transition: 0.3s;}
+.textType-a .board-list-item:first-child {margin-top: 0;}
+.textType-a .board-list-item:after {content: ""; display: block; position: absolute; top: 0; left: 0; z-index: 1; width: 100%; height: 100%; border: 1px solid #eee; border-radius: 10px;}
+.textType-a .board-list-item .num {flex: 0 0 112px; position: relative; z-index: 2; border-right: 2px solid #eee; text-align: center; font-size: 18px; font-weight: 400; color: #999;}
+.textType-a .board-list-item .subj {flex: 1 0 auto; position: relative; z-index: 2; width: calc(100% - 302px); padding-left: 30px; font-size: 18px; font-weight: 400; color: #0f0f0f;}
+.textType-a .board-list-item .date {flex: 0 0 190px; position: relative; z-index: 2; text-align: center;}
+.textType-a .board-list-item .date-text {font-size: 16px; font-weight: 400; color: #999;}
+.textType-a .board-list-item .more-btn {display: none; font-size: 16px; font-weight: 400; color: var(--main-color);}
+.textType-a .board-list-item .more-btn img {width: 10px; margin: -4px 0 0 10px; vertical-align: middle;}
+.textType-a .board-list-item:hover {box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);}
+.textType-a .board-list-item:hover:after {border: 2px solid var(--main-color);}
+.textType-a .board-list-item:hover .subj {color: var(--main-color);}
+.textType-a .board-list-item:hover .date-text {display: none;}
+.textType-a .board-list-item:hover .more-btn {display: block;}
+
+.pg_wrap {display: block; float: none; margin-top: 22px; clear: both; text-align: center;}
+.pg_wrap:after {display:block;visibility:hidden;clear:both;content:""} 
+.pg {text-align: center;}
+.pg_page, .pg_current {display:inline-block;vertical-align:middle;background:none;border:0;margin:0 15px;}
+.pg a:focus, .pg a:hover {text-decoration:none}
+.pg_page {font-size:20px; font-weight: 400; color: #999; height:44px; line-height:44px; padding:0; min-width:auto; text-decoration:none; border-radius:50%;}
+.pg_current {display:inline-block; background:none; border:0; color:var(--main-color); font-size:20px; font-weight:500; height:44px; line-height:44px; padding:0; min-width:auto; border-radius:0}
+.pg_page:hover {background-color: #fff;}
+.pg_start {width: 44px; text-indent:-999px;overflow:hidden;background:#fff url('/source/img/arrow-left-gray.png') no-repeat center/10px auto;padding:0;border:1px solid #ddd; margin: 0 10px;}
+.pg_prev {width: 44px; text-indent:-999px;overflow:hidden;background:#fff url('/source/img/arrow-left-gray.png') no-repeat center/10px auto;padding:0;border:1px solid #ddd;}
+.pg_end {width: 44px; text-indent:-999px;overflow:hidden;background:#fff url('/source/img/arrow-right-gray.png') no-repeat center/10px auto;padding:0;border:1px solid #ddd; margin: 0 10px;}
+.pg_next {width: 44px; text-indent:-999px;overflow:hidden;background:#fff url('/source/img/arrow-right-gray.png') no-repeat center/10px auto;padding:0;border:1px solid #ddd;}
+.pg_start:hover {background:#fff url('/source/img/arrow-left-red.png') no-repeat center/10px auto; border-color: var(--main-color);}
+.pg_prev:hover {background:#fff url('/source/img/arrow-left-red.png') no-repeat center/10px auto; border-color: var(--main-color);}
+.pg_end:hover {background:#fff url('/source/img/arrow-right-red.png') no-repeat center/10px auto; border-color: var(--main-color);}
+.pg_next:hover {background:#fff url('/source/img/arrow-right-red.png') no-repeat center/10px auto; border-color: var(--main-color);}
+
 /* 위스팩소개 */
 /* > 회사소개 */
 .aboutus-slo {display: flex; flex-flow: row wrap; align-items: flex-start; gap: 20px; margin-top: 48px;}

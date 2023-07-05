@@ -58,7 +58,7 @@ $sb_menus = [
     'link' => '/sub/contact',
     'sb_2menus' => [
       [
-        'id' => 'inquiry',
+        'id' => 'contact',
         'name' => '문의하기',
         'link' => '/sub/contact'
       ],
