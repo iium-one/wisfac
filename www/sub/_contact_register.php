@@ -80,11 +80,11 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                         </div>
                         <div class="phone-input-li phone-sym">-</div>
                         <div class="phone-input-li">
-                          <input type="text" name="inq_phone2" class="form-input full">
+                          <input type="text" name="inq_phone2" class="form-input full" maxlength="4">
                         </div>
                         <div class="phone-input-li phone-sym">-</div>
                         <div class="phone-input-li">
-                          <input type="text" name="inq_phone3" class="form-input full">
+                          <input type="text" name="inq_phone3" class="form-input full" maxlength="4">
                         </div>
                       </div>
                     </div>
@@ -117,7 +117,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                   <div class="form-li">
                     <div class="form-text">제목</div>
                     <div class="form-cont">
-                      <input type="text" name="inq_subj" class="form-input full">
+                      <input type="text" name="inq_subj" class="form-input full" maxlength="255">
                     </div>
                   </div>
                 </div>
