@@ -6,7 +6,9 @@ $g5['title'] = '문의내역 상세보기';
 
 include_once('./admin.head.php');
 
-$row = sql_fetch(" select * from iium_inquiry where inq_id = '".$_GET['inq_id']."'" );
+$inquery_table = G5_TABLE_PREFIX."inquiry";
+
+$row = sql_fetch(" select * from {$inquery_table} where inq_id = '".$_GET['inq_id']."'" );
 ?>
 
 <!--

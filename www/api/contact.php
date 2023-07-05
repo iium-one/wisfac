@@ -1,6 +1,7 @@
 <?php
 include_once('./_common.php');
 
+$inquery_table = G5_TABLE_PREFIX."inquiry";
 $name = $_POST['inq_name'];
 $email = $_POST['inq_mail01'].'@'.$_POST['inq_mail02'];
 $area = $_POST['inq_area'];
@@ -21,10 +22,9 @@ $sql_common .= "  inq_name = '{$name}',
                   inq_content = '{$content}',
                   inq_date = '".G5_TIME_YMDHIS."'  ";
 
-$sql = "INSERT iium_inquiry SET {$sql_common}";
+$sql = "INSERT {$inquery_table} SET {$sql_common}";
 
 sql_query($sql);
 
 alert("문의가 완료되었습니다.", "/");
-
 ?>

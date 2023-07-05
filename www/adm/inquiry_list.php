@@ -7,10 +7,12 @@ include_once('./admin.head.php');
 
 $colspan = 5;
 
+$inquery_table = G5_TABLE_PREFIX."inquiry";
+
 $sfl = $_REQUEST['sfl'];
 $stx = $_REQUEST['stx'];
 
-$sql_common = " from iium_inquiry ";
+$sql_common = " from {$inquery_table} ";
 $sql_search = " where (1) ";
 
 if ($stx) {
