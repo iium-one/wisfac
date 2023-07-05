@@ -115,6 +115,14 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 </div>
                 <div class="form-box">
                   <div class="form-li">
+                    <div class="form-text">제목</div>
+                    <div class="form-cont">
+                      <input type="text" name="inq_subj" class="form-input full">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="form-li">
                     <div class="form-text">문의사항</div>
                     <div class="form-cont">
                       <textarea data-lenis-prevent name="inq_content" id="" class="form-textar full" cols="30" rows="10"></textarea>

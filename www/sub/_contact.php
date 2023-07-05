@@ -49,7 +49,7 @@ if(isset($sfl) || isset($stx) || isset($page)){
             <form id="fm-sch" method="get">
               <div class="sch_wrap">
                 <select name="sfl" id="sfl" class="nc-sel sch-select">
-                  <option value="inq_name" <?php echo get_selected($sfl, "inq_name"); ?>>전체</option>
+                  <option value="inq_subj" selected>제목</option>
                 </select>
                 <input type="text" name="stx" id="stx" class="sch-keyword" value="<?php echo $stx;?>" required placeholder="검색어를 입력하세요.">
                 <button type="submit" class="sch-submit" title="검색하기"></button>
@@ -79,10 +79,10 @@ if(isset($sfl) || isset($stx) || isset($page)){
               ?>
               <div class="board-list-item">
                 <div class="num"><?php echo $row[$i]['num'];?></div>
-                <a href="" class="subj"><?php echo $row['inq_name'];?></a>
+                <a href="/sub/contact_view/<?php echo $row['inq_id'];?>" class="subj"><?php echo $row['inq_subj'];?></a>
                 <div class="date">
-                  <span class="date-text">2023.07.10</span>
-                  <a href="" class="more-btn">Learn more<img src="/source/img/arrow-right-red.png" alt=""></a>
+                  <span class="date-text"><?php echo date("Y.m.d", strtotime($row['inq_date'])); ?></span>
+                  <a href="/sub/contact_view/<?php echo $row['inq_id'];?>" class="more-btn">Learn more<img src="/source/img/arrow-right-red.png" alt=""></a>
                 </div>
               </div>
               <?php 
