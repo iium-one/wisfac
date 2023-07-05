@@ -17,7 +17,7 @@
 
 #hd_top-inner .hd-sub {display: flex; flex-flow: row wrap; align-items: center; justify-content: center; gap: 0 27px;}
 #hd_top-inner .lang-sel {height: 40px; padding-left: 14px; padding-right: 30px; font-size: 16px; font-weight: 400; color: #fff; background-color: #333;}
-#hd_top-inner .lang-sel:after {width: 7px; height: 7px; margin-top: -4.5px; border-bottom: 1px solid #fff; border-right: 1px solid #fff;}
+#hd_top-inner .lang-sel:after {width: 12px; height: 7px; background: url('/source/img/arrow-down-white.png') no-repeat center/contain;}
 #hd_top-inner .lang-sel .current {font-size: 16px; font-weight: 400; color: #fff;}
 .nice-select.lang-sel .list {background-color: #666;}
 .nice-select.lang-sel .option:hover,
