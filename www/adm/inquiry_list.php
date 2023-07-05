@@ -79,7 +79,8 @@ $result = sql_query($sql);
         <td><?php echo $row['inq_date']; ?></td>
         <td class="inq_check"><?php echo $row['inq_check'] == '0'?'-':'읽음'; ?></td>
         <td class="td_mng td_mng_m">
-          <a href="./inquiry_form.php?inq_id=<?php echo $row['inq_id'];?>" class="btn btn_03" onclick="inq_check(<?php echo $row['inq_id'];?>)">보기</a>
+          <button class="btn btn_03" onclick="inq_check(<?php echo $row['inq_id'];?>)">보기</button>
+          <!-- <a href="./inquiry_form.php?inq_id=<?php echo $row['inq_id'];?>" class="btn btn_03" onclick="inq_check(<?php echo $row['inq_id'];?>)">보기</a> -->
           <!--
           <form name="product_delete" id="product_delete" action="./product_form_update.php" onsubmit="return fboardform_submit(this)" method="post" style="display: inline-block;">
             <input type="hidden" name="inq_id" value="<?php echo $row['inq_id'];?>">
@@ -159,7 +160,8 @@ function inq_check(inqId){
     method: 'POST',
     data: { inqId: inqId },
     success: function(response) {
-      //window.location.reload();
+      // console.log(response)
+      window.location.href = './inquiry_form.php?inq_id='+inqId;
     }
   });
 }
