@@ -25,6 +25,17 @@
 .tabs.tabs2 .tabs-btn:after {display: none !important;}
 .tabs.tabs2 .tabs-btn.on {border-color: var(--main-color); background-color: var(--main-color);}
 
+.submit-btn {min-width: 184px; height: 58px; line-height: 58px; border: 0; border-radius: 29px; font-size: 18px; font-weight: 400; color: #fff; background-color: var(--main-color); text-align: center;}
+
+.nc-sel:after {border: 0; width: 13px; height: 8px; background: url('/source/img/arrow-down-gray.png') no-repeat center/contain; transform: inherit;}
+.nc-sel.open:after {
+  -webkit-transform: rotate(180deg) translate(2px, 2px);
+  -ms-transform: rotate(180deg) translate(2px, 2px);
+  transform: rotate(180deg) translate(2px, 2px);
+}
+
+[data-lenis-prevent] {overscroll-behavior: auto;}
+
 /* Main(메인) */
 .main-visual-container {overflow: hidden;}
 .main-visual-wrapper {position: relative; z-index: 100;}
@@ -198,6 +209,44 @@
 
 .empty_table {background-color: #f9f9f9;}
 
+.form-input {width: 400px; height: 50px; padding: 0 10px 0 20px; border: 1px solid #eee; border-radius: 10px; font-size: 16px; font-weight: 400; color: #666;}
+.form-input.full {width: 100%;}
+
+.form-textar {width: 400px; height: auto; padding: 20px; border: 1px solid #eee; border-radius: 10px; font-size: 16px; font-weight: 400; color: #666; overflow: auto;}
+.form-textar.full {width: 100%;}
+
+.form-sel {height: 50px; line-height: 48px; padding-left: 20px; padding-right: 50px; border-radius: 10px; font-size: 16px; font-weight: 400; color: #666;}
+
+.form-wrap {margin-top: 35px; padding: 4px 32px 4px 0; border-top: 1px solid #bbb; border-bottom: 1px solid #bbb;}
+.form-wrap .form-box {width: 100%; padding: 13px 0;}
+.form-wrap .form-li {display: inline-flex; flex-flow: row wrap; align-items: flex-start; position: relative; width: 100%;}
+.form-wrap .form-box.w_auto .form-li {width: auto;}
+.form-wrap .form-text {width: 123px; padding-top: 16px; padding-left: 30px;}
+.form-wrap .form-cont {width: calc(100% - 123px);}
+
+.form-wrap .form-li-name {width: 36%;}
+.form-wrap .form-li-email {width: calc(64% - 4px);}
+
+.form-wrap .form-li.bl:after {content: ""; display: block; position: absolute; top: 50%; left: 40px; z-index: 1; height: 50px; margin-top: -25px; border-left: 2px solid #eee;}
+.form-wrap .form-li.bl .form-text {padding-left: 80px; width: 174px;}
+.form-wrap .form-li.bl .form-cont {width: calc(100% - 174px);}
+
+.form-wrap .mail-input-wrap {display: flex; flex-flow: row wrap; align-items: center;}
+.form-wrap .email-sym {padding: 0 9px; font-size: 16px; font-weight: 400; color: #666;}
+.form-wrap .email-id {width: 260px;}
+.form-wrap .email-domain {width: calc(100% - 293px);}
+.form-wrap .doamin-sel {width: 100%;}
+
+.form-wrap .phone-input-li {width: 193px;}
+.form-wrap .phone-input-li.phone1 {width: 180px;}
+.form-wrap .phone-sym {width: auto; padding: 0 9px; font-size: 16px; font-weight: 400; color: #666;}
+.form-wrap .tel-sel {width: 100%;}
+
+.form-wrap .address-input-box {margin-top: 7px; font-size: 0;}
+.form-wrap .address-input-box:first-child {margin-top: 0;}
+.form-wrap .add-btn {width: 150px; height: 50px; margin-left: 5px; border: 0; border-radius: 10px; font-size: 18px; font-weight: 400; color: #fff; background-color: #333; text-align: center; transition: 0.3s;}
+.form-wrap .add-btn:hover {background-color: var(--main-color);}
+
 /* 위스팩소개 */
 /* > 회사소개 */
 .aboutus-slo {display: flex; flex-flow: row wrap; align-items: flex-start; gap: 20px; margin-top: 48px;}
@@ -226,3 +275,7 @@
 .vision-slo-item.item3 {background: url('/source/img/vision-slo-bg3.jpg') no-repeat center/cover;}
 .vision-slo-text1 {font-size: 26px; font-weight: 600; color: var(--sub-color1); line-height: 1.153;}
 .vision-slo-text2 {margin-top: 15px; font-size: 16px; font-weight: 300; color: #fff; line-height: 1.5;}
+
+/* 고객지원 */
+/* > 문의하기 */
+.inquiry-btn-box {margin-top: 24px; text-align: center;}

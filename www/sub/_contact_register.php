@@ -1,99 +1,137 @@
-<div class="sub_contents" style="padding-top: 100px;">
-  <div class="form-wrap">
-    <form action="/api/contact.php" method="post">
-      <div class="inquiry-wrap">
-        <div class="i-col-0 inquiry-li">
-          <div class="inquiry-text">이름</div>
-          <div class="inquiry-cont">
-            <input type="text" name="inq_name">
-          </div>
-        </div>
-        <div class="i-col-0 inquiry-li">
-          <div class="inquiry-text">이메일</div>
-          <div class="inquiry-cont">
-            <div class="i-ccol-0 mail-input-wrap">
-              <div class="mail-input-li">
-                <input type="text" name="inq_mail01">
-              </div>
-              <div class="mail-input-li">@</div>
-              <div class="mail-input-li">
-                <input type="text" name="inq_mail02">
-              </div>
+<?php 
+include_once(G5_INCLUDE_PATH.'/sub_top.php');
+?>
+
+<div id="contact" class="contents">
+  <?php sub_top($sb_menus, 'cs', 'contact'); ?>
+
+  <div id="sb-contents">
+    <section class="board-write">
+      <h2 class="sound_only">검색 및 작성버튼</h2>
+      <div class="container">
+        <div class="wrapper">
+          <div class="sec_ct">
+            <div class="sb_top-title">
+              <p class="sb_top-title-text1"><b>궁금하신 점이 있으신가요? <br/>아래 내용을 입력 후 문의해주세요.</b></p>
             </div>
-          </div>
-        </div>
-        <div class="i-col-0 inquiry-li">
-          <div class="inquiry-text">지역</div>
-          <div class="inquiry-cont">
-            <input type="text" name="inq_area">
-          </div>
-        </div>
-        <div class="i-col-0 inquiry-li">
-          <div class="inquiry-text">회사/학교</div>
-          <div class="inquiry-cont">
-            <input type="text" name="inq_company">
-          </div>
-        </div>
-        <div class="i-col-0 inquiry-li">
-          <div class="inquiry-text">부서</div>
-          <div class="inquiry-cont">
-            <input type="text" name="inq_depart">
-          </div>
-        </div>
-        <div class="i-col-0 inquiry-li">
-          <div class="inquiry-text">전화번호</div>
-          <div class="inquiry-cont">
-            <div class="i-col-0 phone-input-wrap">
-              <div class="phone-input-li">
-                <select name="inq_phone1" id="">
-                  <option value="">선택</option>
-                  <option value="010">010</option>
-                </select>
+
+            <form action="/api/contact.php" method="post">
+              <div class="form-wrap">
+                <div class="form-box">
+                  <div class="form-li form-li-name">
+                    <div class="form-text">이름</div>
+                    <div class="form-cont">
+                      <input type="text" name="inq_name" class="form-input full">
+                    </div>
+                  </div>
+                  <div class="form-li form-li-email bl">
+                    <div class="form-text">이메일</div>
+                    <div class="form-cont">
+                      <div class="mail-input-wrap">
+                        <div class="mail-input-li email-id">
+                          <input type="text" name="inq_mail01" id="inq_mail01" class="form-input full">
+                        </div>
+                        <div class="mail-input-li email-sym">@</div>
+                        <div class="mail-input-li email-domain">
+                          <select name="inq_mail02" id="inq_mail02" class="nc-sel form-sel doamin-sel">
+                            <option value="">선택하세요.</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="gmail.com">gmail.com</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="form-li">
+                    <div class="form-text">지역</div>
+                    <div class="form-cont">
+                      <input type="text" name="inq_area" class="form-input full">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="form-li">
+                    <div class="form-text">회사/학교</div>
+                    <div class="form-cont">
+                      <input type="text" name="inq_company" class="form-input full">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="form-li">
+                    <div class="form-text">부서</div>
+                    <div class="form-cont">
+                      <input type="text" name="inq_depart" class="form-input full">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="form-li">
+                    <div class="form-text">전화번호</div>
+                    <div class="form-cont">
+                      <div class="i-col-0 phone-input-wrap">
+                        <div class="phone-input-li phone1">
+                          <select name="inq_phone1" id="" class="nc-sel form-sel tel-sel">
+                            <option value="">선택</option>
+                            <option value="010">010</option>
+                          </select>
+                        </div>
+                        <div class="phone-input-li phone-sym">-</div>
+                        <div class="phone-input-li">
+                          <input type="text" name="inq_phone2" class="form-input full">
+                        </div>
+                        <div class="phone-input-li phone-sym">-</div>
+                        <div class="phone-input-li">
+                          <input type="text" name="inq_phone3" class="form-input full">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="form-li">
+                    <div class="form-text">주소</div>
+                    <div class="form-cont">
+                      <div class="address-input-wrap">
+                        <div class="address-input-box btn-box">
+                          <input type="text" name="inq_post_num" placeholder="우편번호" readonly id="sample3_postcode" class="form-input">
+                          <button type="button" class="add-btn" onclick="sample3_execDaumPostcode()">주소검색</button>
+                        </div>
+                        <div id="add-wrap"></div>
+                        <div class="address-input-box">
+                          <input type="text" name="inq_add1" placeholder="주소를 선택해주세요." id="sample3_address" readonly class="form-input full">
+                        </div>
+                        <div class="address-input-box">
+                          <input type="text" name="inq_add2" placeholder="상세주소를 입력하세요." id="sample3_detailAddress" class="form-input full">
+                        </div>
+                        <div class="address-input-box" style="display: none;">
+                          <input type="text" name="inq_add3" placeholder="참고항목을 입력하세요." id="sample3_extraAddress" class="form-input full">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="form-li">
+                    <div class="form-text">문의사항</div>
+                    <div class="form-cont">
+                      <textarea data-lenis-prevent name="inq_content" id="" class="form-textar full" cols="30" rows="10"></textarea>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="phone-input-li">
-                <input type="text" name="inq_phone2">
+              <div class="inquiry-btn-box">
+                <button type="submit" class="submit-btn">문의하기</button>
               </div>
-              <div class="phone-input-li">
-                <input type="text" name="inq_phone3">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="i-col-0 inquiry-li">
-          <div class="inquiry-text">주소</div>
-          <div class="inquiry-cont">
-            <div class="address-input-wrap">
-              <div class="address-input-box btn-box">
-                <input type="text" name="inq_post_num" placeholder="우편번호" readonly id="sample3_postcode">
-                <button type="button" onclick="sample3_execDaumPostcode()">주소검색</button>
-              </div>
-              <div id="add-wrap"></div>
-              <div class="address-input-box">
-                <input type="text" name="inq_add1" placeholder="주소를 선택해주세요." id="sample3_address" readonly>
-              </div>
-              <div class="address-input-box">
-                <input type="text" name="inq_add2" placeholder="상세주소를 입력하세요." id="sample3_detailAddress">
-              </div>
-              <div class="address-input-box" style="display: none;">
-                <input type="text" name="inq_add3" placeholder="참고항목을 입력하세요." id="sample3_extraAddress">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="i-col-0 inquiry-li">
-          <div class="inquiry-text">문의사항</div>
-          <div class="inquiry-cont">
-            <textarea name="inq_content" id="" cols="30" rows="10"></textarea>
+            </form>
           </div>
         </div>
       </div>
-      <div class="inquiry-btn-box">
-        <button type="submit">문의하기</button>
-      </div>
-    </form>
+    </section>
   </div>
 </div>
-
 
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 
