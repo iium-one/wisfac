@@ -149,16 +149,18 @@
 .sb_top-title-text2 b {font-weight: 500;}
 
 .board-top .sec_ct {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center;}
+.board-top #fm-sch {display: flex; align-items: center;}
 .board-top .sch_wrap {display: flex; flex-flow: row wrap; align-items: center; position: relative; max-width: 100%; height: 52px; border: 1px solid #eee; border-radius: 10px;}
 .board-top .sch-select {display: flex; align-items: center; width: 160px; height: 100%; padding-left: 20px; padding-right: 25px; border: 0; border-radius: 10px 0 0 10px; font-size: 16px; font-weight: 400; color: #666;}
 .board-top .sch-keyword {width: 338px; height: 100%; padding: 0 50px 0 20px; border: 0; border-radius: 0 10px 10px 0; font-size: 16px; font-weight: 300; color: #0f0f0f;}
 .board-top .sch-keyword::placeholder {color: #999;}
-.board-top .sch-keyword:focus {width: 400px; border: 0 !important; box-shadow: none !important; background: #f9f9f9;}
+.board-top .sch-keyword:focus {width: 360px; border: 0 !important; box-shadow: none !important; background: #f9f9f9;}
 .board-top .sch-submit {position: absolute; top: 6px; right: 7px; z-index: 10; width: 40px; height: 40px; border: 0; border-radius: 10px; background: #bbb url('/source/img/search-icon-white.png') no-repeat center/19px auto;}
 .board-top .sch-keyword:focus + .sch-submit,
 .board-top .sch-submit:focus,
 .board-top .sch-submit:hover {background-color: var(--main-color);}
 .board-top .write-btn {min-width: 150px; height: 52px; line-height: 52px; border-radius: 26px; font-size: 18px; font-weight: 400; color: #fff; background-color: var(--sub-color1); text-align: center;}
+.board-top .return-btn {width: 40px; height: 40px; margin: 2px 0 0 10px; border: 0; border-radius: 10px; background: var(--sub-color1) url('/source/img/return.png') no-repeat center/18px auto;}
 
 .board-list {margin-top: 18px;}
 
@@ -193,6 +195,8 @@
 .pg_prev:hover {background:#fff url('/source/img/arrow-left-red.png') no-repeat center/10px auto; border-color: var(--main-color);}
 .pg_end:hover {background:#fff url('/source/img/arrow-right-red.png') no-repeat center/10px auto; border-color: var(--main-color);}
 .pg_next:hover {background:#fff url('/source/img/arrow-right-red.png') no-repeat center/10px auto; border-color: var(--main-color);}
+
+.empty_table {background-color: #f9f9f9;}
 
 /* 위스팩소개 */
 /* > 회사소개 */
