@@ -209,6 +209,19 @@
 
 .empty_table {background-color: #f9f9f9;}
 
+.board-head {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; padding: 35px 25px; border-top: 1px solid #bbb; border-bottom: 1px solid #ddd;}
+.board-v-subj {font-size: 22px; font-weight: 400; color: #0f0f0f; line-height: 1.182;}
+.board-v-date {font-size: 16px; font-weight: 400; color: #999; line-height: 1.25;}
+
+.board-v-cont {min-height: 300px; padding: 40px 25px; border-bottom: 1px solid #bbb; font-size: 18px; font-weight: 300; color: #666; line-height: 1.45;}
+
+.board-v-btn_group {position: relative; margin-top: 17px;}
+.board-v-golist-btn {display: flex; align-items: center; justify-content: center; position: absolute; top: 0; left: 50%; z-index: 10; width: 184px; height: 58px; margin-left: -92px; font-size: 18px; font-weight: 400; color: #fff; border-radius: 30px; background-color: var(--main-color);}
+.board-v-navi_group {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center;}
+.board-v-navi-btn {display: flex; align-items: center; justify-content: space-between; width: 184px; height: 58px; padding: 0 30px; font-size: 18px; font-weight: 400; color: #999; border: 1px solid rgba(153,153,153,0.7); border-radius: 30px; background-color: #fff;}
+.board-v-navi-btn.prev .icon{display: block; width: 10px; height: 18px; background: url('/source/img/arrow-left-gray.png') no-repeat center/contain;}
+.board-v-navi-btn.next .icon{display: block; width: 10px; height: 18px; background: url('/source/img/arrow-right-gray.png') no-repeat center/contain;}
+
 .form-input {width: 400px; height: 50px; padding: 0 10px 0 20px; border: 1px solid #eee; border-radius: 10px; font-size: 16px; font-weight: 400; color: #666;}
 .form-input.full {width: 100%;}
 
@@ -279,3 +292,9 @@
 /* 고객지원 */
 /* > 문의하기 */
 .inquiry-btn-box {margin-top: 24px; text-align: center;}
+
+.inq-v-text_wrap {border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
+.inq-v-text {display: flex; flex-flow: row wrap; align-items: flex-start;  font-size: 0; border-top: 1px solid #eee;}
+.inq-v-text:first-child {border-top: 0;}
+.inq-v-text-tit {width: 150px; padding: 10px; font-size: 18px; font-weight: 500; color: #333; background-color: #f9f9f9;}
+.inq-v-text-cont {width: calc(100% - 150px); padding: 10px; font-size: 18px; font-weight: 300; color: #666;}
