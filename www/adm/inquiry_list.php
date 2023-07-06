@@ -136,31 +136,12 @@ function fboardform_submit(f)
   }
 }
 
-// function inq_check(selectElement, inqId){
-//   var selectedValue = $(selectElement).val();
-  
-//   $.ajax({
-//     url: './inquiry_check.php',
-//     method: 'POST',
-//     data: { inqId: inqId, value: selectedValue },
-//     success: function(response) {
-//       if(selectedValue == '2'){
-//         alert('확인처리 되었습니다.');
-//       }else{
-//         alert('미확인 상태로 변경됩니다.');
-//       }
-//       window.location.reload();
-//     }
-//   });
-// }
-
 function inq_check(inqId){
   $.ajax({
     url: './inquiry_check.php',
     method: 'POST',
     data: { inqId: inqId },
     success: function(response) {
-      // console.log(response)
       window.location.href = './inquiry_form.php?inq_id='+inqId;
     }
   });
