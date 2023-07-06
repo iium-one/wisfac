@@ -2,13 +2,13 @@
 if (!defined('G5_USE_SHOP') || !G5_USE_SHOP) return;
 
 $menu['menu400'] = array (
-    array('400000', '분류/제품 관리', G5_ADMIN_URL.'/shop_admin/', 'shop_config'),
+    //array('400000', '분류/제품 관리', G5_ADMIN_URL.'/shop_admin/', 'shop_config'),
     //array('400010', '쇼핑몰현황', G5_ADMIN_URL.'/shop_admin/', 'shop_index'),
     //array('400100', '쇼핑몰설정', G5_ADMIN_URL.'/shop_admin/configform.php', 'scf_config'),
     //array('400400', '주문내역', G5_ADMIN_URL.'/shop_admin/orderlist.php', 'scf_order', 1),
     //array('400440', '개인결제관리', G5_ADMIN_URL.'/shop_admin/personalpaylist.php', 'scf_personalpay', 1),
-    array('400200', '분류관리', G5_ADMIN_URL.'/shop_admin/categorylist.php', 'scf_cate'),
-    array('400300', '상품관리', G5_ADMIN_URL.'/shop_admin/itemlist.php', 'scf_item'),
+    //array('400200', '분류관리', G5_ADMIN_URL.'/shop_admin/categorylist.php', 'scf_cate'),
+    //array('400300', '상품관리', G5_ADMIN_URL.'/shop_admin/itemlist.php', 'scf_item'),
     //array('400660', '상품문의', G5_ADMIN_URL.'/shop_admin/itemqalist.php', 'scf_item_qna'),
     //array('400650', '사용후기', G5_ADMIN_URL.'/shop_admin/itemuselist.php', 'scf_ps'),
     //array('400620', '상품재고관리', G5_ADMIN_URL.'/shop_admin/itemstocklist.php', 'scf_item_stock'),

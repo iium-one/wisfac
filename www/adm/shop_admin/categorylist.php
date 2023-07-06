@@ -1,5 +1,5 @@
 <?php
-$sub_menu = '400200';
+$sub_menu = '600100';
 include_once('./_common.php');
 
 auth_check_menu($auth, $sub_menu, "r");
@@ -75,6 +75,74 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
 <input type="submit" value="검색" class="btn_submit">
 
 </form>
+
+<!--카테고리 선택 시작-->
+<?php $he_size = '15'; ?>
+<div class="comcose_box">
+    <!-- 1차 카테고리-->
+    <div class="comcose_list">
+        <select class="comcose_acs" size="<?php echo $he_size ?>" name="ca_id1" onChange="comcose_acs(this)">
+            <option style="color:#333;font-weight:bold;padding-bottom:10px;margin-bottom:10px;border-bottom:solid 1px #bbb;" value="" >1차 카테고리</option>
+            <?php
+            $sql_ca_id1="SELECT ca_id, ca_name FROM {$g5['g5_shop_category_table']} where length(ca_id) = '2' order by ca_id ";
+            $result_ca_id1 = sql_query($sql_ca_id1);
+            for($i=0; $row_ca_id1 = sql_fetch_array($result_ca_id1); $i++){
+            ?>
+            <option value=<?php echo $row_ca_id1['ca_id']; ?> <?php if($row_ca_id1['ca_id'] == substr($stx, 0, 2)) echo 'selected'?>><?php echo $row_ca_id1['ca_name']; ?></option>
+            <?php } ?>
+        </select>
+    </div>
+
+    <!-- 2차 카테고리-->
+    <div class="comcose_list">
+        <select class="comcose_acs" size="<?php echo $he_size ?>"  name="ca_id2" onChange="comcose_acs(this)">
+            <option style="color:#333;font-weight:bold;padding-bottom:10px;margin-bottom:10px;border-bottom:solid 1px #bbb;" value="" >2차 카테고리</option>
+            <?php
+            $sql_ca_id2="SELECT ca_id, ca_name FROM {$g5['g5_shop_category_table']} where length(ca_id) = '4' and substring(ca_id,1,2) = substring('$stx',1,2) order by ca_id ";
+            $result_ca_id2 = sql_query($sql_ca_id2);
+            for($i=0; $row_ca_id2 = sql_fetch_array($result_ca_id2); $i++){
+            ?>
+            <option value=<?php echo $row_ca_id2['ca_id']; ?> <?php if($row_ca_id2['ca_id'] == substr($stx, 0, 4)) echo 'selected'?>><?php echo $row_ca_id2['ca_name']; ?></option>
+            <?php } ?>
+        </select>
+    </div>
+
+    <!-- 3차 카테고리-->
+    <div class="comcose_list">
+        <select class="comcose_acs" size="<?php echo $he_size ?>" name="ca_id3" onChange="comcose_acs(this)">
+            <option style="color:#333;font-weight:bold;padding-bottom:10px;margin-bottom:10px;border-bottom:solid 1px #bbb;" value="" >3차 카테고리</option>
+            <?php
+            $sql_ca_id3="SELECT ca_id, ca_name FROM {$g5['g5_shop_category_table']} where length(ca_id) = '6' and substring(ca_id,1,4) = substring('$stx',1,4) order by ca_id ";
+            $result_ca_id3 = sql_query($sql_ca_id3);
+            for($i=0; $row_ca_id3 = sql_fetch_array($result_ca_id3); $i++){
+            ?>
+            <option value=<?php echo $row_ca_id3['ca_id']; ?> <?php if($row_ca_id3['ca_id'] == substr($stx, 0, 6)) echo 'selected'?>><?php echo $row_ca_id3['ca_name']; ?></option>
+            <?php } ?>
+        </select>
+    </div>
+
+    <!--4차 카테고리-->
+    <div class="comcose_list">
+        <select class="comcose_acs" size="<?php echo $he_size ?>" name="ca_id4" onChange="comcose_acs(this)">
+            <option style="color:#333;font-weight:bold;padding-bottom:10px;margin-bottom:10px;border-bottom:solid 1px #bbb;" value="" >4차 카테고리</option>
+            <?php
+            $sql_ca_id4="SELECT ca_id, ca_name FROM {$g5['g5_shop_category_table']} where length(ca_id) = '8' and substring(ca_id,1,6) = substring('$stx',1,6) order by ca_id ";
+            $result_ca_id4 = sql_query($sql_ca_id4);
+            for($i=0; $row_ca_id4 = sql_fetch_array($result_ca_id4); $i++){
+            ?>
+            <option value=<?php echo $row_ca_id4['ca_id']; ?> <?php if($row_ca_id4['ca_id'] == substr($stx, 0, 8)) echo 'selected'?>><?php echo $row_ca_id4['ca_name']; ?></option>
+            <?php } ?>
+        </select>
+    </div>
+
+    <script type="text/javascript">
+    function comcose_acs(sel_ca){
+    sel_ca= sel_ca.options[sel_ca.selectedIndex].value;
+    location.replace("categorylist.php?&sfl=ca_id&stx="+sel_ca);
+    }
+    </script>
+</div>
+<!--카테고리 선택 끝-->
 
 <form name="fcategorylist" method="post" action="./categorylistupdate.php" autocomplete="off">
 <input type="hidden" name="sst" value="<?php echo $sst; ?>">

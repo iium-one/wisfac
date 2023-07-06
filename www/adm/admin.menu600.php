@@ -1,6 +1,7 @@
 <?php
 $menu['menu600'] = array (
-    array('600000', '제품관리', ''.G5_ADMIN_URL.'/product_list.php', 'product'),
-    //array('600100', '제품관리', ''.G5_ADMIN_URL.'/product_list.php', 'product_mng'),
-    array('600100', '문의내역', ''.G5_ADMIN_URL.'/inquiry_list.php', 'product_mng'),
+    array('600000', '콘텐츠관리', ''.G5_ADMIN_URL.'/product_list.php', 'product'),
+    array('600100', '분류관리', G5_ADMIN_URL.'/shop_admin/categorylist.php', 'scf_cate'),
+    array('600200', '제품관리', G5_ADMIN_URL.'/shop_admin/itemlist.php', 'scf_item'),
+    array('600300', '문의내역', ''.G5_ADMIN_URL.'/inquiry_list.php', 'product_mng'),
 );

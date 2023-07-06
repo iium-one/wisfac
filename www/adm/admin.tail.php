@@ -16,8 +16,8 @@ $print_version = 'Version '.G5_GNUBOARD_VER;
         </div>    
         <footer id="ft">
             <p>
-                Copyright &copy; <?php echo $_SERVER['HTTP_HOST']; ?>. All rights reserved. <?php echo $print_version; ?><br>
-               <button type="button" class="scroll_top"><span class="top_img"></span><span class="top_txt">TOP</span></button>
+              <!-- Copyright &copy; <?php //echo $_SERVER['HTTP_HOST']; ?>. All rights reserved. <?php //echo $print_version; ?><br> -->
+              <button type="button" class="scroll_top"><span class="top_img"></span><span class="top_txt">TOP</span></button>
            </p>
         </footer>
     </div>
