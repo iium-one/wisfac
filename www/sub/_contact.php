@@ -32,8 +32,15 @@ $from_record = ($page - 1) * $rows;
 $sql = " select * {$sql_common} {$sql_search} {$sql_order} limit {$from_record}, {$rows} ";
 $result = sql_query($sql);
 
-if(isset($sfl) || isset($stx) || isset($page)){
-  $qstr .= "sfl=".$sfl."&stx=".$stx."page=".$page;
+if(isset($sfl) || isset($stx)){
+  $qstr .= "sfl=".$sfl."&stx=".$stx;
+}
+if(isset($page)){
+  if(isset($sfl) || isset($stx)){
+    $qstr .= "&page=".$page;
+  }else{
+    $qstr .= "page=".$page;
+  }
 }
 ?>
 
@@ -79,10 +86,10 @@ if(isset($sfl) || isset($stx) || isset($page)){
               ?>
               <div class="board-list-item">
                 <div class="num"><?php echo $row[$i]['num'];?></div>
-                <a href="/sub/contact_view/<?php echo $row['inq_id'];?>" class="subj"><?php echo $row['inq_subj'];?></a>
+                <a href="/sub/contact_view/<?php echo $row['inq_id'];?>?<?php echo $qstr;?>" class="subj"><?php echo $row['inq_subj'];?></a>
                 <div class="date">
                   <span class="date-text"><?php echo date("Y.m.d", strtotime($row['inq_date'])); ?></span>
-                  <a href="/sub/contact_view/<?php echo $row['inq_id'];?>" class="more-btn">Learn more<img src="/source/img/arrow-right-red.png" alt=""></a>
+                  <a href="/sub/contact_view/<?php echo $row['inq_id'];?>?<?php echo $qstr;?>" class="more-btn">Learn more<img src="/source/img/arrow-right-red.png" alt=""></a>
                 </div>
               </div>
               <?php 
@@ -93,29 +100,6 @@ if(isset($sfl) || isset($stx) || isset($page)){
               ?>
             </div>
             <?php echo get_paging(5, $page, $total_page, '/sub/contact?'.$qstr.'&amp;page='); ?>
-            <!-- 페이징 { 
-            <nav class="pg_wrap">
-              <span class="pg">
-                <a href="" class="pg_page pg_start">처음</a>
-                <span class="sound_only">열린</span>
-                <strong class="pg_current">1</strong>
-                <span class="sound_only">페이지</span>
-                <a href="" class="pg_page">
-                  2<span class="sound_only">페이지</span>
-                </a>
-                <a href="" class="pg_page">
-                  3<span class="sound_only">페이지</span>
-                </a>
-                <a href="" class="pg_page">
-                  4<span class="sound_only">페이지</span>
-                </a>
-                <a href="" class="pg_page">
-                  5<span class="sound_only">페이지</span>
-                </a>
-                <a href="https://ismr.or.kr/faq?page=2" class="pg_page pg_end">맨끝</a>
-              </span>
-            </nav>
-            } 페이징 -->
           </div>
         </div>
       </div>

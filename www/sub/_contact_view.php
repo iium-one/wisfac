@@ -4,6 +4,51 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
 $inquery_table = G5_TABLE_PREFIX."inquiry";
 $idx = $params[0];
 $inq = sql_fetch(" select * from {$inquery_table} where inq_id='{$idx}' ");
+
+$sfl = $_GET['sfl'];
+$stx = $_GET['stx'];
+$page = $_GET['page'];
+
+if(isset($sfl) || isset($stx)){
+  $qstr .= "sfl=".$sfl."&stx=".$stx;
+}
+if(isset($page)){
+  if(isset($sfl) || isset($stx)){
+    $qstr .= "&page=".$page;
+  }else{
+    $qstr .= "page=".$page;
+  }
+}
+
+// 윗글을 얻음
+$sql = " select inq_id from {$inquery_table} where inq_id < '{$idx}' order by inq_date desc limit 1 ";
+$prev = sql_fetch($sql);
+// 위의 쿼리문으로 값을 얻지 못했다면
+if (! (isset($prev['inq_id']) && $prev['inq_id'])) {
+    $sql = " select inq_id from {$inquery_table} where inq_id < '{$idx}' order by inq_date desc limit 1 ";
+    $prev = sql_fetch($sql);
+}
+
+// 아래글을 얻음
+$sql = " select inq_id from {$inquery_table} where inq_id > '{$idx}' order by inq_date limit 1 ";
+$next = sql_fetch($sql);
+// 위의 쿼리문으로 값을 얻지 못했다면
+if (! (isset($next['inq_id']) && $next['inq_id'])) {
+    $sql = " select inq_id from {$inquery_table} where inq_id > '{$idx}' order by inq_date limit 1 ";
+    $next = sql_fetch($sql);
+}
+
+// 이전글 링크
+$prev_href = '';
+if (isset($prev['inq_id']) && $prev['inq_id']) {
+  $prev_href = '/sub/contact_view/'.$prev['inq_id'].'?'.$qstr;
+}
+
+// 다음글 링크
+$next_href = '';
+if (isset($next['inq_id']) && $next['inq_id']) {
+  $next_href = '/sub/contact_view/'.$next['inq_id'].'?'.$qstr;
+}
 ?>
 
 <div id="contact" class="contents">
@@ -56,11 +101,17 @@ $inq = sql_fetch(" select * from {$inquery_table} where inq_id='{$idx}' ");
               </div>
             </div>
             <div class="board-v-btn_group">
-              <a href="" class="board-v-golist-btn">목록</a>
+              <a href="/sub/contact<?php echo $qstr!=''?'?'.$qstr:'';?>" class="board-v-golist-btn">목록</a>
+              <?php if($prev_href || $next_href) { ?>
               <div class="board-v-navi_group">
-                <a href="" class="board-v-navi-btn prev"><span class="icon"></span>PREV</a>
-                <a href="" class="board-v-navi-btn next">NEXT<span class="icon"></span></a>
+                <?php if($prev_href) { ?>
+                <a href="<?php echo $prev_href;?>" class="board-v-navi-btn prev"><span class="icon"></span>PREV</a>
+                <?php } ?>
+                <?php if($next_href) { ?>
+                <a href="<?php echo $next_href;?>" class="board-v-navi-btn next">NEXT<span class="icon"></span></a>
+                <?php } ?>
               </div>
+              <?php } ?>
             </div>
           </div>
         </div>

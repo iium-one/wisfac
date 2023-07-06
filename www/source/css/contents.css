@@ -217,8 +217,11 @@
 
 .board-v-btn_group {position: relative; margin-top: 17px;}
 .board-v-golist-btn {display: flex; align-items: center; justify-content: center; position: absolute; top: 0; left: 50%; z-index: 10; width: 184px; height: 58px; margin-left: -92px; font-size: 18px; font-weight: 400; color: #fff; border-radius: 30px; background-color: var(--main-color);}
-.board-v-navi_group {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center;}
+.board-v-navi_group {}
+.board-v-navi_group:after {content: ""; display: table; clear: both;}
 .board-v-navi-btn {display: flex; align-items: center; justify-content: space-between; width: 184px; height: 58px; padding: 0 30px; font-size: 18px; font-weight: 400; color: #999; border: 1px solid rgba(153,153,153,0.7); border-radius: 30px; background-color: #fff;}
+.board-v-navi-btn.prev {float: left;}
+.board-v-navi-btn.next {float: right;}
 .board-v-navi-btn.prev .icon{display: block; width: 10px; height: 18px; background: url('/source/img/arrow-left-gray.png') no-repeat center/contain;}
 .board-v-navi-btn.next .icon{display: block; width: 10px; height: 18px; background: url('/source/img/arrow-right-gray.png') no-repeat center/contain;}
 
