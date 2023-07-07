@@ -48,8 +48,24 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
               <span class="highlight2"><b>WISFAC</b></span>
             </p>
             <div class="tabs tabs2 aboutus-pg-tabs">
-              <button type="button" class="tabs-btn <?php echo !isset($_GET['v']) || $_GET['v']=='vision'?'on':'';?>" data-id="ct_vision">비전</button>
-              <button type="button" class="tabs-btn <?php echo $_GET['v']=='organization'?'on':'';?>" data-id="ct_organization">조직도</button>
+              <?php
+              $sb_menu3_selected = '';
+              foreach ($sb_menus as $menu) {
+                if ($menu['id'] === 'introduce') {
+                  foreach ($menu['sb_2menus'] as $menu2) {
+                    if ($menu2['id'] === 'aboutus') {
+                      foreach ($menu2['sb_3menus'] as $menu3) {
+                        $sb_menu3_selected = !isset($_GET['v']) || $_GET['v']==$menu3['id']?'on':'';
+
+                        echo '<button type="button" class="tabs-btn '.$sb_menu3_selected.'" data-id="ct_'.$menu3['id'].'">'.$menu3['name'].'</button>';
+                      }
+                      break;
+                    }
+                  }
+                  break;
+                }
+              }
+              ?>
             </div>
           </div>
         </div>
