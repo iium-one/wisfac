@@ -331,6 +331,31 @@
 .organ-4dp > li > span .icon.production img {width: 66px;}
 .organ-4dp > li > span .icon.sales img {width: 54px;}
 
+/* > 사업소개 */
+.business-field {}
+.business-field .large-category {}
+.business-field .large-category-top {display: flex; flex-flow: row wrap; align-items: center; justify-content: space-between; margin-bottom: 18px;}
+.business-field .large-category-tit {font-size: 32px; font-weight: 600; color: #0f0f0f;}
+.business-field .large-category-more {border-color: rgba(153,153,153,0.7); font-weight: 400; color: #999;}
+.business-field .large-category-more .icon {width: 11px; height: 19px; background: url('/source/img/arrow-right-gray.png') no-repeat center/contain; transition: 0.3s;}
+.business-field .large-category-more:hover .icon {background: url('/source/img/arrow-right-white.png') no-repeat center/contain;}
+
+.business-field .middle-category {}
+.business-field .middle-category_box {margin-top: 47px;}
+.business-field .middle-category_box:first-child {margin-top: 0;}
+.business-field .middle-category-tit {font-size: 26px; font-weight: 600; color: #0f0f0f;}
+.business-field .middle-category-expl {margin-top: 4px; font-size: 18px; font-weight: 300; color: #666; line-height: 1.65;}
+
+.business-field .business-products {display: flex; flex-flow: column wrap; justify-content: center; align-items: center; overflow: hidden; min-height: 460px; margin-top: 18px; border: 1px solid #ddd; border-radius: 10px;}
+.business-field .business-products_wrap {display: flex; flex-flow: row wrap; align-items: center; justify-content: center; gap: 30px;}
+.business-field .business-product-img {width: 250px; height: 360px; background-color: #eee; border: 1px solid #ddd;}
+.business-field .business-product-name {display: none; margin-top: 20px; font-size: 18px; font-weight: 400; color: #333; text-align: center;}
+.business-field .business-product-name-group {margin-top: 20px; font-size: 18px; font-weight: 400; color: #333; text-align: center;}
+
+.business-field.filed-1 {margin-top: 72px;}
+.business-field.filed-2 {margin-top: 100px;}
+.business-field.filed-3 {margin-top: 62px;}
+
 /* 고객지원 */
 /* > 문의하기 */
 .inquiry-btn-box {margin-top: 24px; text-align: center;}
