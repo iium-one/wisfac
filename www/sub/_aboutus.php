@@ -91,7 +91,75 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
       <div class="container">
         <div class="wrapper">
           <div class="sec_ct">
-            <p>CEO대표이사</p>
+            <div class="organ_wrap">
+              <ul class="organ-1dp">
+                <li>
+                  <span>CEO대표이사</span>
+                  <ul class="organ-2dp">
+                    <li>
+                      <span>CTO부사장</span>
+                      <ul class="organ-3dp">
+                        <li>
+                          <span>기술연구소</span>
+                          <ul class="organ-4dp">
+                            <li>
+                              <span>
+                                <span class="icon software">
+                                  <img src="/source/img/organ-icon-software.png" alt="">
+                                </span>
+                                소프트웨어 개발부
+                              </span>
+                            </li>
+                            <li>
+                              <span>
+                                <span class="icon hardware">
+                                  <img src="/source/img/organ-icon-hardware.png" alt="">
+                                </span>
+                                하드웨어 개발부
+                              </span>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span>경영기획실장</span>
+                      <ul class="organ-3dp">
+                        <li>
+                          <span class="none"></span>
+                          <ul class="organ-4dp">
+                            <li>
+                              <span>
+                                <span class="icon planning">
+                                  <img src="/source/img/organ-icon-planning.png" alt="">
+                                </span>
+                                기획본부
+                              </span>
+                            </li>
+                            <li>
+                              <span>
+                                <span class="icon production">
+                                  <img src="/source/img/organ-icon-production.png" alt="">
+                                </span>
+                                생산기술부
+                              </span>
+                            </li>
+                            <li>
+                              <span>
+                                <span class="icon sales">
+                                  <img src="/source/img/organ-icon-sales.png" alt="">
+                                </span>
+                                영업부
+                              </span>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

@@ -265,6 +265,9 @@
 
 /* 위스팩소개 */
 /* > 회사소개 */
+#aboutus {position: relative;}
+#aboutus:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; z-index: -1; width: 100%; height: 285px; background: #fafafa center;}
+
 .aboutus-slo {display: flex; flex-flow: row wrap; align-items: flex-start; gap: 20px; margin-top: 48px;}
 .aboutus-slo-item {overflow: hidden; width: calc(25% - 15px); padding: 35px 23px; border-radius: 10px; background: #fff; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);}
 .aboutus-slo-text1 {position: relative; font-size: 22px; font-weight: 500; color: #0f0f0f; line-height: 1.273;}
@@ -275,9 +278,9 @@
 .aboutus-tab-text1 {font-size: 50px; font-weight: 200; color: #fff;}
 .aboutus-tab-text1 b {font-size: 60px; font-weight: 700;}
 .aboutus-pg-tabs {margin-top: 60px;}
-.aboutus-tab-ct {display: none;}
+.aboutus-tab-ct {display: none; background: url('/source/img/wisfac-symbol.png') no-repeat top right;}
 .aboutus-tab-ct.on {display: block;}
-.aboutus-tab-ct .sec_ct {margin-top: 100px;}
+.aboutus-tab-ct .sec_ct {padding-top: 100px;}
 
 .vision_text1 {font-size: 50px; font-weight: 700; color: #0f0f0f; line-height: 1;}
 .vision_text2 {margin-top: 30px; font-size: 20px; font-weight: 300; color: #666; line-height: 1.6;}
@@ -291,6 +294,42 @@
 .vision-slo-item.item3 {background: url('/source/img/vision-slo-bg3.jpg') no-repeat center/cover;}
 .vision-slo-text1 {font-size: 26px; font-weight: 600; color: var(--sub-color1); line-height: 1.153;}
 .vision-slo-text2 {margin-top: 15px; font-size: 16px; font-weight: 300; color: #fff; line-height: 1.5;}
+
+/* > 조직도 */
+.organ_wrap {text-align: center;}
+.organ-1dp {position: relative; z-index: 1;}
+.organ-1dp > li {position: relative;}
+.organ-1dp > li > span {display: flex; align-items: center; justify-content: center; position: relative; z-index: 5; width: 200px; height: 60px; line-height: 60px; margin: 0 auto; padding: 0 10px; border-radius: 10px; font-size: 20px; font-weight: 500; color: #fff; background-color: var(--main-color);}
+
+.organ-2dp {position: relative; z-index: 1; display: flex; flex-flow: row wrap; justify-content: center; align-items: flex-start; margin-top: 84px;}
+.organ-2dp:before {content: ""; display: block; position: absolute; top: -85px; left: 50%; z-index: 1; margin-left: -0.5px; height: 43px; border-left: 1px solid #999;}
+.organ-2dp:after {content: ""; display: block; position: absolute; top: -43px; left: 366px; z-index: 1; width: 641px; border-top: 1px solid #999;}
+.organ-2dp > li {position: relative;}
+.organ-2dp > li > span {display: flex; align-items: center; justify-content: center; position: relative; z-index: 5; width: 200px; height: 60px; line-height: 58px; margin: 0 auto; padding: 0 10px; border: 1px solid var(--sub-color1); border-radius: 10px; font-size: 18px; font-weight: 500; color: #0f0f0f; background-color: #fff;}
+.organ-2dp > li:nth-child(1) {margin-right: 56px;}
+.organ-2dp > li > span:after {content: ""; display: block; position: absolute; top: -43px; left: 50%; z-index: 1; margin-left: -0.5px; height: 43px; border-left: 1px solid #999;}
+
+.organ-3dp {position: relative; z-index: 1; display: flex; flex-flow: row wrap; justify-content: center; align-items: flex-start; margin-top: 36px;}
+.organ-3dp > li {position: relative;}
+.organ-3dp > li > span {display: flex; align-items: center; justify-content: center; position: relative; z-index: 5; width: 200px; height: 60px; line-height: 58px; margin: 0 auto; padding: 0 10px; border: 1px solid var(--sub-color1); border-radius: 10px; font-size: 18px; font-weight: 500; color: #0f0f0f; background-color: #fff;}
+.organ-3dp > li > span.none {border: 0; background-color: transparent;}
+.organ-3dp > li > span:after {content: ""; display: block; position: absolute; top: -37px; left: 50%; z-index: 1; margin-left: -0.5px; height: 37px; border-left: 1px solid #999;}
+
+.organ-4dp {position: relative; z-index: 1; display: flex; flex-flow: row wrap; justify-content: center; align-items: flex-start; gap: 0 56px; margin-top: 66px;}
+.organ-4dp:after {content: ""; display: block; position: absolute; top: -126px; left: 50%; z-index: 1; margin-left: -0.5px; height: 95px; border-left: 1px solid #999;}
+.organ-4dp > li:last-child > span:before {display: none;}
+.organ-4dp > li {position: relative;}
+.organ-4dp > li > span {display: flex; flex-direction: column; align-items: center; justify-content: flex-end; position: relative; z-index: 5; width: 200px; height: 140px; margin: 0 auto; padding: 0 10px 14px; border-radius: 10px; font-size: 18px; font-weight: 400; color: #fff; background-color: #333;}
+.organ-4dp > li > span:before {content: ""; display: block; position: absolute; top: -32px; left: 50%; z-index: 1; width: calc(100% + 56px); border-top: 1px solid #999;}
+.organ-4dp > li:last-child > span:before {display: none;}
+.organ-4dp > li > span:after {content: ""; display: block; position: absolute; top: -32px; left: 50%; z-index: 1; margin-left: -0.5px; height: 32px; border-left: 1px solid #999;}
+
+.organ-4dp > li > span .icon {margin-bottom: 16px;}
+.organ-4dp > li > span .icon.software img {width: 69px;}
+.organ-4dp > li > span .icon.hardware img {width: 60px;}
+.organ-4dp > li > span .icon.planning img {width: 61px;}
+.organ-4dp > li > span .icon.production img {width: 66px;}
+.organ-4dp > li > span .icon.sales img {width: 54px;}
 
 /* 고객지원 */
 /* > 문의하기 */
