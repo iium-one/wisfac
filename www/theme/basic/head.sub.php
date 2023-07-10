@@ -32,7 +32,7 @@ if (strstr($g5['lo_url'], '/'.G5_ADMIN_DIR.'/') || $is_admin == 'super') $g5['lo
 <meta name="viewport" id="meta_viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10">
 
 <!-- 검색 메타태그 { 
-<meta name="subject" content="이음소프트-디지털 디자인 스퀘어">
+<meta name="subject" content="WISFAC">
 <meta name="title" content="이음소프트-디지털 디자인 스퀘어">
 <meta name="description" content="홈페이지 설명">
 <meta name="keywords" content="키워드1,키워드2" />
@@ -61,6 +61,7 @@ if($config['cf_add_meta'])
     echo $config['cf_add_meta'].PHP_EOL;
 ?>
 <title><?php echo $g5_head_title; ?></title>
+
 <?php
 $shop_css = '';
 if (defined('_SHOP_')) $shop_css = '_shop';
@@ -89,6 +90,11 @@ var g5_admin_url = "<?php echo G5_ADMIN_URL; ?>";
 <?php } ?>
 </script>
 
+
+<link rel="apple-touch-icon" sizes="180x180" href="/source/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/source/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/source/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="/source/img/favicon/site.webmanifest">
 
 <?php
 /* JS 파일 연결 */
