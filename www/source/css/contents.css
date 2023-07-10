@@ -372,6 +372,25 @@
 #global #sb-contents {background: url('/source/img/wisfac-symbol.png') no-repeat top right;}
 .global-map .sec_ct{margin-top: 40px; padding: 60px 10px 40px; border: 1px solid #ddd; border-radius: 10px; background-color: #fff;}
 
+/* > 오시는 길 */
+#location {padding-bottom: 0;}
+
+.location-comp_box {margin-top: 60px;}
+.location-comp_box:first-child {margin-top: 0;}
+.location-comp_box:nth-child(even) {padding: 60px 0 100px; background-color: #fafafa;}
+.location-comp-tit {margin-bottom: 18px; font-size: 32px; font-weight: 600; color: #0f0f0f;}
+.location-comp_in {display: flex; flex-flow: row wrap; align-items: flex-start;}
+.location-comp-img {overflow: hidden; position: relative; width: 53.334%; height: 0; padding-bottom: 26.667%;}
+.location-comp-img img {position: absolute; top: 0; left: 0; z-index: 10; width: 100%; object-fit: cover;}
+.location-comp-info {width: 46.666%; padding-left: 60px;}
+.location-comp-info_list {margin-top: 14px;}
+.location-comp-info_list:first-child {margin-top: 0;}
+.location-comp-info_list .subj {display: block; font-size: 20px; font-weight: 500; color: #333;}
+.location-comp-info_list .expl {display: block; margin-top: 4px; font-size: 20px; font-weight: 300; color: #666;}
+.location-comp-info-more {margin-top: 35px; font-size: 18px; font-weight: 400; color: #999; border-color: rgba(153,153,153,0.7); background-color: #fff;}
+.location-comp-info-more .icon {width: 11px; height: 19px; background: url('/source/img/arrow-right-gray.png') no-repeat center/contain; transition: 0.3s;}
+.location-comp-info-more:hover .icon {background: url('/source/img/arrow-right-white.png') no-repeat center/contain;}
+
 /* 고객지원 */
 /* > 문의하기 */
 .inquiry-btn-box {margin-top: 24px; text-align: center;}
