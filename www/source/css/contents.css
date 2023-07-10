@@ -357,6 +357,17 @@
 .business-field.filed-2 {margin-top: 100px; padding: 62px 0 100px; background-color: #fafafa;}
 .business-field.filed-3 {margin-top: 62px;}
 
+/* > CEO인사말 */
+.greeting-intro .sec_ct {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: flex-start;}
+.greeting-lt {width: 56.667%; padding-right: 120px;}
+.greeting-rt {width: 43.333%;}
+.greeting-text-box {margin-top: 35px;}
+.greeting-text {font-size: 20px; font-weight: 300; color: #666; line-height: 1.7;}
+.greeting-text b {font-weight: 500; color: #333;}
+.greeting-sign-box {margin-top: 35px;}
+.greeting-sign-text1 {margin-bottom: 7px; font-size: 20px; font-weight: 400; color: #666;}
+.greeting-sign-text2 {font-size: 28px; font-weight: 700; color: #0f0f0f;}
+
 /* 고객지원 */
 /* > 문의하기 */
 .inquiry-btn-box {margin-top: 24px; text-align: center;}
