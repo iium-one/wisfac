@@ -22,10 +22,11 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
 
     <section class="business-fields">
       <h2 class="sound_only">비즈니스 상세내용 영역</h2>
-      <div class="container">
-        <div class="wrapper">
-          <div class="sec_ct">
-            <div class="business-field filed-1">
+      
+      <div class="sec_ct">
+        <div class="business-field filed-1">
+          <div class="container">
+            <div class="wrapper">
               <div class="large-category">
                 <div class="large-category-top">
                   <p class="large-category-tit">1. Air Pocket Inspection</p>
@@ -34,15 +35,21 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 <div class="business-products">
                   <div class="business-products_wrap">
                     <div class="business-product">
-                      <div class="business-product-img"></div>
+                      <div class="business-product-img">
+                        <img src="/source/img/iim-3020.png" alt="">
+                      </div>
                       <div class="business-product-name">IIM-3020</div>
                     </div>
                     <div class="business-product">
-                      <div class="business-product-img"></div>
+                      <div class="business-product-img">
+                        <img src="/source/img/iim-3010.png" alt="">
+                      </div>
                       <div class="business-product-name">IIM-3010</div>
                     </div>
                     <div class="business-product">
-                      <div class="business-product-img"></div>
+                      <div class="business-product-img">
+                        <img src="/source/img/iim-2010.png" alt="">
+                      </div>
                       <div class="business-product-name">IIM-2010</div>
                     </div>
                   </div>
@@ -50,7 +57,11 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 </div>
               </div>
             </div>
-            <div class="business-field filed-2">
+          </div>
+        </div>
+        <div class="business-field filed-2">
+          <div class="container">
+            <div class="wrapper">
               <div class="large-category">
                 <div class="large-category-top">
                   <p class="large-category-tit">2. Edge/Surface Inspection</p>
@@ -59,11 +70,15 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 <div class="business-products">
                   <div class="business-products_wrap">
                     <div class="business-product">
-                      <div class="business-product-img"></div>
+                      <div class="business-product-img">
+                        <img src="/source/img/eis-3000.png" alt="">
+                      </div>
                       <div class="business-product-name">EIS-3000</div>
                     </div>
                     <div class="business-product">
-                      <div class="business-product-img"></div>
+                      <div class="business-product-img">
+                        <img src="/source/img/esis-3000.png" alt="">
+                      </div>
                       <div class="business-product-name">ESIS-3000</div>
                     </div>
                   </div>
@@ -71,7 +86,11 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 </div>
               </div>
             </div>
-            <div class="business-field filed-3">
+          </div>
+        </div>
+        <div class="business-field filed-3">
+          <div class="container">
+            <div class="wrapper">
               <div class="large-category">
                 <div class="large-category-top">
                   <p class="large-category-tit">3. Other</p>
@@ -84,19 +103,27 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                     <div class="business-products">
                       <div class="business-products_wrap">
                         <div class="business-product">
-                          <div class="business-product-img"></div>
+                          <div class="business-product-img">
+                            <img src="/source/img/iws-3000-8l.png" alt="">
+                          </div>
                           <div class="business-product-name">IWS-3000(8Load Port)</div>
                         </div>
                         <div class="business-product">
-                          <div class="business-product-img"></div>
+                          <div class="business-product-img">
+                            <img src="/source/img/iws-3000-7l1f.png" alt="">
+                          </div>
                           <div class="business-product-name">IWS-3000(7Load Port 1Flipper)</div>
                         </div>
                         <div class="business-product">
-                          <div class="business-product-img"></div>
+                          <div class="business-product-img">
+                            <img src="/source/img/iws-3000-4l.png" alt="">
+                          </div>
                           <div class="business-product-name">IMS-3000(4Load Port)</div>
                         </div>
                         <div class="business-product">
-                          <div class="business-product-img"></div>
+                          <div class="business-product-img">
+                            <img src="/source/img/iws-3000-2l.png" alt="">
+                          </div>
                           <div class="business-product-name">IMS-3000(2Load Port)</div>
                         </div>
                       </div>
@@ -109,15 +136,21 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                     <div class="business-products">
                       <div class="business-products_wrap">
                         <div class="business-product">
-                          <div class="business-product-img"></div>
+                          <div class="business-product-img">
+                            <img src="/source/img/chac-3000.png" alt="">
+                          </div>
                           <div class="business-product-name">CHAC-3000</div>
                         </div>
                         <div class="business-product">
-                          <div class="business-product-img"></div>
+                          <div class="business-product-img">
+                            <img src="/source/img/edis-3000.png" alt="">
+                          </div>
                           <div class="business-product-name">EDIS-3000</div>
                         </div>
                         <div class="business-product">
-                          <div class="business-product-img"></div>
+                          <div class="business-product-img">
+                            <img src="/source/img/ecis-3000.png" alt="">
+                          </div>
                           <div class="business-product-name">ECIS-3000</div>
                         </div>
                       </div>
