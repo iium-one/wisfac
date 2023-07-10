@@ -152,7 +152,7 @@
 .sb_2menus_wrap > li > a {display: block; padding-bottom: 4px; font-size: 18px; font-weight: 500; color: #fff; line-height: 1.45;}
 .sb_2menus_wrap > li.act > a {font-weight: 700; color: var(--sub-color1); border-bottom: 2px solid var(--sub-color1);}
 
-#sb-contents {margin-top: 120px;}
+#sb-contents {padding-top: 120px;}
 
 .sb_top-title-text1 {font-size: 50px; font-weight: 300; color: #0f0f0f; line-height: 1.24;}
 .sb_top-title-text1 b {font-weight: 700;}
@@ -367,6 +367,10 @@
 .greeting-sign-box {margin-top: 35px;}
 .greeting-sign-text1 {margin-bottom: 7px; font-size: 20px; font-weight: 400; color: #666;}
 .greeting-sign-text2 {font-size: 28px; font-weight: 700; color: #0f0f0f;}
+
+/* > 글로벌 네트워크 */
+#global #sb-contents {background: url('/source/img/wisfac-symbol.png') no-repeat top right;}
+.global-map .sec_ct{margin-top: 40px; padding: 60px 10px 40px; border: 1px solid #ddd; border-radius: 10px; background-color: #fff;}
 
 /* 고객지원 */
 /* > 문의하기 */
