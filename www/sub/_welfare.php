@@ -230,7 +230,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
               5년, 10년 뒤에 자신의 모습을 그려보고 <br/>
               <b>목표를 세우고 달성하기 위해 끊임없이 달려가는 직원</b>이 되었으면 좋겠습니다.
             </p>
-            <div class="double-dot-open"><img src="/source/img/double-dot-close.png" alt=""></div>
+            <div class="double-dot-close"><img src="/source/img/double-dot-close.png" alt=""></div>
           </div>
         </div>
       </div>
