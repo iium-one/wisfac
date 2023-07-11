@@ -474,11 +474,29 @@
 .personnel-position_text {margin-top: 45px; font-size: 20px; font-weight: 400; color: #f7f7f7; text-align: center;}
 
 .major-welfare {margin-top: 86px;}
-.major-welfare-top {}
+.major-welfare-top {margin-bottom: 45px;}
 .major-welfare-tit {font-size: 36px; font-weight: 600; color: #0f0f0f;}
-.major-welfare-txt {font-size: 18px; font-weight: 300; color: #666;}
+.major-welfare-txt {margin-top: 19px; font-size: 18px; font-weight: 300; color: #666;}
 .major-welfare-list_wrap {display: flex; flex-flow: row wrap; align-items: flex-start; justify-content: center;}
-.major-welfare-list-item {width: 25%; padding: 50px 50px 40px; text-align: center;}
-.major-welfare-list-item .icon {width: 75px; height: 66px; margin: 0 auto 23px; background-color: cadetblue;}
+.major-welfare-list-item {width: 25%; padding: 50px 50px 40px; border-bottom: 1px solid #ddd; text-align: center;}
+.major-welfare-list-item .icon {width: 75px; height: auto; margin: 0 auto 23px;}
 .major-welfare-list-item .num {font-size: 20px; font-weight: 700; color: var(--main-color);}
-.major-welfare-list-item .text {font-size: 20px; font-weight: 400; color: #333; line-height: 1.4;}
+.major-welfare-list-item .text {margin-top: 2px; font-size: 20px; font-weight: 400; color: #333; line-height: 1.4;}
+
+.facilities-guide {margin-top: 90px;}
+.facilities-guide-inf {margin-top: 45px;}
+.facilities-guide-inf:first-child {margin-top: 0;}
+.facilities-guide-text1 {font-size: 22px; font-weight: 500; color: #0f0f0f; line-height: 1.09;}
+.facilities-guide-text2 {font-size: 18px; font-weight: 300; color: #666; line-height: 1.56;}
+
+.facilities-guide-bot {display: flex; flex-flow: row wrap; justify-content: center; align-items: center; margin-top: 45px; text-align: center; gap: 30px;}
+.facilities-guide-img-item {width: calc(33.333% - 20px);}
+.facilities-guide-img {overflow: hidden; position: relative; height: 0; padding-bottom: 59.4%; border-radius: 10px;}
+.facilities-guide-img img {position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%, -50%); object-fit: cover;}
+.facilities-guide-img-text {margin-top: 10px; font-size: 18px; font-weight: 400; color: #333;}
+
+.employee-slogan {margin-top: 80px; padding: 35px 0; text-align: center; background-color: #fafafa;}
+.employee-slogan-text {margin: 13px auto 10px; font-size: 28px; font-weight: 300; color: #333; line-height: 1.571;}
+.employee-slogan-text b {font-weight: 700;}
+.employee-slogan .double-dot-open {width: 14px; margin: 0 auto;}
+.employee-slogan .double-dot-close {width: 14px; margin: 0 auto;}
