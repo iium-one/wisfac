@@ -240,6 +240,11 @@ else if ($w == "d")
     if ($str)
         alert("이 분류와 관련된 상품이 총 {$i} 건 존재하므로 상품을 삭제한 후 분류를 삭제하여 주십시오.\\n\\n$str");
 
+	/* 상품분류 이미지 삭제 : s ........................................... */
+	$_categoryformupdate_file_adm_inc_mode = 'd';
+	include (G5_ADMIN_PATH.'/shop_admin/inc/setup/categoryformupdate_file_adm.inc.php'); // 상품분류 이미지 삭제
+	/* 상품분류 이미지 삭제 : e ........................................... */
+
     // 분류 삭제
     $sql = " delete from {$g5['g5_shop_category_table']} where ca_id = '$ca_id' ";
     sql_query($sql);
@@ -250,6 +255,16 @@ if(function_exists('get_admin_captcha_by'))
 
 if ($w == "" || $w == "u")
 {
+
+
+	/* 상품분류 이미지 삭제 : s ........................................... */
+	$_categoryformupdate_file_adm_inc_mode = 'w';
+	include (G5_ADMIN_PATH.'/shop_admin/inc/setup/categoryformupdate_file_adm.inc.php'); // 상품분류 이미지 추가
+	/* 상품분류 이미지 삭제 : e ........................................... */
+
+
+
+
     goto_url("./categoryform.php?w=u&amp;ca_id=$ca_id&amp;$qstr");
 } else {
     goto_url("./categorylist.php?$qstr");

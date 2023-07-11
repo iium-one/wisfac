@@ -328,6 +328,8 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
 </div>
 
 <div class="btn_fixed_top">
+    <button type="button" class="btn" onclick="location.href='./category_img_list.php';" style="background:#4a4a51;color:#fff;">분류 이미지 관리</button>
+
     <input type="submit" value="일괄수정" class="btn_02 btn">
 
     <?php if ($is_admin == 'super') {?>

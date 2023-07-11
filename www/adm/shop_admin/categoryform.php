@@ -105,6 +105,7 @@ include_once (G5_ADMIN_PATH.'/admin.head.php');
 $pg_anchor ='<ul class="anchor">
 <li><a href="#anc_scatefrm_basic">필수입력</a></li>
 <li><a href="#anc_scatefrm_optional">선택입력</a></li>
+<li><a href="#anc_scatefrm_img">이미지</a></li>
 <li><a href="#anc_scatefrm_extra">여분필드</a></li>';
 if ($w == 'u') $pg_anchor .= '<li><a href="#frm_etc">기타설정</a></li>';
 $pg_anchor .= '</ul>';
@@ -504,6 +505,8 @@ else {
 <div class="btn_fixed_top">
     <input type="submit" value="확인" class="btn_submit btn" accesskey="s">
     <a href="./categorylist.php?<?php echo $qstr; ?>" class="btn_02 btn">목록</a>
+
+    <button type="button" class="btn" onclick="location.href='./category_img_list.php';" style="background:#4a4a51;color:#fff;">분류 이미지 관리</button>
 </div>
 </form>
 
