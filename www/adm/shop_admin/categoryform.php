@@ -197,6 +197,14 @@ else {
             <td><input type="text" name="ca_name" value="<?php echo $ca['ca_name']; ?>" id="ca_name" size="38" required class="required frm_input"></td>
         </tr>
         <tr>
+            <th scope="row"><label for="ca_name">메뉴 표시명</label></th>
+            <td><input type="text" name="ca_1_subj" value="<?php echo $ca['ca_1_subj']; ?>" id="ca_1_subj" size="38" required class="required frm_input"></td>
+        </tr>
+        <tr>
+            <th scope="row"><label for="ca_name">한줄소개</label></th>
+            <td><input type="text" name="ca_2_subj" value="<?php echo $ca['ca_2_subj']; ?>" id="ca_2_subj" size="100" required class="required frm_input"></td>
+        </tr>
+        <tr>
             <th scope="row"><label for="ca_order">출력순서</label></th>
             <td>
                 <?php echo help("숫자가 작을 수록 상위에 출력됩니다. 음수 입력도 가능하며 입력 가능 범위는 -2147483648 부터 2147483647 까지입니다.\n<b>입력하지 않으면 자동으로 출력됩니다.</b>"); ?>

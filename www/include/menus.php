@@ -49,7 +49,7 @@ $sb_menus = [
   [
     'id' => 'product',
     'name' => '제품소개',
-    'link' => '#',
+    'link' => '/sub/prod_category',
     'sb_2menus' => []
   ],
   [
