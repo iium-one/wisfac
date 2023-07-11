@@ -96,13 +96,13 @@ $sb_menus = [
 //제품 카테고리 DB 데이터 가져오기 + 메뉴 배열에 할당
 $cate_table = G5_TABLE_PREFIX.'shop_category';
 $prd_table = G5_TABLE_PREFIX.'shop_item';
-$prd_cate_sql = " select ca_id, ca_name from {$cate_table} ";
+$prd_cate_sql = " select ca_id, ca_1_subj from {$cate_table} ";
 $prd_cate_result = sql_query($prd_cate_sql);
 $prd_cate = array();
 for($i=0; $prd_cate_row=sql_fetch_array($prd_cate_result); $i++){
   $sb_menus[1]['sb_2menus'][] = [
     'id' => $prd_cate_row['ca_id'],
-    'name' => $prd_cate_row['ca_name'],
+    'name' => $prd_cate_row['ca_1_subj'],
     'link' => '#',
   ];
 

@@ -36,6 +36,25 @@
 
 [data-lenis-prevent] {overscroll-behavior: auto;}
 
+/* > Product */
+.prod-cate_wrap {display: flex; flex-flow: row wrap; align-items: center; gap: 30px;}
+.prod-cate-item {overflow: hidden; position: relative; flex: 1; height: 570px; padding: 36px 46px 0; border-radius: 10px; background: #fff; box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);}
+.prod-cate-item:after {content: ""; display: none; position: absolute; top: 0; left: 0; z-index: 10; width: 100%; height: 100%; border: 2px solid var(--main-color); border-radius: 10px; box-sizing: border-box;}
+.prod-cate-item .more {display: block; position: absolute; top: 47px; right: 43px; z-index: 15; width: 13px; height: 23px; background: url('/source/img/arrow-right-gray.png') no-repeat center/contain;}
+.prod-cate-item .ctg_name {position: relative; z-index: 10; padding-right: 20px; font-size: 36px; font-weight: 600; color: #0f0f0f; line-height: 1.222;}
+.prod-cate-item .ctg_expl {position: relative; z-index: 10; margin-top: 15px; font-size: 16px; font-weight: 400; color: #666;}
+.prod-cate-item .ctg_img {position: relative; z-index: 10; margin-top: 50px; text-align: center;}
+.prod-cate-item .ctg_bg {position: absolute; bottom: 0; left: 0; z-index: 1;}
+.prod-cate-item .ctg_bg .ctg_bg_def {display: block;}
+.prod-cate-item .ctg_bg .ctg_bg_over {display: none;}
+
+.prod-cate-item:hover:after {display: block;}
+.prod-cate-item:hover .ctg_bg .ctg_bg_def {display: none;}
+.prod-cate-item:hover .ctg_bg .ctg_bg_over {display: block;}
+.prod-cate-item:hover .more {background: url('/source/img/arrow-right-red.png') no-repeat center/contain;}
+.prod-cate-item:hover .ctg_name {color: var(--main-color);}
+.prod-cate-item:hover .ctg_expl {font-weight: 500; color: #333;}
+
 /* Main(메인) */
 .main-visual-container {overflow: hidden;}
 .main-visual-wrapper {position: relative; z-index: 100;}
@@ -71,26 +90,7 @@
 .main_sec-title2 b {font-size: 700px;}
 
 .main-product {padding: 130px 0 140px;}
-.main-product_wrap {display: flex; flex-flow: row wrap; align-items: center; gap: 30px; margin-top: 50px;}
-.main-product-item {overflow: hidden; position: relative; flex: 1; height: 570px; padding: 36px 46px 0; border-radius: 10px; background: #fff; box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);}
-.main-product-item:after {content: ""; display: none; position: absolute; top: 0; left: 0; z-index: 10; width: 100%; height: 100%; border: 2px solid var(--main-color); border-radius: 10px; box-sizing: border-box;}
-.main-product-item:nth-child(1) {background: url('/source/img/main-prod-esis3000_bg.png') no-repeat bottom center/contain;}
-.main-product-item:nth-child(2) {background: url('/source/img/main-prod-iim2010_bg.png') no-repeat bottom center/contain;}
-.main-product-item:nth-child(3) {background: url('/source/img/main-prod-other_bg.png') no-repeat bottom center/contain;}
-.main-product-item .more {display: block; position: absolute; top: 47px; right: 43px; z-index: 1; width: 13px; height: 23px; background: url('/source/img/arrow-right-gray.png') no-repeat center/contain;}
-.main-product-item .ctg_name {font-size: 36px; font-weight: 600; color: #0f0f0f; line-height: 1.222;}
-.main-product-item .ctg_expl {margin-top: 15px; font-size: 16px; font-weight: 400; color: #666;}
-.main-product-item .ctg_img {margin-top: 30px; text-align: center;}
-.main-product-item:nth-child(1) .ctg_img {margin-top: 88px;}
-.main-product-item:nth-child(2) .ctg_img {margin-top: 74px;}
-
-.main-product-item:hover:after {display: block;}
-.main-product-item:nth-child(1):hover {background: url('/source/img/main-prod-esis3000_over_bg.png') no-repeat bottom center/contain;}
-.main-product-item:nth-child(2):hover {background: url('/source/img/main-prod-iim2010_over_bg.png') no-repeat bottom center/contain;}
-.main-product-item:nth-child(3):hover {background: url('/source/img/main-prod-other_over_bg.png') no-repeat bottom center/contain;}
-.main-product-item:hover .more {background: url('/source/img/arrow-right-red.png') no-repeat center/contain;}
-.main-product-item:hover .ctg_name {color: var(--main-color);}
-.main-product-item:hover .ctg_expl {font-weight: 500; color: #333;}
+.main-product .prod-cate_wrap {margin-top: 50px;}
 
 .main-contact {position: relative; height: 500px;}
 .main-contact_box {height: 400px; position: absolute;}
