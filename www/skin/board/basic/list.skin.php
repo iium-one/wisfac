@@ -27,9 +27,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
               <input type="hidden" name="sop" value="and">
               <div class="sch_wrap">
                 <select name="sfl" id="sfl" class="nc-sel sch-select">
-                  <option value="wr_subject||wr_content">전체</option>
-                  <option value="wr_subject">제목</option>
-                  <option value="wr_content">내용</option>
+                  <option value="wr_subject||wr_content" <?php echo get_selected($sfl, 'wr_subject||wr_content'); ?>>전체</option>
+                  <option value="wr_subject" <?php echo get_selected($sfl, 'wr_subject'); ?>>제목</option>
+                  <option value="wr_content" <?php echo get_selected($sfl, 'wr_content'); ?>>내용</option>
                 </select>
                 <input type="text" name="stx" id="stx" class="sch-keyword" value="<?php echo stripslashes($stx) ?>" required size="25" maxlength="20" placeholder=" 검색어를 입력하세요.">
                 <button type="submit" class="sch-submit" title="검색하기"></button>
@@ -95,7 +95,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                     <a href="<?php echo $list[$i]['href'] ?>" class="subj"><?php echo $list[$i]['subject']; //글 제목 ?></a>
                     <div class="date">
                       <span class="date-text"><?php echo date("Y.m.d", strtotime($list[$i]['wr_datetime'])); ?></span>
-                      <a href="/sub/contact_view/<?php echo $row['inq_id'];?>?<?php echo $qstr;?>" class="more-btn">Learn more<img src="/source/img/arrow-right-red.png" alt=""></a>
+                      <a href="<?php echo $list[$i]['href'] ?>" class="more-btn">Learn more<img src="/source/img/arrow-right-red.png" alt=""></a>
                     </div>
                   </div>
                   <?php 
