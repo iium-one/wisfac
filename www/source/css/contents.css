@@ -154,10 +154,13 @@
 
 #sb-contents {padding-top: 120px;}
 
+.sb_top-title {position: relative;}
 .sb_top-title-text1 {font-size: 50px; font-weight: 300; color: #0f0f0f; line-height: 1.24;}
 .sb_top-title-text1 b {font-weight: 700;}
 .sb_top-title-text2 {margin-top: 18px; font-size: 20px; font-weight: 300; color: #666; line-height: 1.6;}
 .sb_top-title-text2 b {font-weight: 500;}
+
+.sb_top-title .apply-more {position: absolute; top: 24px; right: 0;}
 
 .board-top {position: relative; z-index: 100;}
 .board-top .sec_ct {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center;}
@@ -428,3 +431,54 @@
 .inq-v-text:first-child {border-top: 0;}
 .inq-v-text-tit {width: 150px; padding: 10px; font-size: 18px; font-weight: 500; color: #333; background-color: #f9f9f9;}
 .inq-v-text-cont {width: calc(100% - 150px); padding: 10px; font-size: 18px; font-weight: 300; color: #666;}
+
+/* 인재채용 */
+/* > 채용안내 */
+.announce_contact {margin-top: 25px;}
+.announce_contact-text {margin-top: 20px; font-size: 22px; font-weight: 500; color: #333; line-height: 1;}
+.announce_contact-text:first-child {margin-top: 0;}
+
+.announce-step {display: flex; align-items: center; justify-content: center; margin-top: 46px; padding: 90px 0 60px; background: url('/source/img/announce-step-bg.jpg') no-repeat center/cover; text-align: center;}
+.announce-step_graphic {display: flex; flex-flow: row wrap; justify-content: center; align-items: center; gap: 0 150px}
+.announce-step_graphic-item {position: relative; width: auto;}
+.announce-step_graphic-item:after {content: ""; display: block; position: absolute; top: 45px; left: -83px; width: 16px; height: 26px; background: url('/source/img/arrow-right-white.png') no-repeat center/contain;}
+.announce-step_graphic-item:first-child:after {display: none;}
+.announce-step_graphic-item .icon {width: 120px; height: 110px;}
+.announce-step_graphic-item .text {margin-top: 30px; font-size: 22px; font-weight: 600; color: #fff;}
+.announce-step_text {margin-top: 55px; font-size: 20px; font-weight: 400; color: #f7f7f7;}
+
+.announce-department {margin-top: 80px;}
+.announce-department-top{display: flex; flex-flow: row wrap; align-items: center; justify-content: space-between; margin-bottom: 35px;}
+.announce-department-tit {font-size: 36px; font-weight: 600; color: #0f0f0f;}
+.apply-more {border-color: rgba(153,153,153,0.7); font-weight: 400; color: #999; background-color: #fff;}
+.apply-more .icon {width: 11px; height: 19px; background: url('/source/img/arrow-right-gray.png') no-repeat center/contain; transition: 0.3s;}
+.apply-more:hover .icon {background: url('/source/img/arrow-right-white.png') no-repeat center/contain;}
+.announce-department-tb {width: 100%;}
+.announce-department-tb thead th {padding: 12px 5px; border-top: 1px solid #bbb; border-bottom: 1px solid #bbb; border-left: 1px solid #bbb; font-size: 20px; font-weight: 400; color: #333; background-color: #fafafa; line-height: 1.45;}
+.announce-department-tb thead th:first-child {border-left: 0;}
+.announce-department-tb tbody td {padding: 12px 5px; border-bottom: 1px solid #bbb; font-size: 20px; font-weight: 400; color: #333; background-color: #fff; text-align: center; line-height: 1.45;}
+.announce-department-tb tbody td.bl {border-left: 1px solid #bbb;}
+.announce-department-tb tbody td.tl {text-align: left; padding-left: 40px;}
+.announce-cautn {margin-top: 22px;}
+.announce-cautn-text {font-size: 18px; font-weight: 300; color: #666; line-height: 1.55;}
+
+/* 인사/복지제도 */
+.personnel-position {display: flex; align-items: center; justify-content: center; margin-top: 48px; padding: 100px 0; background: url('/source/img/announce-step-bg.jpg') no-repeat center/cover;}
+.personnel-position_graphic {display: flex; flex-flow: row wrap; justify-content: center; align-items: flex-start; gap: 70px;}
+.personnel-position_graphic-item {display: flex; flex-flow: row wrap; justify-content: center; align-items: center; gap: 40px;}
+.personnel-position_graphic-item .item-inner.name {display: flex; justify-content: center; align-items: center; width: 130px; height: 130px; border: 2px solid #fff; border-radius: 50%; text-align: center;}
+.personnel-position_graphic-item .item-inner.name .text {font-size: 22px; font-weight: 600; color: #fff;}
+.personnel-position_graphic-item .item-inner.year {position: relative; text-align: center;}
+.personnel-position_graphic-item .item-inner.year:after {content: ""; display: block; position: absolute; top: 0; left: 42px; width: 16px; height: 26px; background: url('/source/img/arrow-right-white.png') no-repeat center/contain;}
+.personnel-position_graphic-item .item-inner.year .text {font-size: 22px; font-weight: 400; color: #fff;}
+.personnel-position_text {margin-top: 45px; font-size: 20px; font-weight: 400; color: #f7f7f7; text-align: center;}
+
+.major-welfare {margin-top: 86px;}
+.major-welfare-top {}
+.major-welfare-tit {font-size: 36px; font-weight: 600; color: #0f0f0f;}
+.major-welfare-txt {font-size: 18px; font-weight: 300; color: #666;}
+.major-welfare-list_wrap {display: flex; flex-flow: row wrap; align-items: flex-start; justify-content: center;}
+.major-welfare-list-item {width: 25%; padding: 50px 50px 40px; text-align: center;}
+.major-welfare-list-item .icon {width: 75px; height: 66px; margin: 0 auto 23px; background-color: cadetblue;}
+.major-welfare-list-item .num {font-size: 20px; font-weight: 700; color: var(--main-color);}
+.major-welfare-list-item .text {font-size: 20px; font-weight: 400; color: #333; line-height: 1.4;}
