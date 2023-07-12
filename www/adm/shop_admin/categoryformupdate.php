@@ -66,10 +66,10 @@ $check_str_keys = array(
 'ca_skin_dir'=>'str'
 );
 
-for($i=0;$i<=10;$i++){
-    $check_str_keys['ca_'.$i.'_subj'] = 'str';
-    $check_str_keys['ca_'.$i] = 'str';
-}
+// for($i=0;$i<=10;$i++){
+//     $check_str_keys['ca_'.$i.'_subj'] = 'str';
+//     $check_str_keys['ca_'.$i] = 'str';
+// }
 
 foreach( $check_str_keys as $key=>$val ){
     if( $val === 'int' ){
@@ -131,6 +131,9 @@ if( $ca_skin && ! is_include_path_check($ca_skin) ){
     alert('오류 : 데이터폴더가 포함된 path 를 포함할수 없습니다.');
 }
 
+$ca_5_subj_arr = implode("||",$ca_5_subj);
+$ca_6_subj_arr = implode("||",$ca_6_subj);
+
 $sql_common = " ca_order                = '$ca_order',
                 ca_skin_dir             = '$ca_skin_dir',
                 ca_mobile_skin_dir      = '$ca_mobile_skin_dir',
@@ -138,11 +141,11 @@ $sql_common = " ca_order                = '$ca_order',
                 ca_mobile_skin          = '$ca_mobile_skin',
                 ca_img_width            = '$ca_img_width',
                 ca_img_height           = '$ca_img_height',
-				ca_list_mod             = '$ca_list_mod',
-				ca_list_row             = '$ca_list_row',
+                ca_list_mod             = '$ca_list_mod',
+                ca_list_row             = '$ca_list_row',
                 ca_mobile_img_width     = '$ca_mobile_img_width',
                 ca_mobile_img_height    = '$ca_mobile_img_height',
-				ca_mobile_list_mod      = '$ca_mobile_list_mod',
+				        ca_mobile_list_mod      = '$ca_mobile_list_mod',
                 ca_mobile_list_row      = '$ca_mobile_list_row',
                 ca_sell_email           = '$ca_sell_email',
                 ca_use                  = '$ca_use',
@@ -162,8 +165,8 @@ $sql_common = " ca_order                = '$ca_order',
                 ca_2_subj               = '$ca_2_subj',
                 ca_3_subj               = '$ca_3_subj',
                 ca_4_subj               = '$ca_4_subj',
-                ca_5_subj               = '$ca_5_subj',
-                ca_6_subj               = '$ca_6_subj',
+                ca_5_subj               = '$ca_5_subj_arr',
+                ca_6_subj               = '$ca_6_subj_arr',
                 ca_7_subj               = '$ca_7_subj',
                 ca_8_subj               = '$ca_8_subj',
                 ca_9_subj               = '$ca_9_subj',

@@ -3,7 +3,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
 ?>
 
 <div id="product" class="contents">
-  <?php sub_top($sb_menus, 'product', 'aboutus'); ?>
+  <?php sub_top($sb_menus, 'product', ''); ?>
 
   <div id="sb-contents">
     <section class="prod-cate">

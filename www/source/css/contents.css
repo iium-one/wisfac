@@ -36,6 +36,24 @@
 
 [data-lenis-prevent] {overscroll-behavior: auto;}
 
+.dgtxt-wrap {margin: 0 -10px; font-size: 0;}
+.dgtxt-list {display: inline-block; padding: 0 10px; font-size: 16px; vertical-align: top;}
+.dgtxt-wrap.cd1 .dgtxt-list {width: 100%;}
+.dgtxt-wrap.cd2 .dgtxt-list {width: 50%;}
+.dgtxt-wrap.cd3 .dgtxt-list {width: 33.333%;}
+.dgtxt-wrap.cd4 .dgtxt-list {width: 25%;}
+.dgtxt-wrap.cd5 .dgtxt-list {width: 20%;}
+.dgtxt-list-in {overflow: hidden; width: 100%; height: 100%; padding: 35px 23px; border-radius: 10px; background: #fff; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);}
+.dgtxt-text1 {position: relative; font-size: 22px; font-weight: 500; color: #0f0f0f; line-height: 1.273;}
+.dgtxt-text1:before {content: ""; display: block; position: absolute; top: 4px; left: -23px; z-index: 1; width: 4px; height: 21px; background-color: var(--main-color);}
+.dgtxt-text2 {margin-top: 8px; font-size: 16px; font-weight: 300; color: #666; line-height: 1.5;}
+
+.dg-slogan {padding: 35px 0; text-align: center; background-color: #fafafa;}
+.dg-slogan-text {margin: 13px auto 10px; font-size: 28px; font-weight: 300; color: #333; line-height: 1.571;}
+.dg-slogan-text b {font-weight: 700;}
+.dg-slogan .double-dot-open {width: 14px; margin: 0 auto;}
+.dg-slogan .double-dot-close {width: 14px; margin: 0 auto;}
+
 /* > Product */
 .prod-cate_wrap {display: flex; flex-flow: row wrap; align-items: center; gap: 30px;}
 .prod-cate-item {overflow: hidden; position: relative; flex: 1; height: 570px; padding: 36px 46px 0; border-radius: 10px; background: #fff; box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);}
@@ -299,11 +317,7 @@
 #aboutus {position: relative;}
 #aboutus:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; z-index: -1; width: 100%; height: 285px; background: #fafafa center;}
 
-.aboutus-slo {display: flex; flex-flow: row wrap; align-items: flex-start; gap: 20px; margin-top: 48px;}
-.aboutus-slo-item {overflow: hidden; width: calc(25% - 15px); padding: 35px 23px; border-radius: 10px; background: #fff; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);}
-.aboutus-slo-text1 {position: relative; font-size: 22px; font-weight: 500; color: #0f0f0f; line-height: 1.273;}
-.aboutus-slo-text1:before {content: ""; display: block; position: absolute; top: 4px; left: -23px; z-index: 1; width: 4px; height: 21px; background-color: var(--main-color);}
-.aboutus-slo-text2 {margin-top: 8px; font-size: 16px; font-weight: 300; color: #666; line-height: 1.5;}
+.aboutus-slo {margin-top: 48px;}
 
 .aboutus-tab {margin-top: 130px; padding-top: 95px; height: 400px; background: url('/source/img/aboutus-tab-bg.jpg') no-repeat center/cover;}
 .aboutus-tab-text1 {font-size: 50px; font-weight: 200; color: #fff;}
@@ -422,6 +436,32 @@
 .location-comp-info-more .icon {width: 11px; height: 19px; background: url('/source/img/arrow-right-gray.png') no-repeat center/contain; transition: 0.3s;}
 .location-comp-info-more:hover .icon {background: url('/source/img/arrow-right-white.png') no-repeat center/contain;}
 
+/* 제품소개 */
+/* > 제품 분류 */
+.cate-def-name {font-size: 50px; font-weight: 700; color: #0f0f0f;}
+.cate-def-expl1 {margin-top: 11px; font-size: 20px; font-weight: 500; color: #333; line-height: 1.6;}
+.cate-def-expl2 {font-size: 16px; font-weight: 400; color: #666; line-height: 1.625;}
+
+.cate-func {margin-top: 35px; padding: 30px 0; background-color: #fafafa;}
+.cate-func-wrap {margin: 25px -15px 0;}
+.cate-func-wrap .dgtxt-list {padding: 0 15px;}
+
+.cate-prod {margin-top: 70px; padding-bottom: 80px; background: url('/source/img/wisfac-symbol.png') no-repeat bottom right;}
+.cate-prod-wrap {margin: -50px -20px; font-size: 0; text-align: center;}
+.cate-prod-list {display: inline-block; padding: 50px 20px; font-size: 16px; vertical-align: bottom;}
+.cate-prod-wrap.cd1 .cate-prod-list{width: 100%;}
+.cate-prod-wrap.cd2 .cate-prod-list{width: 50%;}
+.cate-prod-wrap.cd3 .cate-prod-list{width: 33.333%;}
+.cate-prod-wrap.cd4 .cate-prod-list{width: 25%;}
+.cate-prod-wrap.cd5 .cate-prod-list{width: 20%;}
+.cate-prod-list-in {}
+.cate-prod-img {position: relative; overflow: hidden; margin: 0 auto; width: 100%; height: 380px;}
+.cate-prod-img img{position: absolute; top: 50%; left: 50%; z-index: 1; width: auto; max-width: 100%; height: auto; max-height: 100%; transform: translate(-50%, -50%);}
+.cate-prod-name {margin-top: 30px; font-size: 26px; font-weight: 600; color: #0f0f0f;}
+.cate-prod-more {margin: 20px auto 0; border-color: rgba(153,153,153,0.7); font-weight: 400; color: #999; background-color: #fff;}
+.cate-prod-more .icon {width: 11px; height: 19px; background: url("/source/img/arrow-right-gray.png") no-repeat center/contain; transition: 0.3s;}
+.cate-prod-more:hover .icon {background: url("/source/img/arrow-right-white.png") no-repeat center/contain;}
+
 /* 고객지원 */
 /* > 문의하기 */
 .inquiry-btn-box {margin-top: 24px; text-align: center;}
@@ -495,8 +535,4 @@
 .facilities-guide-img img {position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%, -50%); object-fit: cover;}
 .facilities-guide-img-text {margin-top: 10px; font-size: 18px; font-weight: 400; color: #333;}
 
-.employee-slogan {margin-top: 80px; padding: 35px 0; text-align: center; background-color: #fafafa;}
-.employee-slogan-text {margin: 13px auto 10px; font-size: 28px; font-weight: 300; color: #333; line-height: 1.571;}
-.employee-slogan-text b {font-weight: 700;}
-.employee-slogan .double-dot-open {width: 14px; margin: 0 auto;}
-.employee-slogan .double-dot-close {width: 14px; margin: 0 auto;}
+.employee-slogan {margin-top: 80px;}

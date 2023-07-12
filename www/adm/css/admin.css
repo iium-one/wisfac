@@ -360,6 +360,7 @@ tfoot th {}
 .tbl_frm01 th{border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;background:#f6f6f6;padding: 10px;width:200px;text-align:left}
 .tbl_frm01 td {border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;padding: 10px;text-align:left;}
 .tbl_frm01 textarea {height:150px}
+.tbl_frm01 textarea.mini_txtar {height:80px}
 .tbl_frm01 #captcha {margin:0;padding:0;border:0;background:transparent}
 .tbl_frm01 #captcha input {margin-left:5px;text-align:center}
 .h2_frm{text-align:left;color:#253ecc;font-size:1.12em;font-weight:bold;margin:20px 0 10px}
@@ -1144,8 +1145,8 @@ box-shadow: 1px 2px 5px rgba(150,150,150,0.5);z-index:1000}
 .files_box_ul .files_preview img{margin-top: -2px;}
 
 /* Custom */
-.plus_btn{width: 30px; height: 35px; border: 0; background: #3f51b5; color: #fff; font-size: 14px;}
-.minus_btn{width: 30px; height: 35px; border: 0; background: #ff1464; color: #fff; font-size: 14px;}
+.plus_btn{width: 35px; height: 35px; border: 0; background: #3f51b5; color: #fff; font-size: 14px;}
+.minus_btn{width: 35px; height: 35px; border: 0; background: #ff1464; color: #fff; font-size: 14px;}
 
 .add_func_li{margin-top: 5px;}
 .add_func_li:first-child{margin-top: 0;}
@@ -1156,6 +1157,16 @@ box-shadow: 1px 2px 5px rgba(150,150,150,0.5);z-index:1000}
 .comcose_list{display: inline-block; width:25%; font-size: 12px; padding: 0 5px;}
 .comcose_acs {display: block; width:100%; height: 200px; padding: 10px; color:#222; font-size: 12px; border: 1px solid #ddd;}
 .comcose_acs option{padding-top: 3px; padding-bottom: 3px;}
+
+.major-func_wrap {width: 800px;}
+.major-func {}
+.major-func-li {display: flex; align-items: center; margin-bottom: 10px;}
+.major-func-li .inpt-s{width: 250px;}
+.major-func-li .inpt-m{width: calc(100% - 300px); margin-left: 5px;}
+.major-func_wrap .func_btn.delete {width: 30px; height: 30px; margin-left: 10px; border: 1px solid #ddd; border-radius: 50%; color: #999; background-color: #fafafa; font-size: 12px; font-weight: 300; transition: 0.3s;}
+.major-func_wrap .func_btn.delete:hover {border-color: #f00; color: #f00; background-color: #fff;}
+.major-func_wrap .func_btn.add {width: calc(100% - 45px); height: 30px; border: 1px dashed #ddd; border-radius: 5px; background-color: #fff; font-size: 12px; font-weight: 300; color: #333; transition: 0.3s;}
+.major-func_wrap .func_btn.add:hover {border-color: #253ecc; color: #253ecc;}
 
 @media only screen and (max-device-width : 768px) and (orientation : landscape){
 /* Styles */

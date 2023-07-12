@@ -103,7 +103,7 @@ for($i=0; $prd_cate_row=sql_fetch_array($prd_cate_result); $i++){
   $sb_menus[1]['sb_2menus'][] = [
     'id' => $prd_cate_row['ca_id'],
     'name' => $prd_cate_row['ca_1_subj'],
-    'link' => '#',
+    'link' => '/sub/prod_list/'.$prd_cate_row['ca_id'],
   ];
 
   $prd_item_sql = " select it_id, it_name from {$prd_table} where ca_id = '{$prd_cate_row['ca_id']}' ";

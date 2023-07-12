@@ -116,13 +116,13 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                         </div>
                         <div class="business-product">
                           <div class="business-product-img">
-                            <img src="/source/img/iws-3000-4l.png" alt="">
+                            <img src="/source/img/ims-3000-4l.png" alt="">
                           </div>
                           <div class="business-product-name">IMS-3000(4Load Port)</div>
                         </div>
                         <div class="business-product">
                           <div class="business-product-img">
-                            <img src="/source/img/iws-3000-2l.png" alt="">
+                            <img src="/source/img/ims-3000-2l.png" alt="">
                           </div>
                           <div class="business-product-name">IMS-3000(2Load Port)</div>
                         </div>
