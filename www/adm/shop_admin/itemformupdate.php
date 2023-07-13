@@ -337,6 +337,10 @@ $it_explan = isset($_POST['it_explan']) ? $_POST['it_explan'] : '';
 if ($it_name == "")
     alert("상품명을 입력해 주십시오.");
 
+$it_1_subj_arr = implode("||",$it_1_subj);
+$it_2_subj_arr = implode("||",$it_2_subj);
+$it_4_subj_arr = implode("||",$it_4_subj);
+
 $sql_common = " ca_id               = '$ca_id',
                 ca_id2              = '$ca_id2',
                 ca_id3              = '$ca_id3',
@@ -399,10 +403,10 @@ $sql_common = " ca_id               = '$ca_id',
                 it_img8             = '$it_img8',
                 it_img9             = '$it_img9',
                 it_img10            = '$it_img10',
-                it_1_subj           = '$it_1_subj',
-                it_2_subj           = '$it_2_subj',
+                it_1_subj           = '$it_1_subj_arr',
+                it_2_subj           = '$it_2_subj_arr',
                 it_3_subj           = '$it_3_subj',
-                it_4_subj           = '$it_4_subj',
+                it_4_subj           = '$it_4_subj_arr',
                 it_5_subj           = '$it_5_subj',
                 it_6_subj           = '$it_6_subj',
                 it_7_subj           = '$it_7_subj',

@@ -74,14 +74,16 @@ $prod_cate = sql_fetch("
     </section>
     <?php } ?>
 
-    <section class="cate-prod">
+    <?php
+    $prod_item_leng = sql_fetch(" select count(*) as cnt from {$prod_item_table} where ca_id = '{$prod_ca_idx}' and it_use=1 ");
+    ?>
+    <section class="cate-prod <?php echo $prod_item_leng['cnt'] == 0 ? 'prod_none':'';?>">
       <h2 class="sound_only">제품 목록</h2>
       <div class="container">
         <div class="wrapper">
+          <?php if($prod_item_leng['cnt'] != 0) { ?>
           <div class="sec_ct">
             <?php
-            $prod_item_leng = sql_fetch(" select count(*) as cnt from {$prod_item_table} where ca_id = '{$prod_ca_idx}' ");
-
             if($prod_item_leng['cnt'] <= 2) {
               $prod_item_col = $prod_item_leng['cnt'];
             } else {
@@ -115,6 +117,9 @@ $prod_cate = sql_fetch("
             </div>
             <?php } ?>
           </div>
+          <?php } else { ?>
+          <div class="empty_prod">제품 데이터가 없습니다.</div>
+          <?php } ?>
         </div>
       </div>
     </section>

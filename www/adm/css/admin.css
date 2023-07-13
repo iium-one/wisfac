@@ -1168,6 +1168,34 @@ box-shadow: 1px 2px 5px rgba(150,150,150,0.5);z-index:1000}
 .major-func_wrap .func_btn.add {width: calc(100% - 45px); height: 30px; border: 1px dashed #ddd; border-radius: 5px; background-color: #fff; font-size: 12px; font-weight: 300; color: #333; transition: 0.3s;}
 .major-func_wrap .func_btn.add:hover {border-color: #253ecc; color: #253ecc;}
 
+.item-spec_wrap {width: 870px;}
+.item-spec {}
+.item-spec-li {display: flex; align-items: flex-start; margin-bottom: 10px;}
+.item-spec-li-dp1 {width: 272px;}
+.item-spec-li-dp2 {width: calc(100% - 357px); margin-left: 5px;}
+.item-spec-li-dp2-box {margin-top: 5px;}
+.item-spec-li-dp2-box:first-child {margin-top: 0;}
+/*
+.item-spec-li .inpt-s{width: 250px;}
+.item-spec-li .inpt-m{width: calc(100% - 340px); margin-left: 5px;}
+*/
+.item-spec_wrap .item-spec_btn.delete {width: 30px; height: 30px; margin-left: 10px; border: 1px solid #ddd; border-radius: 50%; color: #999; background-color: #fafafa; font-size: 12px; font-weight: 300; transition: 0.3s;}
+.item-spec_wrap .item-spec_btn.delete:hover {border-color: #f00; color: #f00; background-color: #fff;}
+.item-spec_wrap .item-spec_btn.col-add {width: 30px; height: 30px; margin-left: 10px; border: 1px solid #ddd; border-radius: 50%; color: #999; background-color: #fafafa; font-size: 12px; font-weight: 300; transition: 0.3s;}
+.item-spec_wrap .item-spec_btn.col-add:hover {border-color: #253ecc; color: #253ecc; background-color: #fff;}
+.item-spec_wrap .item-spec_btn.add {width: calc(100% - 45px); height: 30px; border: 1px dashed #ddd; border-radius: 5px; background-color: #fff; font-size: 12px; font-weight: 300; color: #333; transition: 0.3s;}
+.item-spec_wrap .item-spec_btn.add:hover {border-color: #253ecc; color: #253ecc;}
+
+.item-add_wrap {width: 800px;}
+.item-add {}
+.item-add-li {display: flex; align-items: center; margin-bottom: 10px;}
+.item-add-li .inpt-s{width: 250px;}
+.item-add-li .inpt-m{width: calc(100% - 300px); margin-left: 5px;}
+.item-add_wrap .item-add_btn.delete {width: 30px; height: 30px; margin-left: 10px; border: 1px solid #ddd; border-radius: 50%; color: #999; background-color: #fafafa; font-size: 12px; font-weight: 300; transition: 0.3s;}
+.item-add_wrap .item-add_btn.delete:hover {border-color: #f00; color: #f00; background-color: #fff;}
+.item-add_wrap .item-add_btn.add {width: calc(100% - 45px); height: 30px; border: 1px dashed #ddd; border-radius: 5px; background-color: #fff; font-size: 12px; font-weight: 300; color: #333; transition: 0.3s;}
+.item-add_wrap .item-add_btn.add:hover {border-color: #253ecc; color: #253ecc;}
+
 @media only screen and (max-device-width : 768px) and (orientation : landscape){
 /* Styles */
 input[type="text"]{max-width:200px}
