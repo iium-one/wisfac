@@ -35,7 +35,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 <button type="submit" class="sch-submit" title="검색하기"></button>
               </div>
               <?php if(isset($_REQUEST['stx']) || $_REQUEST['stx'] != ''){ ?>
-              <a href="/news" class="return-btn" title="전체검색"></a>
+              <a href="/notice" class="return-btn" title="전체검색"></a>
               <?php } ?>
             </form>
           </div>
