@@ -97,7 +97,7 @@ $prod_cate = sql_fetch("
                                 it_name, 
                                 it_img1 
                               from {$prod_item_table} 
-                              where ca_id = '{$prod_ca_idx}' 
+                              where ca_id = '{$prod_ca_idx}' and it_use=1 
                               order by it_order asc, it_time asc
                               ";
             $prod_item_result = sql_query($prod_item_sql);
