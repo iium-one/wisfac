@@ -1,5 +1,5 @@
 <?php
-$sub_menu = "600100";
+$sub_menu = "600300";
 include_once('./_common.php');
 
 $g5['title'] = '문의내역';
