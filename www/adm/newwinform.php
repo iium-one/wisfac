@@ -48,6 +48,11 @@ include_once (G5_ADMIN_PATH.'/admin.head.php');
 <input type="hidden" name="nw_id" value="<?php echo $nw_id; ?>">
 <input type="hidden" name="token" value="">
 
+
+<input type="hidden" name="nw_division" value="both"> <!--구분-->
+<input type="hidden" name="nw_device" value="both"> <!--접속기기-->
+
+
 <div class="local_desc01 local_desc">
     <p>초기화면 접속 시 자동으로 뜰 팝업레이어를 설정합니다.</p>
 </div>
@@ -60,30 +65,6 @@ include_once (G5_ADMIN_PATH.'/admin.head.php');
         <col>
     </colgroup>
     <tbody>
-    <tr>
-        <th scope="row"><label for="nw_division">구분</label></th>
-        <td>
-            <?php echo help("커뮤니티에 표시될 것인지 쇼핑몰에 표시될 것인지를 설정합니다."); ?>
-            <select name="nw_division" id="nw_division">
-                <option value="comm"<?php echo get_selected($nw['nw_division'], 'comm'); ?>>커뮤니티</option>
-                <?php if (defined('G5_USE_SHOP') && G5_USE_SHOP) { ?>
-                <option value="both"<?php echo get_selected($nw['nw_division'], 'both', true); ?>>커뮤니티와 쇼핑몰</option>
-                <option value="shop"<?php echo get_selected($nw['nw_division'], 'shop'); ?>>쇼핑몰</option>
-                <?php } ?>
-            </select>
-        </td>
-    </tr>
-    <tr>
-        <th scope="row"><label for="nw_device">접속기기</label></th>
-        <td>
-            <?php echo help("팝업레이어가 표시될 접속기기를 설정합니다."); ?>
-            <select name="nw_device" id="nw_device">
-                <option value="both"<?php echo get_selected($nw['nw_device'], 'both', true); ?>>PC와 모바일</option>
-                <option value="pc"<?php echo get_selected($nw['nw_device'], 'pc'); ?>>PC</option>
-                <option value="mobile"<?php echo get_selected($nw['nw_device'], 'mobile'); ?>>모바일</option>
-            </select>
-        </td>
-    </tr>
     <tr>
         <th scope="row"><label for="nw_disable_hours">시간<strong class="sound_only"> 필수</strong></label></th>
         <td>

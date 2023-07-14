@@ -216,10 +216,6 @@ if(!sql_query(" select it_skin from {$g5['g5_shop_item_table']} limit 1", false)
 <section id="anc_sitfrm_cate">
     <h2 class="h2_frm">제품분류</h2>
     <?php echo $pg_anchor; ?>
-    <div class="local_desc02 local_desc">
-        <p>기본분류는 반드시 선택하셔야 합니다. 하나의 제품에 최대 3개의 다른 분류를 지정할 수 있습니다.</p>
-    </div>
-
     <div class="tbl_frm01 tbl_wrap">
         <table>
         <caption>제품분류 입력</caption>
@@ -291,9 +287,7 @@ if(!sql_query(" select it_skin from {$g5['g5_shop_item_table']} limit 1", false)
                 <?php } else { ?>
                     <input type="hidden" name="it_id" value="<?php echo $it['it_id']; ?>">
                     <span class="frm_ca_id"><?php echo $it['it_id']; ?></span>
-                    <a href="<?php echo shop_item_url($it_id); ?>" class="btn_frmline">제품확인</a>
-                    <a href="<?php echo G5_ADMIN_URL; ?>/shop_admin/itemuselist.php?sfl=a.it_id&amp;stx=<?php echo $it_id; ?>" class="btn_frmline">사용후기</a>
-                    <a href="<?php echo G5_ADMIN_URL; ?>/shop_admin/itemqalist.php?sfl=a.it_id&amp;stx=<?php echo $it_id; ?>" class="btn_frmline">제품문의</a>
+                    <a href="/sub/prod_view/<?php echo $it_id; ?>" class="btn_frmline" target="_blank">제품확인</a>
                 <?php } ?>
             </td>
         </tr>
@@ -567,9 +561,12 @@ $(function(){
             <col>
         </colgroup>
         <tbody>
-        <?php for($i=2; $i<=6; $i++) { ?>
+        <?php 
+        for($i=2; $i<=6; $i++) { 
+          $it_roll_num = $i - 1;
+        ?>
         <tr>
-            <th scope="row"><label for="it_img<?php echo $i; ?>">이미지 <?php echo ($i - 1); ?></label></th>
+            <th scope="row"><label for="it_img<?php echo $i; ?>">이미지 <?php echo ($i - 1); ?></label><br/>/ 이미지 설명</th>
             <td>
                 <input type="file" name="it_img<?php echo $i; ?>" id="it_img<?php echo $i; ?>">
                 <?php
@@ -583,6 +580,13 @@ $(function(){
                 <label for="it_img<?php echo $i; ?>_del"><span class="sound_only">이미지 <?php echo $i; ?> </span>파일삭제</label>
                 <input type="checkbox" name="it_img<?php echo $i; ?>_del" id="it_img<?php echo $i; ?>_del" value="1">
                 <span class="sit_wimg_limg<?php echo $i; ?>"><?php echo $thumb; ?></span>
+                <?php } ?>
+
+                <div style="margin: 10px 0;">
+                  <input type="text" name="it_<?php echo $it_roll_num;?>" value="<?php echo $it['it_'.$it_roll_num];?>" class="frm_input" size="80">
+                </div>
+
+                <?php if($it_img_exists) { ?>
                 <div id="limg<?php echo $i; ?>" class="banner_or_img">
                     <?php echo $img_tag; ?>
                     <button type="button" class="sit_wimg_close">닫기</button>
@@ -611,9 +615,12 @@ $(function(){
             <col>
         </colgroup>
         <tbody>
-        <?php for($i=7; $i<=10; $i++) { ?>
+        <?php 
+        for($i=7; $i<=10; $i++) { 
+          $it_detail_num = $i - 1;
+        ?>
         <tr>
-            <th scope="row"><label for="it_img<?php echo $i; ?>">이미지 <?php echo ($i - 6); ?></label></th>
+            <th scope="row"><label for="it_img<?php echo $i; ?>">이미지 <?php echo ($i - 6); ?><br/>/ 이미지 설명</label></th>
             <td>
                 <input type="file" name="it_img<?php echo $i; ?>" id="it_img<?php echo $i; ?>">
                 <?php
@@ -627,6 +634,13 @@ $(function(){
                 <label for="it_img<?php echo $i; ?>_del"><span class="sound_only">이미지 <?php echo $i; ?> </span>파일삭제</label>
                 <input type="checkbox" name="it_img<?php echo $i; ?>_del" id="it_img<?php echo $i; ?>_del" value="1">
                 <span class="sit_wimg_limg<?php echo $i; ?>"><?php echo $thumb; ?></span>
+                <?php } ?>
+
+                <div style="margin: 10px 0;">
+                  <input type="text" name="it_<?php echo $it_detail_num;?>" value="<?php echo $it['it_'.$it_detail_num];?>" class="frm_input" size="80">
+                </div>
+
+                <?php if($it_img_exists) { ?>
                 <div id="limg<?php echo $i; ?>" class="banner_or_img">
                     <?php echo $img_tag; ?>
                     <button type="button" class="sit_wimg_close">닫기</button>

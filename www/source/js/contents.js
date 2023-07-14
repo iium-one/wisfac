@@ -126,14 +126,14 @@ aboutTabButtons.forEach(button => {
 // [plugin-Swiper] 제품 상세이미지 슬라이더
 const prodRollSwiper = new Swiper('.prod-img_roll', {
   draggable: true,
-  // autoplay: {
-  //   delay: 4000,
-  //   disableOnInteraction: false
-  // },
-  // pagination: {
-  //   el: ".main-visual-wrapper .swiper-pagination",
-  //   type: "fraction",
-  // }
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".prod-img_roll .swiper-pagination",
+    type: "progressbar",
+  }
 });
 
 $(document).ready(function(){

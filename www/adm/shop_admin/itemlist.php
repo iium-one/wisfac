@@ -209,25 +209,11 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
         <th scope="col">분류</th>
         <th scope="col" rowspan="2"><?php echo subject_sort_link('it_order', 'sca='.$sca); ?>순서</a></th>
         <th scope="col" rowspan="2"><?php echo subject_sort_link('it_use', 'sca='.$sca, 1); ?>노출</a></th>
-        <!--<th scope="col" rowspan="3"><?php echo subject_sort_link('it_soldout', 'sca='.$sca, 1); ?>품절</a></th>-->
-        <th scope="col" rowspan="2"><?php echo subject_sort_link('it_hit', 'sca='.$sca, 1); ?>조회</a></th>
         <th scope="col" rowspan="2">관리</th>
     </tr>
     <tr>
         <th scope="col" id="th_pc_title"><?php echo subject_sort_link('it_name', 'sca='.$sca); ?>상품명</a></th>
-        <!--
-        <th scope="col" id="th_amt"><?php echo subject_sort_link('it_price', 'sca='.$sca); ?>판매가격</a></th>
-        <th scope="col" id="th_camt"><?php echo subject_sort_link('it_cust_price', 'sca='.$sca); ?>시중가격</a></th>
-        <th scope="col" id="th_skin">PC스킨</th>
-        -->
     </tr>
-    <!--
-    <tr>
-        <th scope="col" id="th_pt"><?php echo subject_sort_link('it_point', 'sca='.$sca); ?>포인트</a></th>
-        <th scope="col" id="th_qty"><?php echo subject_sort_link('it_stock_qty', 'sca='.$sca); ?>재고</a></th>
-        <th scope="col" id="th_mskin">모바일스킨</th>
-    </tr>
-    -->
     </thead>
     <tbody>
     <?php
@@ -249,38 +235,16 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
             <input type="hidden" name="it_id[<?php echo $i; ?>]" value="<?php echo $row['it_id']; ?>">
             <?php echo $row['it_id']; ?>
         </td>
-        <td rowspan="2" class="td_img"><a href="<?php echo $href; ?>"><?php echo get_it_image($row['it_id'], 50, 50); ?></a></td>
-        <td class="td_sort">
-            <label for="ca_id_<?php echo $i; ?>" class="sound_only"><?php echo get_text($row['it_name']); ?> 기본분류</label>
-            <select name="ca_id[<?php echo $i; ?>]" id="ca_id_<?php echo $i; ?>" style="width: 100%;">
-                <?php echo conv_selected_option($ca_list, $row['ca_id']); ?>
-            </select>
-            <!--
-            <label for="ca_id2_<?php echo $i; ?>" class="sound_only"><?php echo get_text($row['it_name']); ?> 2차분류</label>
-            <select name="ca_id2[<?php echo $i; ?>]" id="ca_id2_<?php echo $i; ?>">
-                <?php echo conv_selected_option($ca_list, $row['ca_id2']); ?>
-            </select>
-            <label for="ca_id3_<?php echo $i; ?>" class="sound_only"><?php echo get_text($row['it_name']); ?> 3차분류</label>
-            <select name="ca_id3[<?php echo $i; ?>]" id="ca_id3_<?php echo $i; ?>">
-                <?php echo conv_selected_option($ca_list, $row['ca_id3']); ?>
-            </select>
-            -->
+        <td rowspan="2" class="td_img"><?php echo get_it_image($row['it_id'], 50, 50); ?></td>
+        <td class="td_sort" style="text-align: left;">
+          <?php echo $row['ca_name'];?>
         </td>
         <td rowspan="2" class="td_num">
-            <label for="order_<?php echo $i; ?>" class="sound_only">순서</label>
-            <input type="text" name="it_order[<?php echo $i; ?>]" value="<?php echo $row['it_order']; ?>" id="order_<?php echo $i; ?>" class="tbl_input" size="3">
+          <?php echo $row['it_order']; ?>
         </td>
-        <td rowspan="2">
-            <label for="use_<?php echo $i; ?>" class="sound_only">노출여부</label>
-            <input type="checkbox" name="it_use[<?php echo $i; ?>]" <?php echo ($row['it_use'] ? 'checked' : ''); ?> value="1" id="use_<?php echo $i; ?>">
+        <td rowspan="2" style="width: 60px;">
+            <?php echo ($row['it_use'] ? '<span style="padding: 3px 10px; border-radius: 20px; background: #0275aa; color: #fff;">On</span>' : '<span style="padding: 3px 10px; border-radius: 20px; background: #f00; color: #fff;">Off</span>'); ?>
         </td>
-        <!--
-        <td rowspan="3">
-            <label for="soldout_<?php echo $i; ?>" class="sound_only">품절</label>
-            <input type="checkbox" name="it_soldout[<?php echo $i; ?>]" <?php echo ($row['it_soldout'] ? 'checked' : ''); ?> value="1" id="soldout_<?php echo $i; ?>">
-        </td>
-        -->
-        <td rowspan="2" class="td_num"><?php echo $row['it_hit']; ?></td>
         <td rowspan="2" class="td_mng td_mng_s">
             <a href="./itemform.php?w=u&amp;it_id=<?php echo $row['it_id']; ?>&amp;ca_id=<?php echo $row['ca_id']; ?>&amp;<?php echo $qstr; ?>" class="btn btn_03"><span class="sound_only"><?php echo htmlspecialchars2(cut_str($row['it_name'],250, "")); ?> </span>수정</a>
             <a href="./itemcopy.php?it_id=<?php echo $row['it_id']; ?>&amp;ca_id=<?php echo $row['ca_id']; ?>" class="itemcopy btn btn_02" target="_blank"><span class="sound_only"><?php echo htmlspecialchars2(cut_str($row['it_name'],250, "")); ?> </span>복사</a>
@@ -288,38 +252,10 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
         </td>
     </tr>
     <tr class="<?php echo $bg; ?>">
-        <td headers="th_pc_title" class="td_input">
-            <label for="name_<?php echo $i; ?>" class="sound_only">상품명</label>
-            <input type="text" name="it_name[<?php echo $i; ?>]" value="<?php echo htmlspecialchars2(cut_str($row['it_name'],250, "")); ?>" id="name_<?php echo $i; ?>" required class="tbl_input required" size="30">
-        </td>
-        <!--
-        <td headers="th_amt" class="td_numbig td_input">
-            <label for="price_<?php echo $i; ?>" class="sound_only">판매가격</label>
-            <input type="text" name="it_price[<?php echo $i; ?>]" value="<?php echo $row['it_price']; ?>" id="price_<?php echo $i; ?>" class="tbl_input sit_amt" size="7">
-        </td>
-        <td headers="th_camt" class="td_numbig td_input">
-            <label for="cust_price_<?php echo $i; ?>" class="sound_only">시중가격</label>
-            <input type="text" name="it_cust_price[<?php echo $i; ?>]" value="<?php echo $row['it_cust_price']; ?>" id="cust_price_<?php echo $i; ?>" class="tbl_input sit_camt" size="7">
-        </td>
-        <td headers="th_skin" class="td_numbig td_input">
-            <label for="it_skin_<?php echo $i; ?>" class="sound_only">PC 스킨</label>
-            <?php echo get_skin_select('shop', 'it_skin_'.$i, 'it_skin['.$i.']', $row['it_skin']); ?>
-        </td>
-        -->
-    </tr>
-    <!--
-    <tr class="<?php echo $bg; ?>">
-        <td headers="th_pt" class="td_numbig td_input"><?php echo $it_point; ?></td>
-        <td headers="th_qty" class="td_numbig td_input">
-            <label for="stock_qty_<?php echo $i; ?>" class="sound_only">재고</label>
-            <input type="text" name="it_stock_qty[<?php echo $i; ?>]" value="<?php echo $row['it_stock_qty']; ?>" id="stock_qty_<?php echo $i; ?>" class="tbl_input sit_qty" size="7">
-        </td>
-        <td headers="th_mskin" class="td_numbig td_input">
-            <label for="it_mobile_skin_<?php echo $i; ?>" class="sound_only">모바일 스킨</label>
-            <?php echo get_mobile_skin_select('shop', 'it_mobile_skin_'.$i, 'it_mobile_skin['.$i.']', $row['it_mobile_skin']); ?>
+        <td headers="th_pc_title" class="td_input" style="text-align: left;">
+          <?php echo htmlspecialchars2(cut_str($row['it_name'],250, "")); ?>
         </td>
     </tr>
-    -->
     <?php
     }
     if ($i == 0)
@@ -332,15 +268,10 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
 <div class="btn_fixed_top">
 
     <a href="./itemform.php" class="btn btn_01">상품등록</a>
-    <a href="./itemexcel.php" onclick="return excelform(this.href);" target="_blank" class="btn btn_02">상품일괄등록</a>
-    <input type="submit" name="act_button" value="선택수정" onclick="document.pressed=this.value" class="btn btn_02">
     <?php if ($is_admin == 'super') { ?>
     <input type="submit" name="act_button" value="선택삭제" onclick="document.pressed=this.value" class="btn btn_02">
     <?php } ?>
 </div>
-<!-- <div class="btn_confirm01 btn_confirm">
-    <input type="submit" value="일괄수정" class="btn_submit" accesskey="s">
-</div> -->
 </form>
 
 <?php echo get_paging(G5_IS_MOBILE ? $config['cf_mobile_pages'] : $config['cf_write_pages'], $page, $total_page, "{$_SERVER['SCRIPT_NAME']}?$qstr&amp;page="); ?>

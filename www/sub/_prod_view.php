@@ -22,7 +22,15 @@ $prod_item = sql_fetch("
     a.it_img7, 
     a.it_img8, 
     a.it_img9, 
-    a.it_img10, 
+    a.it_1, 
+    a.it_2, 
+    a.it_3, 
+    a.it_4, 
+    a.it_5, 
+    a.it_6, 
+    a.it_7, 
+    a.it_8, 
+    a.it_9, 
     b.ca_id, 
     b.ca_name, 
     b.ca_1_subj 
@@ -58,7 +66,7 @@ for($i=1; $i<=4; $i++) {
 ?>
 
 <div id="product" class="contents view">
-  <?php sub_top($sb_menus, 'product', 'aboutus'); ?>
+  <?php sub_top($sb_menus, 'product', $prod_item['ca_id']); ?>
 
   <div id="sb-contents">
     <div class="container">
@@ -89,19 +97,25 @@ for($i=1; $i<=4; $i++) {
           <div class="sec_ct">
             <?php if($it_roll_img_cnt > 0) { ?>
             <div class="prod-img_roll">
-              <div class="swiper-wrapper prod-img_roll_wrap">
+              <div class="match-height swiper-wrapper prod-img_roll_wrap">
                 <?php 
                 for($i=1; $i<=5; $i++) {
                   if(!${'it_roll_img'.$i})
                     continue;
                 ?>
                 <div class="swiper-slide prod-img_roll-slide">
-                  <?php echo ${'it_roll_img'.$i}; ?>
+                  <div class="prod-img_roll_imgwrap">
+                    <?php echo ${'it_roll_img'.$i}; ?>
+                  </div>
+                  <?php if($prod_item['it_'.$i]) { ?>
+                  <p class="prod-img_roll-text"><?php echo $prod_item['it_'.$i]; ?></p>
+                  <?php } ?>
                 </div>
                 <?php
                 }
                 ?>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
             <?php } ?>
             <?php if($prod_item['it_1_subj']) { ?>
@@ -140,7 +154,7 @@ for($i=1; $i<=4; $i++) {
 
     <?php if($it_detail_img_cnt > 0 || ($prod_item['it_3_subj'] && $prod_item['it_4_subj'])) { ?>
     <section class="prod-detail">
-      <h2 class="sound_only">제품 이미지 및 사양</h2>
+      <h2 class="sound_only">제품 상세 이미지 및 추가설명</h2>
       <div class="container">
         <div class="wrapper">
           <div class="sec_ct">
@@ -148,14 +162,20 @@ for($i=1; $i<=4; $i++) {
             <p class="prod-detail-tit">Detail view</p>
             <div class="prod-detail_wrap">
               <?php 
+              $detail_num = 0;
               for($i=1; $i<=5; $i++) {
+                $detail_num = $i + 5;
+
                 if(!${'it_detail_img'.$i})
                   continue;
               ?>
               <div class="prod-detail-img">
-                <div class="prod-detail-img-in">
+                <div class="prod-detail-img-in <?php echo $prod_item['it_'.$detail_num] ? 'bdr0':'';?>">
                   <?php echo ${'it_detail_img'.$i}; ?>
                 </div>
+                <?php if($prod_item['it_'.$detail_num]) { ?>
+                <p class="prod-detail-img-text"><?php echo $prod_item['it_'.$detail_num]; ?></p>
+                <?php } ?>
               </div>
               <?php
               }
