@@ -102,21 +102,25 @@ if(mainBoardWrap){
 
 // 메인 게시글 영역 탭 버튼 클릭 이벤트 처리
 const mainBoardTabButtons = document.querySelectorAll('.main-boarad-tabs .tabs-btn');
+const mainBoardMoreBtn = document.querySelector(".main-board .i-arrow-btn01");
+
 mainBoardTabButtons.forEach(button => {
   button.addEventListener('click', function() {
     let board = button.getAttribute("data-board");
 
     tabAddOnClass(this, mainBoardData(board));
     mainBoardSwiper.slideTo(0, 0, false);
+    mainBoardMoreBtn.setAttribute("href",`/${board}`)
   });
 });
 
 // 위스팩소개 > 회사소개 : 비전/조직도 탭 버튼 클릭 이벤트 처리
 const aboutTabButtons = document.querySelectorAll('.aboutus-pg-tabs .tabs-btn');
+
 aboutTabButtons.forEach(button => {
   button.addEventListener('click', function() {
     let contentID = button.getAttribute("data-id");
-    console.log(contentID)
+    
     tabAddOnClass(this, function(){
       $(`#${contentID}`).addClass('on').siblings().removeClass('on');
     });

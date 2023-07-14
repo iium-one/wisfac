@@ -116,7 +116,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
         <div class="main-contact_ct_inner">
           <p class="main-contact-title">위스팩 소개</p>
           <p class="main-contact-expl">세계가 인정하는 기술과 제품 <br/><b>위스팩이 궁금</b>하신가요?</p>
-          <a href="" class="i-arrow-btn01">
+          <a href="/sub/aboutus?v=vision" class="i-arrow-btn01">
             회사소개
             <span class="icon">
               <img src="/source/img/arrow-right-white.png" alt="회사소개 링크이동">
@@ -130,7 +130,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
         <div class="main-contact_ct_inner">
           <p class="main-contact-title">고객문의</p>
           <p class="main-contact-expl">제품에 대해 <b>궁금한 내용</b>이 <br/>있으신가요?</p>
-          <a href="" class="i-arrow-btn01">
+          <a href="/sub/contact" class="i-arrow-btn01">
             문의하기
             <span class="icon">
               <img src="/source/img/arrow-right-white.png" alt="고객문의 링크이동">
@@ -152,7 +152,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
               <button type="button" class="tabs-btn on" data-board="notice">공지사항</button>
               <button type="button" class="tabs-btn" data-board="news">회사소식</button>
             </div>
-            <a href="" class="i-arrow-btn01">
+            <a href="/notice" class="i-arrow-btn01">
               Learn more
               <span class="icon"></span>
             </a>
@@ -189,7 +189,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
           <div class="main_sec-top">
             <h2 class="sound_only">회사소개, 사업소개 배너</h2>
           </div>
-          <a href="" class="main-banner_box main-banner-company">
+          <a href="/sub/global" class="main-banner_box main-banner-company">
             <div class="main-banner_ct_inner">
               <p class="banner-title">Global WISFAC</p>
               <p class="banner-subtitle"><b>글로벌기업</b> 위스팩을 만나보세요.</p>
@@ -199,7 +199,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
               <img src="/source/img/main-company-banner-prod.png" alt="">
             </div>
           </a>
-          <a href="" class="main-banner_box main-banner-business">
+          <a href="/sub/business" class="main-banner_box main-banner-business">
             <div class="main-banner_ct_inner">
               <p class="banner-title">사업소개</p>
               <p class="banner-subtitle">위스팩의 <b>개발 제품군</b>을 확인하세요.</p>
