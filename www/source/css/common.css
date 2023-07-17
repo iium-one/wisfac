@@ -1,7 +1,7 @@
 * {margin:0; padding:0; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; word-break: keep-all;}
 html,body{max-width: 100%; min-height: 100%;}
 html{overflow-x: hidden; -webkit-text-size-adjust: none;}
-body{-webkit-print-color-adjust:exact; background: #fff; font-family: 'Pretendard', sans-serif; font-style: normal; font-size: 16px; font-weight: 300; color: #0f0f0f; line-height: 1.2; -ms-overflow-style:none;}
+body{-webkit-print-color-adjust:exact; background: #fff; font-family: 'Pretendard', sans-serif; font-style: normal; font-size: 16px; font-weight: 300; color: #0f0f0f; line-height: 1.2; -ms-overflow-style:none; width: 100%; overflow-x: hidden;}
 body::-webkit-scrollbar { display:none; }
 ul, li, dl,dt,dd {margin:0; padding:0; list-style:none;}
 a{color:#0f0f0f; text-decoration:none;}
