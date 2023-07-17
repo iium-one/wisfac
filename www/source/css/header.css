@@ -69,5 +69,23 @@
 #all_menu .all_menu-dep3 > li:hover > a:before {background-color: var(--sub-color1);}
 
 @media screen and (max-width:1600px){
-  
+
 } /* End meaia 1600 */
+
+@media screen and (max-width:1290px){
+  #hd_top-inner .gnb-dep1 {gap: 0 50px;}
+  #hd_top-inner .gnb-dep1 > li > a {font-size: 18px;}
+  #hd_top-inner .gnb-dep2 > li > a {font-size: 18px;}
+
+  #all_menu .all_menu-nav {padding-left: 20px;}
+  #all_menu .all_menu-dep1 > li > a {font-size: 24px;}
+  #all_menu .all_menu-dep2 > li > a {font-size: 18px;}
+} /* End meaia 1290 */
+
+@media screen and (max-width:1024px){
+  .gnb {display: none !important;}
+} /* End meaia 1024 */
+
+@media screen and (max-width:767px){
+  
+} /* End meaia 767 */
