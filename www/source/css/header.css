@@ -67,3 +67,7 @@
 #all_menu .all_menu-dep2 > li:hover > a {color: var(--sub-color1);}
 #all_menu .all_menu-dep3 > li:hover > a {color: var(--sub-color1);}
 #all_menu .all_menu-dep3 > li:hover > a:before {background-color: var(--sub-color1);}
+
+@media screen and (max-width:1600px){
+  
+} /* End meaia 1600 */
