@@ -5,7 +5,7 @@ $sb_menus = [
   [
     'id' => 'introduce',
     'name' => '위스팩소개',
-    'link' => '/sub/aboutus',
+    'link' => '/sub/aboutus?v=vision',
     'sb_2menus' => [
       [
         'id' => 'aboutus',
@@ -86,7 +86,7 @@ $sb_menus = [
       ],
       [
         'id' => 'welfare',
-        'name' => '인사/복지재도',
+        'name' => '인사/복지제도',
         'link' => '/sub/welfare'
       ]
     ]
