@@ -11,7 +11,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
       <div class="container">
         <div class="wrapper">
           <div class="sec_ct">
-            <div class="prod-cate_wrap">
+            <div class="match-height prod-cate_wrap">
               <?php
               $prod_cate_table = G5_TABLE_PREFIX.'shop_category';
               $prod_cate_sql = " select 
