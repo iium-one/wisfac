@@ -196,7 +196,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
               <p class="banner-expl">다년간의 기술 개발을 통해 반도체용 웨이퍼 검사 분야에서 순수 국내기술을 기반으로 <br/>첨단 기술 장비들을 개발하여 생산하는 글로벌 전문기업입니다.</p>
             </div>
             <div class="main-banner-prod">
-              <img src="/source/img/main-company-banner-prod.png" alt="">
+              <img src="/source/img/main-business-banner-prod.png" alt="">
             </div>
           </a>
           <a href="/sub/business" class="main-banner_box main-banner-business">
@@ -206,7 +206,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
               <p class="banner-expl">Si Wafer와 SiC Wafer 등 다양한 Wafer 검사를 위해 순수 국내기술로 개발하여 생산하고 있으며 <br/>다양한 하드웨어 제품군과 이와 관련된 다양한 소프트웨어 제품군을 가지고 있습니다.</p>
             </div>
             <div class="main-banner-prod">
-              <img src="/source/img/main-business-banner-prod.png" alt="">
+              <img src="/source/img/main-company-banner-prod.png" alt="">
             </div>
           </a>
         </div>
