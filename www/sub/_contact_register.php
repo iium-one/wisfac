@@ -19,24 +19,31 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
               <div class="form-wrap">
                 <div class="form-box">
                   <div class="form-li form-li-name">
-                    <div class="form-text">이름</div>
+                    <div class="form-text">이름<span class="required">*</span></div>
                     <div class="form-cont">
-                      <input type="text" name="inq_name" class="form-input full">
+                      <input type="text" name="inq_name" required class="form-input">
                     </div>
                   </div>
-                  <div class="form-li form-li-email bl">
-                    <div class="form-text">이메일</div>
+                </div>
+                <div class="form-box">
+                  <div class="form-li form-li-email">
+                    <div class="form-text">이메일<span class="required">*</span></div>
                     <div class="form-cont">
                       <div class="mail-input-wrap">
                         <div class="mail-input-li email-id">
-                          <input type="text" name="inq_mail01" id="inq_mail01" class="form-input full">
+                          <input type="text" name="inq_mail01" id="inq_mail01" required class="form-input full">
                         </div>
                         <div class="mail-input-li email-sym">@</div>
                         <div class="mail-input-li email-domain">
-                          <select name="inq_mail02" id="inq_mail02" class="nc-sel form-sel doamin-sel">
+                          <input type="text" name="inq_mail02" id="inq_mail02" required class="form-input disabled" readonly>
+                          <select name="inq_mail03" id="inq_mail03" class="nc-sel form-sel doamin-sel" onchange="emailDomain(this.value)">
                             <option value="">선택하세요.</option>
                             <option value="naver.com">naver.com</option>
                             <option value="gmail.com">gmail.com</option>
+                            <option value="hanmail.net">hanmail.net</option>
+                            <option value="nate.com">nate.com</option>
+                            <option value="kakao.com">kakao.com</option>
+                            <option value="w">직접입력</option>
                           </select>
                         </div>
                       </div>
@@ -69,7 +76,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 </div>
                 <div class="form-box">
                   <div class="form-li">
-                    <div class="form-text">전화번호</div>
+                    <div class="form-text">전화번호<span class="required">*</span></div>
                     <div class="form-cont">
                       <div class="i-col-0 phone-input-wrap">
                         <div class="phone-input-li phone1">
@@ -80,11 +87,11 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                         </div>
                         <div class="phone-input-li phone-sym">-</div>
                         <div class="phone-input-li">
-                          <input type="text" name="inq_phone2" class="form-input full" maxlength="4">
+                          <input type="text" name="inq_phone2" required class="form-input full" maxlength="4">
                         </div>
                         <div class="phone-input-li phone-sym">-</div>
                         <div class="phone-input-li">
-                          <input type="text" name="inq_phone3" class="form-input full" maxlength="4">
+                          <input type="text" name="inq_phone3" required class="form-input full" maxlength="4">
                         </div>
                       </div>
                     </div>
@@ -115,17 +122,17 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 </div>
                 <div class="form-box">
                   <div class="form-li">
-                    <div class="form-text">제목</div>
+                    <div class="form-text">제목<span class="required">*</span></div>
                     <div class="form-cont">
-                      <input type="text" name="inq_subj" class="form-input full" maxlength="255">
+                      <input type="text" name="inq_subj" required class="form-input full" maxlength="255">
                     </div>
                   </div>
                 </div>
                 <div class="form-box">
                   <div class="form-li">
-                    <div class="form-text">문의사항</div>
+                    <div class="form-text">문의사항<span class="required">*</span></div>
                     <div class="form-cont">
-                      <textarea data-lenis-prevent name="inq_content" id="" class="form-textar full" cols="30" rows="10"></textarea>
+                      <textarea data-lenis-prevent name="inq_content" id="" required class="form-textar full" cols="30" rows="10"></textarea>
                     </div>
                   </div>
                 </div>
@@ -144,6 +151,23 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 
 <script>
+// 이메일 도메인 선택 기능
+const emailDomain = (v) => {
+  let emailDomain_value = v;
+  const emailDomain_input = document.getElementById('inq_mail02');
+
+  if(emailDomain_value === 'w') {
+    emailDomain_input.value = "";
+    emailDomain_input.readOnly = false;
+    emailDomain_input.classList.remove('disabled');
+    emailDomain_input.focus();
+  } else {
+    emailDomain_input.value = emailDomain_value;
+    emailDomain_input.readOnly = true;
+    emailDomain_input.classList.add('disabled');
+  }
+}
+
 // 우편번호 찾기 찾기 화면을 넣을 element
 var element_wrap = document.getElementById('add-wrap');
 

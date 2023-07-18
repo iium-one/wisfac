@@ -268,6 +268,7 @@
 
 .form-input {width: 400px; height: 50px; padding: 0 10px 0 20px; border: 1px solid #eee; border-radius: 10px; font-size: 16px; font-weight: 400; color: #666;}
 .form-input.full {width: 100%;}
+.form-input.disabled {background: #fafafa;}
 
 .form-textar {width: 400px; height: auto; padding: 20px; border: 1px solid #eee; border-radius: 10px; font-size: 16px; font-weight: 400; color: #666; overflow: auto;}
 .form-textar.full {width: 100%;}
@@ -281,10 +282,8 @@
 .form-wrap .form-li {display: inline-flex; flex-flow: row wrap; align-items: flex-start; position: relative; width: 100%;}
 .form-wrap .form-box.w_auto .form-li {width: auto;}
 .form-wrap .form-text {width: 123px; padding-top: 16px; padding-left: 30px;}
+.form-wrap .form-text .required {margin-left: 3px; font-size: 12px; font-weight: 400; color: #f00; vertical-align: middle; background: none !important;}
 .form-wrap .form-cont {width: calc(100% - 123px);}
-
-.form-wrap .form-li-name {width: 36%;}
-.form-wrap .form-li-email {width: calc(64% - 4px);}
 
 /*.form-wrap .form-li.bl:after {content: ""; display: block; position: absolute; top: 50%; left: 40px; z-index: 1; height: 50px; margin-top: -25px; border-left: 2px solid #eee;}*/
 .form-wrap .form-li.bl .form-text {padding-left: 80px; width: 174px;}
@@ -294,7 +293,8 @@
 .form-wrap .email-sym {padding: 0 9px; font-size: 16px; font-weight: 400; color: #666;}
 .form-wrap .email-id {width: 260px;}
 .form-wrap .email-domain {width: calc(100% - 293px);}
-.form-wrap .doamin-sel {width: 100%;}
+.form-wrap .email-domain .form-input {width: auto;}
+.form-wrap .doamin-sel {display: inline-block; float: none; width: auto; vertical-align: middle;}
 
 .form-wrap .phone-input-li {width: 193px;}
 .form-wrap .phone-input-li.phone1 {width: 180px;}
