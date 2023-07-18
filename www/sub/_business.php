@@ -71,18 +71,18 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                   <div class="business-products_wrap">
                     <div class="business-product">
                       <div class="business-product-img">
-                        <img src="/source/img/eis-3000.png" alt="">
-                      </div>
-                      <div class="business-product-name">EIS-3000</div>
-                    </div>
-                    <div class="business-product">
-                      <div class="business-product-img">
                         <img src="/source/img/esis-3000.png" alt="">
                       </div>
                       <div class="business-product-name">ESIS-3000</div>
                     </div>
+                    <div class="business-product">
+                      <div class="business-product-img">
+                        <img src="/source/img/eis-3000.png" alt="">
+                      </div>
+                      <div class="business-product-name">EIS-3000</div>
+                    </div>
                   </div>
-                  <p class="business-product-name-group">EIS-3000&nbsp;｜&nbsp;ESIS-3000</p>
+                  <p class="business-product-name-group">ESIS-3000&nbsp;｜&nbsp;EIS-3000</p>
                 </div>
               </div>
             </div>

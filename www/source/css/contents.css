@@ -286,7 +286,7 @@
 .form-wrap .form-li-name {width: 36%;}
 .form-wrap .form-li-email {width: calc(64% - 4px);}
 
-.form-wrap .form-li.bl:after {content: ""; display: block; position: absolute; top: 50%; left: 40px; z-index: 1; height: 50px; margin-top: -25px; border-left: 2px solid #eee;}
+/*.form-wrap .form-li.bl:after {content: ""; display: block; position: absolute; top: 50%; left: 40px; z-index: 1; height: 50px; margin-top: -25px; border-left: 2px solid #eee;}*/
 .form-wrap .form-li.bl .form-text {padding-left: 80px; width: 174px;}
 .form-wrap .form-li.bl .form-cont {width: calc(100% - 174px);}
 
@@ -393,7 +393,7 @@
 
 .business-field .business-products {display: flex; flex-flow: column wrap; justify-content: space-between; align-items: center; overflow: hidden; min-height: 460px; margin-top: 18px; padding: 70px 0 30px; border: 1px solid #ddd; border-radius: 10px; background-color: #fff;}
 .business-field .business-products_wrap {display: flex; flex-flow: row wrap; align-items: center; justify-content: center; gap: 30px;}
-.business-field .business-product-img {width: auto; height: 270px;}
+.business-field .business-product-img {display: flex; align-items: flex-end; width: auto; height: 270px;}
 .business-field .business-product-img img {max-width: none; max-height: 100%;}
 .business-field .business-product-name {display: none; margin-top: 20px; font-size: 18px; font-weight: 400; color: #333; text-align: center;}
 .business-field .business-product-name-group {margin-top: 30px; font-size: 18px; font-weight: 400; color: #333; text-align: center;}
