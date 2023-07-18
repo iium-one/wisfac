@@ -8,7 +8,7 @@
 #hd_top-inner .gnb-dep1 > li {position: relative;}
 #hd_top-inner .gnb-dep1 > li > a {display: block; font-size: 20px; font-weight: 500; color: #0f0f0f; line-height: 100px;}
 
-#hd_top-inner .gnb-dep2 {position: absolute; top: 101px; left: -34px; z-index: 100; min-width: 190px; padding: 17px 30px 17px 34px; border-radius: 0 0 10px 10px; background-color: #f9f9f9; overflow: hidden; opacity: 0; visibility: hidden; transition: 0.3s;}
+#hd_top-inner .gnb-dep2 {position: absolute; top: 101px; left: -34px; z-index: 100; min-width: 200px; padding: 17px 10px 17px 34px; border-radius: 0 0 10px 10px; background-color: #f9f9f9; overflow: hidden; opacity: 0; visibility: hidden; transition: 0.3s;}
 #hd_top-inner .gnb-dep2 > li {}
 #hd_top-inner .gnb-dep2 > li > a {display: block; font-size: 20px; font-weight: 400; color: #333; line-height: 2;}
 #hd_top-inner .gnb-dep2 > li > a:hover {color: var(--sub-color1)}
