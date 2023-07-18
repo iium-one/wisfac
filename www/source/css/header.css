@@ -82,7 +82,7 @@
   #all_menu .all_menu-dep2 > li > a {font-size: 18px;}
 } /* End meaia 1290 */
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1023px){
   .gnb {display: none !important;}
 } /* End meaia 1024 */
 

@@ -19,7 +19,7 @@
   #footer .ft_info-text {margin-left: 0; margin-top: 30px;}
 } /* End meaia 1290 */
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1023px){
   #footer .ft_info-text {gap: 0 15px;}
 } /* End meaia 1024 */
 
