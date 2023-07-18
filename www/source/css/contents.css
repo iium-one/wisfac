@@ -725,6 +725,10 @@
   .greeting-text {font-size: 16px;}
   .greeting-sign-text1 {font-size: 16px;}
   .greeting-sign-text2 {font-size: 22px;}
+
+  /* > 오시는 길 */
+  .location-comp-img {width: 45%;}
+  .location-comp-info {width: 55%; padding-left: 40px;}
 } /* End meaia 1290 */
 
 @media screen and (max-width:1023px){
@@ -822,6 +826,14 @@
   .greeting-text {font-size: 16px;}
   .greeting-sign-text1 {font-size: 16px;}
   .greeting-sign-text2 {font-size: 20px;}
+
+  /* > 오시는 길 */
+  .location-comp-tit {font-size: 26px;}
+  .location-comp-img {width: 50%;}
+  .location-comp-info {width: 50%; padding-left: 20px;}
+  .location-comp-info_list .subj {font-size: 18px;}
+  .location-comp-info_list .expl {font-size: 16px; line-height: 1.5;}
+  .location-comp-info-more {margin-top: 20px;}
 } /* End meaia 1024 */
 
 @media screen and (max-width:767px){
@@ -940,4 +952,16 @@
 
   /* > CEO인사말 */
   .greeting-sign-text2 {font-size: 18px;}
+
+  /* > 오시는 길 */
+  .location-comp-tit {font-size: 20px;}
+  .location-comp_in {display: block;}
+  .location-comp-img {width: 100%; padding-bottom: 50%;}
+  .location-comp-info {width: 100%; margin-top: 30px; padding-left: 0;}
+  .location-comp-info_list .subj {font-size: 16px;}
+  .location-comp-info_list .expl {font-size: 14px;}
+  .location-comp-info-more {width: 120px; height: 35px; line-height: 35px;}
+  .location-comp-info-more .icon {width: 6px; height: 10px;}
+  .location-comp_box {margin-top: 50px;}
+  .location-comp_box:nth-child(even) {padding-top: 50px;}
 } /* End meaia 767 */
