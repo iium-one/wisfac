@@ -18,7 +18,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 <p class="announce_contact-text">Tel. 042-936-6500(내선0번)</p>
                 <p class="announce_contact-text">E-mail. (추후전달예정)</p>
               </div>
-              <a href="" class="i-arrow-btn01 apply-more">입사지원하기<span class="icon"></span></a>
+              <!-- <a href="" class="i-arrow-btn01 apply-more">입사지원하기<span class="icon"></span></a> -->
             </div>
           </div>
         </div>
