@@ -9,3 +9,25 @@
 .fnb a {font-size: 16px; font-weight: 500; color: #999;}
 .fnb a:hover {color: #fff;}
 .ft-copyright {font-size: 16px; font-weight: 300; color: #666;}
+
+@media screen and (max-width:1600px){
+
+} /* End meaia 1600 */
+
+@media screen and (max-width:1290px){
+  #footer .ft_info {display: block;}
+  #footer .ft_info-text {margin-left: 0; margin-top: 30px;}
+} /* End meaia 1290 */
+
+@media screen and (max-width:1024px){
+  #footer .ft_info-text {gap: 0 15px;}
+} /* End meaia 1024 */
+
+@media screen and (max-width:767px){
+  #footer .ft_info {padding: 30px 0 20px;}
+  #footer .ft-logo {display: block; width: 130px;}
+  #footer .ft_info-text {margin-top: 20px;}
+  #footer .ft_info-text span {font-size: 14px;}
+  .fnb a {font-size: 14px;}
+  .ft-copyright {margin-top: 20px; font-size: 14px;}
+} /* End meaia 767 */
