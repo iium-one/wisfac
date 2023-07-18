@@ -392,7 +392,7 @@
 .business-field .middle-category-expl {margin-top: 4px; font-size: 18px; font-weight: 300; color: #666; line-height: 1.65;}
 
 .business-field .business-products {display: flex; flex-flow: column wrap; justify-content: space-between; align-items: center; overflow: hidden; min-height: 460px; margin-top: 18px; padding: 70px 0 30px; border: 1px solid #ddd; border-radius: 10px; background-color: #fff;}
-.business-field .business-products_wrap {display: flex; flex-flow: row wrap; align-items: center; justify-content: center; gap: 30px;}
+.business-field .business-products_wrap {display: flex; flex-flow: row wrap; align-items: flex-end; justify-content: center; gap: 30px;}
 .business-field .business-product-img {display: flex; align-items: flex-end; width: auto; height: 270px;}
 .business-field .business-product-img img {max-width: none; max-height: 100%;}
 .business-field .business-product-name {display: none; margin-top: 20px; font-size: 18px; font-weight: 400; color: #333; text-align: center;}
@@ -613,6 +613,34 @@
   .banner-subtitle {font-size: 36px; margin-bottom: 15px;}
   .banner-expl br {display: none;}
   .main-banner-prod {right: 40px; max-width: calc(50% - 50px);}
+
+  /* Sub(서브) */
+  .sb_top_ct {height: 400px;}
+  .sb_title {font-size: 46px;}
+  .sb_2menus_wrap {gap: 10px 50px;}
+
+  .sb_top-title-text1 {font-size: 40px;}
+
+  /* 위스팩소개 */
+  /* > 회사소개 */
+  .aboutus-tab-text1 {font-size: 40px;}
+  .aboutus-tab-text1 b {font-size: 46px;}
+
+  .vision_text1 {font-size: 40px;}
+
+  .organ-2dp:after {left: 50%; width: 572px; margin-left: -338px;}
+  .organ-4dp {gap: 0 10px;}
+  .organ-4dp > li > span:before {width: calc(100% + 10px);}
+
+  /* > 사업소개 */
+  .business-field .business-products {min-height: auto;}
+  .business-field .business-product-img {height: 200px;}
+  .business-field.filed-3 .middle-category_box:nth-child(1) .business-product:nth-child(4) .business-product-img {height: 185px;}
+
+  /* > CEO인사말 */
+  .greeting-text {font-size: 18px;}
+  .greeting-sign-text1 {font-size: 18px;}
+  .greeting-sign-text2 {font-size: 24px;}
 } /* End meaia 1600 */
 
 @media screen and (max-width:1290px){
@@ -639,14 +667,74 @@
   .main-contact-expl {font-size: 26px;}
 
   .banner-subtitle {font-size: 26px;}
+
+  /* Sub(서브) */
+  .sb_top-title-text1 {font-size: 32px;}
+  .sb_top-title-text2 {font-size: 16px;}
+
+  .dgtxt-wrap {margin: -10px;}
+  .dgtxt-wrap .dgtxt-list {padding: 10px;}
+  .dgtxt-wrap .dgtxt-list {width: 50% !important;}
+  .dgtxt-text1 {font-size: 18px;}
+  .dgtxt-text1:before {top: 2px; height: 20px;}
+
+  /* 위스팩소개 */
+  /* > 회사소개 */
+  .aboutus-slo {margin-top: 48px;}
+
+  .aboutus-tab {height: 300px; margin-top: 100px; padding-top: 50px;}
+  .aboutus-pg-tabs {margin-top: 40px;}
+  .aboutus-tab-text1 {font-size: 34px;}
+  .aboutus-tab-text1 b {font-size: 36px;}
+  .aboutus-tab-ct {background-position: bottom 15% right 0; background-size: 80% auto;}
+
+  .vision_text1 {font-size: 32px;}
+  .vision_text2 {font-size: 16px;}
+  .vision-slo {gap: 20px;}
+  .vision-slo-item {width: calc(33.333% - 14px);}
+
+  /* > 조직도 */
+  .organ-1dp > li > span {width: 120px; font-size: 16px;}
+  .organ-2dp > li:nth-child(1) {margin-right: 20px;}
+  .organ-2dp > li > span {width: 120px; font-size: 16px;}
+  .organ-2dp:after {width: 386px; margin-left: -230px;}
+  .organ-3dp > li > span {width: 120px; font-size: 16px;}
+  .organ-4dp > li > span {width: 140px; height: 130px; font-size: 16px;}
+  .organ-4dp > li > span .icon.software img {width: 60px;}
+  .organ-4dp > li > span .icon.hardware img {width: 51px;}
+  .organ-4dp > li > span .icon.planning img {width: 52px;}
+  .organ-4dp > li > span .icon.production img {width: 57px;}
+  .organ-4dp > li > span .icon.sales img {width: 45px;}
+
+  /* > 사업소개 */
+  .business-field.filed-1 {margin-top: 50px;}
+  .business-field.filed-2 {margin-top: 50px; padding: 50px 0;}
+  .business-field.filed-3 {margin-top: 50px;}
+
+  .business-field .business-product-img {height: 160px;}
+  .business-field.filed-3 .middle-category_box:nth-child(1) .business-product:nth-child(4) .business-product-img {height: 145px;}
+  .business-field .large-category-tit {font-size: 26px;}
+  .business-field .middle-category-tit {font-size: 22px;}
+  .business-field .middle-category-expl {font-size: 16px;}
+  .business-field .business-product-name-group {font-size: 16px;}
+
+  /* > CEO인사말 */
+  .greeting-lt {width: 50%; padding-right: 50px;}
+  .greeting-rt {width: 50%;}
+
+  .greeting-text {font-size: 16px;}
+  .greeting-sign-text1 {font-size: 16px;}
+  .greeting-sign-text2 {font-size: 22px;}
 } /* End meaia 1290 */
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1023px){
   /* UI */
   .i-arrow-btn01 {width: 150px; height: 45px; line-height: 45px; padding: 0 15px; font-size: 14px;}
   .i-arrow-btn01 .icon {width: 8px;}
 
   .tabs-btn {font-size: 16px;}
+
+  .tabs.tabs2 .tabs-btn {min-width: 150px; font-size: 16px;}
 
   /* Main(메인) */
   .main-visual-item {height: 450px;}
@@ -657,6 +745,7 @@
   .main_sec-title1 {font-size: 32px;}
   .main_sec-expl1 {font-size: 16px;}
 
+  .main-product .prod-cate_wrap {margin-top: 30px;}
   .prod-cate_wrap {gap: 10px;}
   .prod-cate-item .ctg_name {font-size: 18px;}
   .prod-cate-item .ctg_img {height: 200px; line-height: 200px;}
@@ -672,6 +761,67 @@
   .main-banner_box {padding: 30px;}
   .banner-subtitle {font-size: 22px;}
   .main-banner-prod {right: 20px; max-width: calc(50% - 20px);}
+
+  /* Sub(서브) */
+  .sb_top_ct {height: 350px; padding-bottom: 40px;}
+  .sb_title {font-size: 36px;}
+  .sb_2menus {margin-top: 30px;}
+  .sb_2menus_wrap {gap: 15px 20px;}
+  .sb_2menus_wrap > li > a {padding-bottom: 0; font-size: 16px;}
+
+  #sb-contents {padding-top: 70px;}
+
+  .sb_top-title-text1 {font-size: 26px;}
+  .sb_top-title-text1 br {display: none;}
+  .sb_top-title-text2 br {display: none;}
+
+  /* 위스팩소개 */
+  /* > 회사소개 */
+  .aboutus-slo {margin-top: 30px;}
+
+  .aboutus-tab {margin-top: 70px; padding-top: 60px;}
+  .aboutus-tab-ct .sec_ct {padding-top: 70px;}
+  
+  .vision_text2 {margin-top: 18px;}
+  .vision_text2 br {display: none;}
+
+  .vision-slo {margin-top: 30px;}
+  .vision-slo-item {padding: 20px; border-radius: 30px;}
+  .vision-slo-item:after {top: 10px; left: 10px; width: calc(100% - 20px); height: calc(100% - 20px); border-radius: 20px;}
+  .vision-slo-text1 {font-size: 20px;}
+  .vision-slo-text2 br {display: none;}
+
+  /* > 조직도 */
+  .organ-2dp > li:nth-child(1) {margin-right: 10px;}
+  .organ-2dp > li > span {width: 80px; font-size: 14px;}
+  .organ-2dp:after {width: 226px; margin-left: -135px;}
+  .organ-3dp > li > span {width: 80px; font-size: 14px;}
+  .organ-4dp > li > span {width: 80px; height: 130px; font-size: 14px; justify-content: flex-start; padding: 15px 10px;}
+  .organ-4dp > li > span .icon {height: 46px; line-height: 46px;}
+  .organ-4dp > li > span .icon.software img {width: 50px;}
+  .organ-4dp > li > span .icon.hardware img {width: 41px;}
+  .organ-4dp > li > span .icon.planning img {width: 42px;}
+  .organ-4dp > li > span .icon.production img {width: 47px;}
+  .organ-4dp > li > span .icon.sales img {width: 35px;}
+
+  /* > 사업소개 */
+  .business-field .business-products {padding-top: 50px;}
+  .business-field .business-product-img {height: 110px;}
+  .business-field .business-products_wrap {gap: 15px;}
+  .business-field.filed-3 .middle-category_box:nth-child(1) .business-product:nth-child(4) .business-product-img {height: 100px;}
+  .business-field .large-category-tit {font-size: 24px;}
+  .business-field .middle-category-tit {font-size: 20px;}
+  .business-field .middle-category-expl {font-size: 14px;}
+  .business-field .business-product-name-group {font-size: 13px; line-height: 1.5;}
+
+  /* > CEO인사말 */
+  .greeting-intro .sec_ct {position: relative;}
+  .greeting-lt {width: 100%; padding-right: 0;}
+  .greeting-rt {display: none;}
+
+  .greeting-text {font-size: 16px;}
+  .greeting-sign-text1 {font-size: 16px;}
+  .greeting-sign-text2 {font-size: 20px;}
 } /* End meaia 1024 */
 
 @media screen and (max-width:767px){
@@ -685,6 +835,8 @@
   .tabs {gap: 10px;}
   .tabs-btn {font-size: 14px;}
 
+  .tabs.tabs2 .tabs-btn {min-width: 120px; height: 35px; line-height: 35px; font-size: 14px;}
+
   /* Main(메인) */
   .main-visual-item {height: 400px;}
   .main-visual_ct {padding-top: 100px;}
@@ -696,7 +848,6 @@
   .main_sec-subtitle1 {font-size: 16px;}
   .main_sec-expl1 {font-size: 14px;}
 
-  .main-product .prod-cate_wrap {margin-top: 30px;}
   .prod-cate-item {display: block; width: 100%; height: auto !important; min-height: auto; flex: 1 1 100%; padding: 30px 20px;}
   .prod-cate-item .ctg_img {height: 160px; line-height: 160px;}
   .prod-cate-item .ctg_bg {height: 0; padding-bottom: 40%;}
@@ -723,4 +874,70 @@
   .banner-subtitle {font-size: 20px;}
   .banner-expl {font-size: 14px;}
   .main-banner-prod {position: inherit; top: inherit; right: inherit; transform: none; width: 100%; max-width: 100%; margin-top: 30px;}
+
+  /* Sub(서브) */
+  .sb_top_ct {height: 300px;}
+  .sb_title {font-size: 30px;}
+
+  .sb_top-title-text1 {font-size: 20px;}
+  .sb_top-title-text2 {font-size: 14px;}
+
+  .dgtxt-wrap {margin: -5px;}
+  .dgtxt-wrap .dgtxt-list {width: 100% !important; padding: 5px;}
+  .dgtxt-list-in {padding: 23px;}
+  .dgtxt-text1 {font-size: 16px;}
+  .dgtxt-text1:before {height: 16px;}
+  .dgtxt-text2 {font-size: 14px;}
+
+  /* 위스팩소개 */
+  /* > 회사소개 */
+  #aboutus:after {height: 205px;}
+
+  .aboutus-slo {margin-top: 15px;}
+
+  .aboutus-tab {height: auto; margin-top: 50px; padding: 40px 0;}
+  .aboutus-tab-text1 {font-size: 20px;}
+  .aboutus-tab-text1 b {font-size: 22px;}
+  .aboutus-pg-tabs {margin-top: 20px;}
+  .aboutus-tab-ct .sec_ct {padding-top: 50px;}
+
+  .vision_text1 {font-size: 20px;}
+  .vision_text2 {font-size: 14px;}
+
+  .vision-slo {display: block; margin-top: 15px;}
+  .vision-slo-item {width: 100%; min-height: 160px; margin-top: 10px;}
+  .vision-slo-item:first-child {margin-top: 0;}
+  .vision-slo-text1 {font-size: 16px;}
+  .vision-slo-text2 {font-size: 14px;}
+
+  /* > 조직도 */
+  .organ-1dp > li > span {width: 80px; font-size: 12px;}
+  .organ-2dp > li:nth-child(1) {margin-right: 5px;}
+  .organ-2dp > li > span {width: 70px; font-size: 12px;}
+  .organ-2dp:after {width: 139px; margin-left: -83px;}
+  .organ-3dp > li > span {width: 70px; font-size: 12px;}
+  .organ-4dp {gap: 0 5px;}
+  .organ-4dp > li > span {width: 50px; height: 105px; font-size: 10px; justify-content: flex-start; padding: 15px 0;}
+  .organ-4dp > li > span:before {width: calc(100% + 5px);}
+  .organ-4dp > li > span .icon {height: 34px; line-height: 34px;}
+  .organ-4dp > li > span .icon.software img {width: 40px;}
+  .organ-4dp > li > span .icon.hardware img {width: 31px;}
+  .organ-4dp > li > span .icon.planning img {width: 32px;}
+  .organ-4dp > li > span .icon.production img {width: 37px;}
+  .organ-4dp > li > span .icon.sales img {width: 25px;}
+
+  /* > 사업소개 */
+  .business-field .large-category-tit {margin-bottom: 5px;}
+  .business-field .large-category-more {width: 100px; height: 25px; line-height: 25px; margin-bottom: 5px; padding: 0 10px; font-size: 12px;}
+  .business-field .large-category-more .icon {width: 6px; height: 10px;}
+
+  .business-field .business-product-img {height: 40px;}
+  .business-field.filed-3 .middle-category_box:nth-child(1) .business-product:nth-child(4) .business-product-img {height: 37px;}
+  .business-field .large-category-tit {font-size: 18px;}
+  .business-field .middle-category-tit {font-size: 16px;}
+  .business-field .middle-category-expl {font-size: 13px;}
+  .business-field .business-product-name-group {font-size: 10px;}
+
+  /* > CEO인사말 */
+  .greeting-sign-text2 {font-size: 18px;}
 } /* End meaia 767 */
