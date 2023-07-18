@@ -76,7 +76,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
             <h2 class="main_sec-title1">WISFAC <span class="highlight">Product</span></h2>
             <p class="main_sec-expl1">위스팩의 제품에 대한 간략한 설명을 기재해주세요. 위스팩의 제품에 대한 간략한 설명을 기재해주세요. <br/>위스팩의 제품에 대한 간략한 설명을 기재해주세요. 위스팩의 제품에 대한 간략한 설명을 기재해주세요.</p>
           </div>
-          <div class="prod-cate_wrap">
+          <div class="match-height prod-cate_wrap">
             <?php
             $prod_cate_table = G5_TABLE_PREFIX.'shop_category';
             $prod_cate_sql = " select 
