@@ -87,5 +87,11 @@
 } /* End meaia 1024 */
 
 @media screen and (max-width:767px){
-  
+  #hd_top-inner {height: 60px;}
+  #hd_top-inner .hd-logo {width: 130px;}
+  #hd_top-inner .hd-sub {gap: 0 15px;}
+  #hd_top-inner .lang-sel {height: 30px; line-height: 28px; padding-left: 10px; padding-right: 25px; font-size: 12px;}
+  #hd_top-inner .lang-sel:after {width: 10px; height: 6px; right: 10px;}
+  #hd_top-inner .lang-sel .current {font-size: 12px;}
+  #hd_top-inner .lang-sel .option {height: 30px; line-height: 28px;}
 } /* End meaia 767 */
