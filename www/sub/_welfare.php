@@ -87,7 +87,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
               <p class="major-welfare-tit">주요 복리후생</p>
               <p class="major-welfare-txt">성과 및 능력에 따른 파격적인 인센티브 지급(연봉제) 최대 30%, 사택 및 기숙사 운영, 여름/겨울 휴가비 별도 지급, 출퇴근 보조금 지급 및 생일 축하금 지급 등 다양한 복리후생이 있습니다.</p>
             </div>
-            <div class="major-welfare-list_wrap">
+            <div class="match-height major-welfare-list_wrap">
               <div class="major-welfare-list-item">
                 <div class="icon">
                   <img src="/source/img/major-welfare1.png" alt="">

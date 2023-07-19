@@ -17,7 +17,7 @@ select{appearance: none; border-radius: 0; outline: none;}
 select::-ms-expand {display: none;}
 
 /* guide line */
-.container {padding-left: 40px; padding-right: 40px;}
+.container {width: 100%; padding-left: 40px; padding-right: 40px;}
 .wrapper {width: 1500px; max-width: 100%; margin: 0 auto;}
 .wrapper2 {width: 1280px; max-width: 100%; margin: 0 auto;}
 

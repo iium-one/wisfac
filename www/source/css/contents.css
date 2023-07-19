@@ -544,7 +544,7 @@
 .announce-cautn {margin-top: 22px;}
 .announce-cautn-text {font-size: 18px; font-weight: 300; color: #666; line-height: 1.55;}
 
-/* 인사/복지제도 */
+/* > 인사/복지제도 */
 .personnel-position {display: flex; align-items: center; justify-content: center; margin-top: 48px; padding: 100px 0; background: url('/source/img/announce-step-bg.jpg') no-repeat center/cover;}
 .personnel-position_graphic {display: flex; flex-flow: row wrap; justify-content: center; align-items: flex-start; gap: 70px;}
 .personnel-position_graphic-item {display: flex; flex-flow: row wrap; justify-content: center; align-items: center; gap: 40px;}
@@ -655,6 +655,19 @@
   .prod-name {font-size: 40px;}
   .prod-spec-tb th {padding: 10px 15px; font-size: 18px;}
   .prod-spec-tb td {padding: 10px 15px; font-size: 18px; line-height: 1.45;}
+
+  /* 인재채용 */
+  /* > 채용안내 */
+  .announce_contact-text {font-size: 18px;}
+
+  /* > 인사/복지제도 */
+  .personnel-position_graphic {gap: 30px;}
+  .personnel-position_graphic-item {gap: 20px;}
+  .personnel-position_graphic-item .item-inner.name {width: 100px; height: 100px;}
+  .personnel-position_graphic-item .item-inner.name .text {font-size: 18px;}
+  .personnel-position_graphic-item .item-inner.year .text {font-size: 18px;}
+  .personnel-position_graphic-item .item-inner.year:after {top: 3px; left: 33px; width: 9px; height: 15px;}
+  .personnel-position_text {font-size: 16px;}
 } /* End meaia 1600 */
 
 @media screen and (max-width:1290px){
@@ -774,6 +787,39 @@
   .prod-spec_wrap {width: 100%; margin-top: 50px;}
   .prod-detail-add_info-txt {font-size: 16px;}
   .prod-detail-add_info-txt:before {top: 11px}
+
+  /* 인재채용 */
+  /* > 채용안내 */
+  .announce_contact-text {font-size: 16px;}
+
+  .announce-step_graphic {gap: 0 50px;}
+  .announce-step_graphic-item:after {left: -30px;}
+  .announce-step_graphic-item .text {font-size: 18px;}
+  .announce-step_text {font-size: 16px;}
+
+  .announce-department-tit {font-size: 26px;}
+  .announce-department-tb thead th {font-size: 18px;}
+  .announce-department-tb tbody td {font-size: 18px;}
+
+  .announce-cautn-text {font-size: 16px;}
+
+  /* > 인사/복지제도 */
+  .personnel-position_graphic {gap: 30px;}
+  .personnel-position_graphic-item {gap: 15px;}
+  .personnel-position_graphic-item .item-inner.name {width: 80px; height: 80px;}
+  .personnel-position_graphic-item .item-inner.name .text {font-size: 16px; font-weight: 400;}
+  .personnel-position_graphic-item .item-inner.year .text {font-size: 16px; font-weight: 300;}
+  .personnel-position_graphic-item .item-inner.year:after {top: 2px; left: 33px; width: 8px; height: 15px;}
+
+  .major-welfare-tit {font-size: 26px;}
+  .major-welfare-txt {line-height: 1.5;}
+  .major-welfare-list-item {padding: 30px;}
+  .major-welfare-list-item .text {font-size: 16px;}
+
+  .facilities-guide-text1 {margin-bottom: 10px; font-size: 20px;}
+  .facilities-guide-text2 {font-size: 16px;}
+  .facilities-guide-bot {gap: 10px;}
+  .facilities-guide-img-text {font-size: 16px;}
 } /* End meaia 1290 */
 
 @media screen and (max-width:1023px){
@@ -935,6 +981,43 @@
   .form-wrap .email-id {width: 150px;}
   .form-wrap .email-domain {width: calc(100% - 183px);}
   .form-wrap .email-domain .form-input {width: 150px;}
+
+  /* 인재채용 */
+  /* > 채용안내 */
+  .announce_contact-text {font-size: 16px;}
+
+  .announce-step_graphic-item:after {top: 27px;}
+  .announce-step_graphic-item .icon {width: 80px; height: 75px;}
+
+  /* > 인사/복지제도 */
+  .announce-department-top {margin-bottom: 20px;}
+  .announce-department-tit {font-size: 22px;}
+  .announce-department-tb thead th {font-size: 16px;}
+  .announce-department-tb tbody td {font-size: 16px;}
+  .announce-department-tb tbody td.tl {padding-left: 10px;}
+
+  .sb_top-title .apply-more {top: -10px;}
+  .personnel-position {padding: 50px 0;}
+  .personnel-position_graphic-item .item-inner.name {width: 60px; height: 60px;}
+  .personnel-position_graphic-item .item-inner.name .text {font-size: 14px;}
+  .personnel-position_graphic-item .item-inner.year .text {font-size: 14px;}
+  .personnel-position_graphic-item .item-inner.year:after {width: 6px; height: 12px;}
+  .personnel-position_text {font-size: 14px;}
+
+  .major-welfare {margin-top: 50px;}
+  .major-welfare-tit {font-size: 22px;}
+  .major-welfare-txt {font-size: 16px;}
+  .major-welfare-list-item {padding: 20px 10px;}
+  .major-welfare-list-item .num {font-size: 16px;}
+  .major-welfare-list-item .text {margin-top: 5px; font-size: 14px;}
+  .major-welfare-list-item .text br {display: none;}
+
+  .facilities-guide {margin-top: 50px;}
+  .facilities-guide-inf {margin-top: 30px;}
+  .facilities-guide-text1 {font-size: 18px;}
+  .facilities-guide-bot {margin-top: 30px;}
+  .facilities-guide-img-item {width: calc(33.333% - 7px);}
+  .facilities-guide-img-text {font-size: 14px;}
 } /* End meaia 1024 */
 
 @media screen and (max-width:767px){
@@ -1162,4 +1245,50 @@
   .inq-v-text-tit {width: 80px; padding: 5px 7px; font-size: 14px;}
   .inq-v-text-cont {width: calc(100% - 80px); padding: 5px 7px; font-size: 14px;}
   .board-v-cont {padding: 20px 0;}
+
+  /* 인재채용 */
+  /* > 채용안내 */
+  .announce_contact-text {font-size: 14px;}
+
+  .announce-step {padding: 50px 0;}
+  .announce-step_graphic {gap: 0 18px;}
+  .announce-step_graphic-item:after {top: 12px; left: -11px; width: 6px; height: 10px;}
+  .announce-step_graphic-item .icon {width: 40px; height: 37px;}
+  .announce-step_graphic-item .text {margin-top: 15px; font-size: 12px; font-weight: 400;}
+  .announce-step_text {margin-top: 20px; font-size: 12px; line-height: 1.65;}
+
+  .announce-department-tit {margin-bottom: 10px; font-size: 16px;}
+  .apply-more {width: 100px; height: 35px; line-height: 35px; padding: 0 10px; font-size: 12px;}
+  .apply-more .icon {width: 5px; height: 8px;}
+  .announce-department-tb thead th {font-size: 10px;}
+  .announce-department-tb tbody td {font-size: 10px;}
+  .announce-department-tb tbody td.tl {padding-left: 5px;}
+
+  .announce-cautn {margin-top: 10px;}
+  .announce-cautn-text {font-size: 12px;}
+
+  /* > 인사/복지제도 */
+  .sb_top-title .apply-more {position: inherit; top: inherit; right: inherit; margin-top: 20px;}
+
+  .personnel-position {margin-top: 30px;}
+  .personnel-position_graphic {gap: 20px;}
+  .personnel-position_graphic-item {gap: 10px;}
+  .personnel-position_graphic-item .item-inner.name {width: 50px; height: 40px; border: 1px solid #fff; border-radius: 5px;}
+  .personnel-position_graphic-item .item-inner.name .text {font-size: 12px;}
+  .personnel-position_graphic-item .item-inner.year .text {font-size: 12px;}
+  .personnel-position_graphic-item .item-inner.year:after {top: 1px; left: 22px;}
+  .personnel-position_text {margin-top: 20px; line-height: 1.5;}
+
+  .major-welfare-tit {font-size: 18px;}
+  .major-welfare-txt {font-size: 14px;}
+  .major-welfare-list-item {width: 33.333%; padding:  10px 5px;}
+  .major-welfare-list-item .icon {width: 60px; margin: 0 auto 5px;}
+  .major-welfare-list-item .num {font-size: 14px;}
+  .major-welfare-list-item .text {font-size: 12px;}
+  
+  .facilities-guide-text1 {font-size: 16px; line-height: 1.5;}
+  .facilities-guide-text2 {font-size: 14px;}
+  .facilities-guide-bot {display: block;}
+  .facilities-guide-img-item {display: block; width: 100%; margin-top: 30px;}
+  .facilities-guide-img-item:first-child {margin-top: 0;}
 } /* End meaia 767 */
