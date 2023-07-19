@@ -217,11 +217,11 @@
 .textType-a .board-list-item:hover .more-btn {display: block;}
 
 .gallType-a .board-list_wrap {display: flex; flex-flow: row wrap; align-items: flex-start; gap: 53px 13px;}
-.gallType-a .board-list-item {width: 25%;}
+.gallType-a .board-list-item {width: calc(25% - 10px);}
 .gallType-a .gall_box {position: relative;}
 .gallType-a .gall_chk {position: absolute; top: 5px; left: 5px; z-index: 20;}
 .gallType-a .gall_con {}
-.gallType-a .gall_img {display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; height: 230px; border-radius: 10px; font-size: 14px; font-weight: 400; color: #999; background-color: #fafafa;}
+.gallType-a .gall_img {display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; height: 0; padding-bottom: 61.33%; border-radius: 10px; font-size: 14px; font-weight: 400; color: #999; background-color: #fafafa;}
 .gallType-a .gall_img:after {content: ""; display: none; position: absolute; top: 0; left: 0; z-index: 11; width: 100%; height: 100%; border: 2px solid var(--main-color); border-radius: 10px; background: none;}
 .gallType-a .gall_img img {position: absolute; top: 50%; left: 50%; z-index: 10; width: 100%; object-fit: cover; transform: scale(1) translate(-50%, -50%); transition: 0.5s ease-out;}
 .gallType-a .gall_text_href {margin-top: 19px; padding: 0 10px;}
@@ -701,6 +701,9 @@
   .board-v-navi-btn.prev .icon {width: 8px; height: 13px;}
   .board-v-navi-btn.next .icon {width: 8px; height: 13px;}
 
+  .gallType-a .bo_tit {font-size: 16px;}
+  .gallType-a .gall_date {font-size: 14px;}
+
   /* 위스팩소개 */
   /* > 회사소개 */
   .aboutus-slo {margin-top: 48px;}
@@ -835,8 +838,13 @@
   .textType-a .board-list-item .more-btn {font-size: 14px;}
   .textType-a .board-list-item .more-btn img {width: 8px; margin: -2px 0 0 10px;}
 
+  .gallType-a .board-list-item {width: calc(50% - 7px);}
+  .gallType-a .gall_text_href {margin-top: 15px;}
+  .gallType-a .gall_date {margin-top: 7px;}
+
   .board-head .board-v-subj {font-size: 18px;}
   .board-v-date {font-size: 14px;}
+  .board-v-cont {font-size: 16px;}
 
   .form-input {height: 45px; font-size: 14px;}
   .form-sel {height: 45px; line-height: 43px; padding-left: 10px; padding-right: 30px; font-size: 14px;}
@@ -1014,9 +1022,23 @@
   .textType-a .board-list-item .more-btn {font-size: 12px;}
   .textType-a .board-list-item .more-btn img {width: 8px; margin: -2px 0 0 5px;}
 
+  .gallType-a .board-list_wrap {gap: 30px 0;}
+  .gallType-a .board-list-item {width: 100%;}
+  .gallType-a .gall_text_href {margin-top: 10px;}
+  .gallType-a .bo_tit {font-size: 14px;}
+  .gallType-a .gall_date {margin-top: 5px; font-size: 12px;}
+
   .board-head {display: block; padding: 20px 0;}
   .board-head .board-v-subj {display: block; width: 100%; font-size: 16px;}
   .board-head .board-v-date {display: block; width: 100%; margin-top: 10px; font-size: 12px;}
+
+  #bo_v_source .bo_v_source_ct {padding: 10px !important;}
+  #bo_v_file a {font-size: 12px !important;}
+  #bo_v_file li i {font-size: 12px !important;}
+  #bo_v_link a {font-size: 12px !important;}
+  #bo_v_link li i {font-size: 12px !important;}
+
+  .board-v-cont {font-size: 14px;}
 
   .board-v-golist-btn {width: 80px; height: 40px; margin-left: -40px; font-size: 12px;}
   .board-v-navi-btn {width: 80px; height: 40px; padding: 10px; font-size: 12px;}
