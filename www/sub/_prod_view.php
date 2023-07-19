@@ -96,7 +96,7 @@ for($i=1; $i<=4; $i++) {
         <div class="wrapper">
           <div class="sec_ct">
             <?php if($it_roll_img_cnt > 0) { ?>
-            <div class="prod-img_roll">
+            <div class="prod-img_roll <?php echo $it_roll_img_cnt > 1? 'pb':''; ?>">
               <div class="match-height swiper-wrapper prod-img_roll_wrap">
                 <?php 
                 for($i=1; $i<=5; $i++) {

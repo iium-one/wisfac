@@ -266,7 +266,7 @@
 .board-v-navi-btn.prev .icon{display: block; width: 10px; height: 18px; background: url('/source/img/arrow-left-gray.png') no-repeat center/contain;}
 .board-v-navi-btn.next .icon{display: block; width: 10px; height: 18px; background: url('/source/img/arrow-right-gray.png') no-repeat center/contain;}
 
-.form-input {width: 400px; height: 50px; padding: 0 10px 0 20px; border: 1px solid #eee; border-radius: 10px; font-size: 16px; font-weight: 400; color: #666;}
+.form-input {width: 400px; max-width: 100%; height: 50px; padding: 0 10px 0 20px; border: 1px solid #eee; border-radius: 10px; font-size: 16px; font-weight: 400; color: #666;}
 .form-input.full {width: 100%;}
 .form-input.disabled {background: #fafafa;}
 
@@ -475,11 +475,12 @@
 
 .prod-spec {margin-top: 85px; margin-bottom: 85px;}
 .prod-spec .sec_ct {display: flex; flex-flow: row wrap; align-items: flex-start;}
-.prod-img_roll {overflow: hidden; position: relative; width: 50%; padding-bottom: 50px;}
+.prod-img_roll {overflow: hidden; position: relative; width: 50%;}
+.prod-img_roll.pb {padding-bottom: 50px;}
 .prod-img_roll_wrap {}
 .prod-img_roll-slide {padding: 0 40px;}
 .prod-img_roll_imgwrap {text-align: center;}
-.prod-img_roll-text {margin-top: 35px; font-size: 16px; font-weight: 400; color: #666; text-align: center;}
+.prod-img_roll-text {margin-top: 35px; font-size: 16px; font-weight: 400; color: #666; text-align: center; line-height: 1.45;}
 .prod-img_roll .swiper-pagination-progressbar {position: absolute; top: inherit; bottom: 0; left: 50%; z-index: 1; width: 50%; transform: translateX(-50%);}
 .prod-img_roll .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {background: #333;}
 
@@ -497,7 +498,7 @@
 .prod-detail-img-in.bdr0 {border-radius: 10px 10px 0 0;}
 .prod-detail-img-text {padding: 10px; border-radius: 0 0 10px 10px; font-size: 16px; font-weight: 400; color: #fff; text-align: center; background-color: #aaa;}
 
-.prod-detail-add_info {padding-bottom: 70px;}
+.prod-detail-add_info {}
 .prod-detail-add_info-tit {font-size: 24px; font-weight: 400; color: #0f0f0f;}
 .prod-detail-add_info_box {margin-top: 17px;}
 .prod-detail-add_info-txt {position: relative; padding-left: 18px; font-size: 18px; font-weight: 300; color: #333; line-height: 1.55;}
@@ -580,6 +581,9 @@
 
 
 @media screen and (max-width:1600px){
+  /* UI */
+  .dg-slogan-text {font-size: 26px;}
+
   /* Main(메인) */
   .main-visual-item {height: 600px;}
 
@@ -642,6 +646,15 @@
   .greeting-text {font-size: 18px;}
   .greeting-sign-text1 {font-size: 18px;}
   .greeting-sign-text2 {font-size: 24px;}
+
+  /* 제품소개 */
+  /* > 제품 분류 */
+  .cate-def-name {font-size: 40px;}
+
+  /* > 제품 상세 */
+  .prod-name {font-size: 40px;}
+  .prod-spec-tb th {padding: 10px 15px; font-size: 18px;}
+  .prod-spec-tb td {padding: 10px 15px; font-size: 18px; line-height: 1.45;}
 } /* End meaia 1600 */
 
 @media screen and (max-width:1290px){
@@ -650,6 +663,9 @@
 
   .tabs {gap: 10px 20px;}
   .tabs-btn {font-size: 18px;}
+
+  .dg-slogan-text {font-size: 22px;}
+  .dg-slogan-text br {display: none;}
 
   /* Main(메인) */
   .main-visual-btxt {font-size: 60px;}
@@ -679,6 +695,11 @@
   .dgtxt-wrap .dgtxt-list {width: 50% !important;}
   .dgtxt-text1 {font-size: 18px;}
   .dgtxt-text1:before {top: 2px; height: 20px;}
+
+  .board-v-golist-btn {width: 150px; height: 45px; margin-left: -75px; font-size: 16px;}
+  .board-v-navi-btn {width: 130px; height: 45px; font-size: 16px;}
+  .board-v-navi-btn.prev .icon {width: 8px; height: 13px;}
+  .board-v-navi-btn.next .icon {width: 8px; height: 13px;}
 
   /* 위스팩소개 */
   /* > 회사소개 */
@@ -731,6 +752,25 @@
   /* > 오시는 길 */
   .location-comp-img {width: 45%;}
   .location-comp-info {width: 55%; padding-left: 40px;}
+
+  /* 제품소개 */
+  /* > 제품 분류 */
+  .cate-def-name {font-size: 32px;}
+  .cate-def-expl1 {font-size: 16px;}
+  .cate-def-expl2 br {display: none;}
+  .cate-func-wrap {margin: 25px -10px 0;}
+  .cate-prod-name {font-size: 24px;}
+
+  /* > 제품 상세 */
+  .prod-name {font-size: 32px;}
+  .prod-expl1 {font-size: 16px;}
+  .prod-expl1 br {display: none;}
+  .prod-spec .sec_ct {display: block;}
+  .prod-img_roll-text {margin-top: 20px; font-size: 14px;}
+  .prod-img_roll {width: 500px; max-width: 100%; margin: 0 auto;}
+  .prod-spec_wrap {width: 100%; margin-top: 50px;}
+  .prod-detail-add_info-txt {font-size: 16px;}
+  .prod-detail-add_info-txt:before {top: 11px}
 } /* End meaia 1290 */
 
 @media screen and (max-width:1023px){
@@ -738,9 +778,13 @@
   .i-arrow-btn01 {width: 150px; height: 45px; line-height: 45px; padding: 0 15px; font-size: 14px;}
   .i-arrow-btn01 .icon {width: 8px;}
 
+  .submit-btn {min-width: 150px; height: 50px; line-height: 50px; font-size: 16px;}
+
   .tabs-btn {font-size: 16px;}
 
   .tabs.tabs2 .tabs-btn {min-width: 150px; font-size: 16px;}
+
+  .dg-slogan-text {font-size: 20px;}
 
   /* Main(메인) */
   .main-visual-item {height: 450px;}
@@ -781,6 +825,23 @@
   .sb_top-title-text1 {font-size: 26px;}
   .sb_top-title-text1 br {display: none;}
   .sb_top-title-text2 br {display: none;}
+
+  .board-top .write-btn {min-width: 130px; height: 45px; line-height: 45px; font-size: 16px;}
+
+  .textType-a .board-list-item .num {font-size: 16px; flex: 0 0 80px;}
+  .textType-a .board-list-item .subj {padding-left: 20px; font-size: 16px;}
+  .textType-a .board-list-item .date {flex: 0 0 150px;}
+  .textType-a .board-list-item .date-text {font-size: 14px;}
+  .textType-a .board-list-item .more-btn {font-size: 14px;}
+  .textType-a .board-list-item .more-btn img {width: 8px; margin: -2px 0 0 10px;}
+
+  .board-head .board-v-subj {font-size: 18px;}
+  .board-v-date {font-size: 14px;}
+
+  .form-input {height: 45px; font-size: 14px;}
+  .form-sel {height: 45px; line-height: 43px; padding-left: 10px; padding-right: 30px; font-size: 14px;}
+  .form-textar {font-size: 14px;}
+  .form-wrap .add-btn {width: 120px; height: 45px; font-size: 14px;}
 
   /* 위스팩소개 */
   /* > 회사소개 */
@@ -837,6 +898,35 @@
   .location-comp-info_list .subj {font-size: 18px;}
   .location-comp-info_list .expl {font-size: 16px; line-height: 1.5;}
   .location-comp-info-more {margin-top: 20px;}
+
+  /* 제품소개 */
+  /* > 제품 분류 */
+  .cate-prod {background-size: 60% auto;}
+  .cate-def-name {font-size: 26px;}
+  .cate-def-expl2 {font-size: 14px;}
+  .cate-prod-name {font-size: 20px;}
+  .cate-prod-img {height: 200px;}
+
+  /* > 제품 상세 */
+  .prod_detail_back {padding-bottom: 20px; font-size: 16px;}
+  .prod_detail_back img {width: 9px; margin-right: 10px;}
+  .prod-def {padding: 30px 0;}
+  .prod-name {font-size: 26px;}
+  .prod-spec {margin-top: 50px; margin-bottom: 50px;}
+  .prod-spec-tb th {font-size: 16px;}
+  .prod-spec-tb td {font-size: 16px;}
+  .prod-detail {padding-top: 50px;}
+  .prod-detail-tit {font-size: 22px;}
+  .prod-detail-add_info-tit {font-size: 22px;}
+
+  /* 고객지원 */
+  /* > 문의하기 */
+  .inq-v-text-tit {width: 120px; font-size: 14px;}
+  .inq-v-text-cont {width: calc(100% - 120px); font-size: 14px;}
+
+  .form-wrap .email-id {width: 150px;}
+  .form-wrap .email-domain {width: calc(100% - 183px);}
+  .form-wrap .email-domain .form-input {width: 150px;}
 } /* End meaia 1024 */
 
 @media screen and (max-width:767px){
@@ -847,10 +937,14 @@
   .contents {margin-top: 60px; padding-bottom: 100px;}
 
   /* UI */
+  .submit-btn {min-width: 130px; font-size: 14px;}
+
   .tabs {gap: 10px;}
   .tabs-btn {font-size: 14px;}
 
   .tabs.tabs2 .tabs-btn {min-width: 120px; height: 35px; line-height: 35px; font-size: 14px;}
+
+  .dg-slogan-text {font-size: 16px;}
 
   /* Main(메인) */
   .main-visual-item {height: 400px;}
@@ -903,6 +997,49 @@
   .dgtxt-text1 {font-size: 16px;}
   .dgtxt-text1:before {height: 16px;}
   .dgtxt-text2 {font-size: 14px;}
+
+  .board-top .sec_ct {display: block;}
+  .board-top .sch_wrap {height: 40px;}
+  .board-top .sch-select {width: 80px; padding-left: 10px; padding-right: 15px; font-size: 12px;}
+  .board-top .sch-select:after {right: 0; width: 9px; height: 6px;}
+  .board-top .sch-keyword {width: calc(100% - 80px); font-size: 12px;}
+  .board-top .sch-submit {top: 4px; right: 4px; width: 30px; height: 30px; background-size: 12px auto;}
+  .board-top .write-btn {display: block; min-width: auto; width: 100%; height: 35px; line-height: 35px; margin-top: 20px; border-radius: 10px; font-size: 14px;}
+
+  .textType-a .board-list-item {display: block; padding: 15px;}
+  .textType-a .board-list-item .num {display: none;}
+  .textType-a .board-list-item .subj {display: block; width: 100%; padding-left: 0; font-size: 14px;}
+  .textType-a .board-list-item .date {display: block; width: 100%; margin-top: 5px; text-align: left;}
+  .textType-a .board-list-item .date-text {font-size: 12px;}
+  .textType-a .board-list-item .more-btn {font-size: 12px;}
+  .textType-a .board-list-item .more-btn img {width: 8px; margin: -2px 0 0 5px;}
+
+  .board-head {display: block; padding: 20px 0;}
+  .board-head .board-v-subj {display: block; width: 100%; font-size: 16px;}
+  .board-head .board-v-date {display: block; width: 100%; margin-top: 10px; font-size: 12px;}
+
+  .board-v-golist-btn {width: 80px; height: 40px; margin-left: -40px; font-size: 12px;}
+  .board-v-navi-btn {width: 80px; height: 40px; padding: 10px; font-size: 12px;}
+  .board-v-navi-btn.prev .icon {width: 6px; height: 10px;}
+  .board-v-navi-btn.next .icon {width: 6px; height: 10px;}
+
+  .form-input {height: 40px;}
+  .form-sel {height: 40px; line-height: 38px;}
+  .form-wrap .add-btn {width: auto; height: 40px; padding: 0 10px; font-size: 12px;}
+
+  .form-wrap {padding: 0;}
+  .form-wrap .form-box {padding: 0; border-top: 1px solid #ddd;}
+  .form-wrap .form-box:first-child {border-top: 0;}
+  .form-wrap .form-li {display: block;}
+  .form-wrap .form-text {display: block; width: 100%; padding: 10px; background-color: #fafafa;}
+  .form-wrap .form-cont {display: block; width: 100%; padding: 10px;}
+  .form-wrap .email-id {width: 100%; margin-bottom: 5px;}
+  .form-wrap .email-domain {width: calc(100% - 33px);}
+  .form-wrap .email-domain .form-input {width: calc(100% - 110px);}
+  .form-wrap .phone-input-li {width: calc(33.333% - 17px) !important;}
+  .form-wrap .phone-input-li.phone-sym {width: 25px !important;}
+  .form-wrap .address-input-box.btn-box .form-input {width: calc(100% - 75px);}
+  .form-wrap .address-input-box.btn-box .add-btn {width: 70px;}
 
   /* 위스팩소개 */
   /* > 회사소개 */
@@ -967,4 +1104,40 @@
   .location-comp-info-more .icon {width: 6px; height: 10px;}
   .location-comp_box {margin-top: 50px;}
   .location-comp_box:nth-child(even) {padding-top: 50px;}
+
+  /* 제품소개 */
+  /* > 제품 분류 */
+  .cate-prod {padding-bottom: 50px; background-size: 90% auto;}
+  .cate-def-name {font-size: 20px;}
+  .cate-def-expl1 {font-size: 14px;}
+  .cate-func-wrap {margin: 20px -5px 0;}
+  .cate-prod-wrap {margin: -30px -20px;}
+  .cate-prod-wrap .cate-prod-list {display: block !important; width: 100% !important; padding: 30px 20px;}
+  .cate-prod-name {margin-top: 20px; font-size: 18px;}
+  .cate-prod-img {height: 150px;}
+  .cate-prod-more {width: 130px; height: 35px; line-height: 35px;}
+
+  /* > 제품 상세 */
+  .prod_detail_back {padding-bottom: 10px; font-size: 14px;}
+  .prod_detail_back img {width: 7px; margin-right: 5px;}
+  .prod-name {font-size: 20px;}
+  .prod-expl1 {font-size: 14px;}
+  .prod-img_roll-text {margin-top: 10px; font-size: 10px;}
+  .prod-spec {margin-top: 50px; margin-bottom: 50px;}
+  .prod-spec_wrap {margin-top: 30px;}
+  .prod-spec-tb th {padding: 5px 7px; font-size: 12px;}
+  .prod-spec-tb td {padding: 5px 7px; font-size: 12px;}
+  .prod-detail {padding-top: 50px;}
+  .prod-detail-tit {font-size: 18px;}
+  .prod-detail_wrap {gap: 5px;}
+  .prod-detail-img {width: calc(50% - 5px);}
+  .prod-detail-add_info-tit {font-size: 18px;}
+  .prod-detail-add_info-txt {font-size: 14px;}
+  .prod-detail-add_info-txt:before {top: 9px}
+
+  /* 고객지원 */
+  /* > 문의하기 */
+  .inq-v-text-tit {width: 80px; padding: 5px 7px; font-size: 14px;}
+  .inq-v-text-cont {width: calc(100% - 80px); padding: 5px 7px; font-size: 14px;}
+  .board-v-cont {padding: 20px 0;}
 } /* End meaia 767 */
