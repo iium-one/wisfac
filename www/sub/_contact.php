@@ -86,10 +86,13 @@ if(isset($page)){
               ?>
               <div class="board-list-item">
                 <div class="num"><?php echo $row[$i]['num'];?></div>
-                <a href="/sub/contact_view/<?php echo $row['inq_id'];?>?<?php echo $qstr;?>" class="subj"><?php echo $row['inq_subj'];?></a>
+                <button type="button" class="view-btn subj" data-post-id="<?php echo $row['inq_id'];?>" data-post-qstr="<?php echo $qstr;?>"><?php echo $row['inq_subj'];?></button>
+                <!-- <a href="/sub/contact_view/<?php echo $row['inq_id'];?>?<?php echo $qstr;?>" class="subj"><?php echo $row['inq_subj'];?></a> -->
+
                 <div class="date">
                   <span class="date-text"><?php echo date("Y.m.d", strtotime($row['inq_date'])); ?></span>
-                  <a href="/sub/contact_view/<?php echo $row['inq_id'];?>?<?php echo $qstr;?>" class="more-btn">Learn more<img src="/source/img/arrow-right-red.png" alt=""></a>
+                  <button type="button" class="view-btn more-btn" data-post-id="<?php echo $row['inq_id'];?>" data-post-qstr="<?php echo $qstr;?>">Learn more<img src="/source/img/arrow-right-red.png" alt=""></button>
+                  <!-- <a href="/sub/contact_view/<?php echo $row['inq_id'];?>?<?php echo $qstr;?>" class="more-btn">Learn more<img src="/source/img/arrow-right-red.png" alt=""></a> -->
                 </div>
               </div>
               <?php 
@@ -106,3 +109,42 @@ if(isset($page)){
     </section>
   </div>
 </div>
+
+<div class="password_dim">
+  <div class="password_ct">
+    <button type="button" class="password_close"><i class="fa fa-times" aria-hidden="true"></i></button>
+    <p class="password_tit">비밀번호 체크</p>
+    <p class="password_cau">
+      문의글 작성시 입력하신 비밀번호를 입력해주세요.<br/>
+      비밀번호를 모르는 경우 열람할 수 없으며, 관리자에게 문의해주시기 바랍니다.
+    </p>
+
+    <form id="password_fm" action="" method="post">
+      <input type="hidden" name="return_url" value="<?php echo G5_URL.$_SERVER[ "REQUEST_URI" ];?>">
+      <input type="password" name="contact_check_pw" required id="contact_check_pw" class="form-input full">
+      <button type="submit" class="contact_check_pw_submit">열람하기</button>
+    </form>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  const $passwordPop = $(".password_dim");
+  let post_id="";
+  let post_qstr="";
+  let post_link="";
+
+  $(".view-btn").on('click', function(){
+    post_id = $(this).data('post-id');
+    post_qstr = $(this).data('post-qstr');
+    post_link = `/sub/contact_view/${post_id}?${post_qstr}`;
+
+    $("#password_fm").attr('action', post_link);
+    $passwordPop.fadeIn(200);
+  });
+
+  $(".password_close").on('click', function(){
+    $passwordPop.fadeOut(200);
+  });
+});
+</script>

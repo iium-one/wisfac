@@ -205,10 +205,10 @@
 .textType-a .board-list-item:after {content: ""; display: block; position: absolute; top: 0; left: 0; z-index: 1; width: 100%; height: 100%; border: 1px solid #eee; border-radius: 10px;}
 .textType-a .board-list-item .chk_box {position:absolute; top: 10px; left: 10px; z-index: 10; }
 .textType-a .board-list-item .num {flex: 0 0 112px; position: relative; z-index: 2; border-right: 2px solid #eee; text-align: center; font-size: 18px; font-weight: 400; color: #999;}
-.textType-a .board-list-item .subj {flex: 1 0 auto; position: relative; z-index: 2; width: calc(100% - 302px); padding-left: 30px; font-size: 18px; font-weight: 400; color: #0f0f0f;}
+.textType-a .board-list-item .subj {display: block; flex: 1 0 auto; position: relative; z-index: 2; width: calc(100% - 302px); padding-left: 30px; font-size: 18px; font-weight: 400; color: #0f0f0f; border: 0; background: none; text-align: left;}
 .textType-a .board-list-item .date {flex: 0 0 190px; position: relative; z-index: 2; text-align: center;}
 .textType-a .board-list-item .date-text {font-size: 16px; font-weight: 400; color: #999;}
-.textType-a .board-list-item .more-btn {display: none; font-size: 16px; font-weight: 400; color: var(--main-color);}
+.textType-a .board-list-item .more-btn {display: none; width: 100%; font-size: 16px; font-weight: 400; color: var(--main-color); border: 0; background: none; text-align: center;}
 .textType-a .board-list-item .more-btn img {width: 10px; margin: -4px 0 0 10px; vertical-align: middle;}
 .textType-a .board-list-item:hover {box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);}
 .textType-a .board-list-item:hover:after {border: 2px solid var(--main-color);}
@@ -284,6 +284,7 @@
 .form-wrap .form-text {width: 123px; padding-top: 16px; padding-left: 30px;}
 .form-wrap .form-text .required {margin-left: 3px; font-size: 12px; font-weight: 400; color: #f00; vertical-align: middle; background: none !important;}
 .form-wrap .form-cont {width: calc(100% - 123px);}
+.form-wrap .form-cau-text {margin-top: 5px; font-size: 13px; font-weight: 400; color: #f00;}
 
 /*.form-wrap .form-li.bl:after {content: ""; display: block; position: absolute; top: 50%; left: 40px; z-index: 1; height: 50px; margin-top: -25px; border-left: 2px solid #eee;}*/
 .form-wrap .form-li.bl .form-text {padding-left: 80px; width: 174px;}
@@ -513,6 +514,14 @@
 .inq-v-text:first-child {border-top: 0;}
 .inq-v-text-tit {width: 150px; padding: 10px; font-size: 18px; font-weight: 500; color: #333; background-color: #f9f9f9;}
 .inq-v-text-cont {width: calc(100% - 150px); padding: 10px; font-size: 18px; font-weight: 300; color: #666;}
+
+.password_dim {display: none; position: fixed; top: 0; left: 0; z-index: 900; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7);}
+.password_ct {position: relative; top: 50%; left: 50%; z-index: 950; transform: translate(-50%, -50%); width: 500px; height: auto; background-color: #fff; border-radius: 20px; max-width: 90%; max-height: 90%; padding: 50px 20px 30px;}
+.password_tit {font-size: 20px; font-weight: 600; color: #333; text-align: center;}
+.password_cau {margin-top: 10px; font-size: 14px; font-weight: 400; color: #999; text-align: center; line-height: 1.45;}
+#password_fm {margin-top: 30px;}
+.contact_check_pw_submit {display: block; width: 100%; margin-top: 15px; border: 0; border-radius: 10px; background-color: var(--main-color); font-size: 14px; font-weight: 500; color: #fff; height: 50px;}
+.password_close {display: block; width: 30px; height: 30px; position: absolute; top: 10px; right: 10px; z-index: 10; border: 0; border-radius: 10px; background-color: #333; color: #fff;}
 
 /* 인재채용 */
 /* > 채용안내 */
@@ -883,6 +892,9 @@
   .textType-a .board-list-item .date-text {font-size: 14px;}
   .textType-a .board-list-item .more-btn {font-size: 14px;}
   .textType-a .board-list-item .more-btn img {width: 8px; margin: -2px 0 0 10px;}
+  .textType-a .board-list-item:hover .num {color: var(--main-color);}
+  .textType-a .board-list-item:hover .date-text {display: inline-block; color: var(--main-color);}
+  .textType-a .board-list-item:hover .more-btn {display: none;}
 
   .gallType-a .board-list-item {width: calc(50% - 7px);}
   .gallType-a .gall_text_href {margin-top: 15px;}
@@ -1245,6 +1257,14 @@
   .inq-v-text-tit {width: 80px; padding: 5px 7px; font-size: 14px;}
   .inq-v-text-cont {width: calc(100% - 80px); padding: 5px 7px; font-size: 14px;}
   .board-v-cont {padding: 20px 0;}
+
+  .password_dim {}
+  .password_ct {padding-top: 13px;}
+  .password_tit {font-size: 16px;}
+  .password_cau {font-size: 12px;}
+  #password_fm {margin-top: 10px;}
+  .contact_check_pw_submit {height: 40px;}
+  .password_close {width: 20px; height: 20px; border-radius: 5px; font-size: 12px;}
 
   /* 인재채용 */
   /* > 채용안내 */

@@ -5,6 +5,14 @@ $inquery_table = G5_TABLE_PREFIX."inquiry";
 $idx = $params[0];
 $inq = sql_fetch(" select * from {$inquery_table} where inq_id='{$idx}' ");
 
+$inq_return = $_POST['return_url'];
+$inq_check_pw = $_POST['contact_check_pw'];
+$inq_pw = $inq['inq_pw'];
+
+if( !check_password($inq_check_pw, $inq_pw) ) {
+  alert("비밀번호가 일치하지 않습니다.", $inq_return);
+}
+
 $sfl = $_GET['sfl'];
 $stx = $_GET['stx'];
 $page = $_GET['page'];

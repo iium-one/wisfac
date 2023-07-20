@@ -11,6 +11,7 @@ $phone = $_POST['inq_phone1'].'-'.$_POST['inq_phone2'].'-'.$_POST['inq_phone3'];
 $address = '('.$_POST['inq_post_num'].')' . $_POST['inq_add1'] . $_POST['inq_add2'] . $_POST['inq_add3'];
 $subject = $_POST['inq_subj'];
 $content = $_POST['inq_content'];
+$inq_password = get_encrypt_string($_POST['inq_pw']);
 $datetime = date("Y-m-d H:i:s");
 
 $sql_common .= "  inq_name = '{$name}',
@@ -22,6 +23,7 @@ $sql_common .= "  inq_name = '{$name}',
                   inq_add = '{$address}',
                   inq_subj = '{$subject}',
                   inq_content = '{$content}',
+                  inq_pw = '{$inq_password}',
                   inq_date = '".G5_TIME_YMDHIS."'  ";
 
 $sql = "INSERT {$inquery_table} SET {$sql_common}";

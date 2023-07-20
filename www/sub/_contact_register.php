@@ -136,6 +136,15 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                     </div>
                   </div>
                 </div>
+                <div class="form-box">
+                  <div class="form-li">
+                    <div class="form-text">비밀번호<span class="required">*</span></div>
+                    <div class="form-cont">
+                      <input type="password" name="inq_pw" required class="form-input" maxlength="255">
+                      <p class="form-cau-text">※문의글 확인시 사용되오니 메모해두시기 바랍니다.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="inquiry-btn-box">
                 <button type="submit" class="submit-btn">문의하기</button>
