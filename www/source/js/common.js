@@ -13,4 +13,17 @@ const tabAddOnClass = (element, callback) => {
   }
 }
 
-export { tabAddOnClass }
+// [plugin-mCustomScrollbar]
+const mcScrollbar = (target_id) => {
+  let $target = $(`#${target_id}`);
+  if($target.length > 0){
+    $target.mCustomScrollbar({
+      theme:"minimal",
+      setTop: 0,
+      axis: "y",
+      alwaysShowScrollbar: 1
+    });
+  }
+}
+
+export { tabAddOnClass, mcScrollbar }

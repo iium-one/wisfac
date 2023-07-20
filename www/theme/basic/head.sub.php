@@ -105,6 +105,7 @@ add_javascript('<script src="'.G5_JS_URL.'/wrest.js?ver='.G5_JS_VER.'"></script>
 add_javascript('<script src="'.G5_JS_URL.'/placeholders.min.js"></script>', 0);
 /*Plug-in, Library {*/
 add_javascript('<script src="/source/plugin/prefixfree.min.js" defer></script>', 0);
+add_javascript('<script src="/source/plugin/scrollbar/jquery.mCustomScrollbar.js" defer></script>', 0);
 add_javascript('<script src="/source/plugin/jquery.matchHeight.js" defer></script>', 0);
 add_javascript('<script src="/source/plugin/aos/aos.js" defer></script>', 0);
 add_javascript('<script src="/source/plugin/scrollbar/lenis.js" defer></script>', 0);
@@ -120,6 +121,7 @@ add_javascript('<script type="module" src="/source/js/contents.js" defer></scrip
 add_stylesheet('<link rel="stylesheet" href="'.G5_JS_URL.'/font-awesome/css/font-awesome.min.css">', 0);
 /*Plug-in, Library {*/
 add_stylesheet('<link rel="stylesheet" href="/source/plugin/aos/aos.css">', 0);
+add_stylesheet('<link rel="stylesheet" href="/source/plugin/scrollbar/jquery.mCustomScrollbar.min.css">', 0);
 add_stylesheet('<link rel="stylesheet" href="/source/plugin/niceselect/nice-select.css">', 0);
 add_stylesheet('<link rel="stylesheet" href="/source/plugin/swiper/swiper-bundle.min.css">', 0);
 /*} Plug-in, Library */

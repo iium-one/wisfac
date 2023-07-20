@@ -62,6 +62,11 @@ if(defined('_INDEX_')) { // index에서만 실행
             <span></span>
             <span></span>
           </button>
+          <button type="button" class="mobile_menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </div>
@@ -102,6 +107,40 @@ if(defined('_INDEX_')) { // index에서만 실행
   </div>
 </div>
 <!-- } All Menu -->
+
+<!-- Mobile Menu { -->
+<div id="mobile_menu">
+  <div class="container">
+    <div class="wrapper">
+      <div id="mobile_menu_ct" class="mobile_menu_ct">
+        <?php foreach ($sb_menus as $menu) { ?>
+        <nav class="mobile_menu-nav">
+          <ul class="mobile_menu-dep1">
+            <li>
+              <a href="javascript:void(0);"><?php echo $menu['name'];?></a>
+              <ul class="mobile_menu-dep2">
+                <?php foreach ($menu['sb_2menus'] as $menu2) { ?>
+                <li>
+                  <a href="<?php echo $menu2['link'];?>"><?php echo $menu2['name'];?></a>
+                  <ul class="mobile_menu-dep3">
+                    <?php foreach ($menu2['sb_3menus'] as $menu3) { ?>
+                    <li>
+                      <a href="<?php echo $menu3['link'];?>"><?php echo $menu3['name'];?></a>
+                    </li>
+                    <?php } ?>
+                  </ul>
+                </li>
+                <?php } ?>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <?php } ?>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- } AMobilell Menu -->
 
 <!-- 
 main: theme > basic > index.php
