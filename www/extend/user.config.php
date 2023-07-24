@@ -1,6 +1,11 @@
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가;
 
+if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
+  $redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+  header('HTTP/1.1 301 Moved Permanently'); header('Location: ' . $redirect);
+}
+
 if($member['mb_id'] == "iium"){
   $is_admin = "super";
 }
