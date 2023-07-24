@@ -132,7 +132,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                   </div>
                   <div class="middle-category_box">
                     <p class="middle-category-tit">3-2. Cu-haze, Edge/DSOD, Edge/Cu-haze</p>
-                    <p class="middle-category-expl">해당 제품군의 설명을 기재 바랍니다.</p>
+                    <p class="middle-category-expl">CHAC-3000, EDIS-3000, ECIS-3000는 Si Wafer의  Edge 결함과 Surface의 Haze Pattern, COP(Crystal Originated Pits), 헤이즈 패턴을 검출하는 장비입니다.</p>
                     <div class="business-products">
                       <div class="business-products_wrap">
                         <div class="business-product">

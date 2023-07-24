@@ -74,7 +74,11 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
         <div class="main-product_ct">
           <div class="main_sec-top">
             <h2 class="main_sec-title1">WISFAC <span class="highlight">Product</span></h2>
-            <p class="main_sec-expl1">위스팩의 제품에 대한 간략한 설명을 기재해주세요. 위스팩의 제품에 대한 간략한 설명을 기재해주세요. <br/>위스팩의 제품에 대한 간략한 설명을 기재해주세요. 위스팩의 제품에 대한 간략한 설명을 기재해주세요.</p>
+            <p class="main_sec-expl1">
+              전 세계가 주목하고 있는 위스팩의 Wafer 검사 장비들은 자동화 시스템이 잘 갖춰졌으며 <br/>검사/검출의 신기술들이 집약되어 운용의 편리함과 고객의 니즈를 충족하여 전 세계 고객사들로부터 극찬을 받고 있습니다. <br/>
+              지금 위스팩의 검사 장비들을 만나보시고 문의해 주세요.
+              우리는 언제든 여러분을 만날 준비가 되어있습니다.
+            </p>
           </div>
           <div class="match-height prod-cate_wrap">
             <?php
@@ -196,7 +200,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
               <p class="banner-expl">다년간의 기술 개발을 통해 반도체용 웨이퍼 검사 분야에서 순수 국내기술을 기반으로 <br/>첨단 기술 장비들을 개발하여 생산하는 글로벌 전문기업입니다.</p>
             </div>
             <div class="main-banner-prod">
-              <img src="/source/img/main-business-banner-prod.png" alt="">
+              <img src="/source/img/main-company-banner-prod.png" alt="">
             </div>
           </a>
           <a href="/sub/business" class="main-banner_box main-banner-business">
@@ -206,7 +210,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
               <p class="banner-expl">Si Wafer와 SiC Wafer 등 다양한 Wafer 검사를 위해 순수 국내기술로 개발하여 생산하고 있으며 <br/>다양한 하드웨어 제품군과 이와 관련된 다양한 소프트웨어 제품군을 가지고 있습니다.</p>
             </div>
             <div class="main-banner-prod">
-              <img src="/source/img/main-company-banner-prod.png" alt="">
+              <img src="/source/img/main-business-banner-prod.png" alt="">
             </div>
           </a>
         </div>
