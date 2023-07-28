@@ -16,10 +16,10 @@ if(G5_COMMUNITY_USE === false) { // Shop
           <img src="/source/img/logo-gray.svg" alt="WISFAC 로고, 메인으로 이동">
         </a>
         <div class="ft_info-text">
-          <span class="full">[34036] 대전광역시 유성구 테크노2로 314</span>
-          <span>Tel. 042-123-4567</span>
-          <span>Fax. 042-234-5678</span>
-          <span>E-mail.abcd@naver.com</span>
+          <span class="full">[34000] 대전 유성구 국제과학로 17 (신동 659-2)</span>
+          <span>Tel. 042-936-6505</span>
+          <!-- <span>Fax. 042-234-5678</span> -->
+          <!-- <span>E-mail.abcd@naver.com</span> -->
         </div>
       </div>
       <div class="ft_util">
