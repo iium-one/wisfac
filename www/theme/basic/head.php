@@ -51,6 +51,7 @@ if(defined('_INDEX_')) { // index에서만 실행
           </ul>
         </nav>
         <div class="hd-sub">
+          <!-- onchange="window.open(value,'_self');" -->
           <select class="nc-sel lang-sel">
             <option value="kor">KOR</option>
             <option value="eng">ENG</option>
