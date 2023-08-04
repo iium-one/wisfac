@@ -1,9 +1,10 @@
 <?php 
-include_once(G5_INCLUDE_PATH.'/sub_top.php');
+include_once('/home/wespec/www/chi/include/sub_top.php');
 
 $prod_ca_idx = $params[0];
 $prod_cate_table = G5_TABLE_PREFIX.'shop_category';
 $prod_item_table = G5_TABLE_PREFIX.'shop_item';
+$prod_cate_lang = 'CHI';
 $prod_cate = sql_fetch(" 
   select 
     ca_name, 
@@ -14,7 +15,7 @@ $prod_cate = sql_fetch("
     ca_6_subj, 
     ca_7_subj 
   from {$cate_table} 
-  where ca_id = '{$prod_ca_idx}' 
+  where ca_id = '{$prod_ca_idx}'
 ");
 ?>
 
@@ -112,7 +113,7 @@ $prod_cate = sql_fetch("
                 <p class="cate-prod-name">
                   <?php echo $prod_item['it_name']; ?>
                 </p>
-                <a href="/sub/prod_view/<?php echo $prod_item['it_id']; ?>" class="i-arrow-btn01 cate-prod-more">Learn more<span class="icon"></span></a>
+                <a href="/chi/sub/prod_view/<?php echo $prod_item['it_id']; ?>" class="i-arrow-btn01 cate-prod-more">学习更多<span class="icon"></span></a>
               </div>
             </div>
             <?php } ?>

@@ -1,7 +1,7 @@
 <?php 
-include_once(G5_INCLUDE_PATH.'/sub_top.php');
+include_once('/home/wespec/www/chi/include/sub_top.php');
 
-$inquery_table = G5_TABLE_PREFIX."inquiry";
+$inquery_table = G5_TABLE_PREFIX."inquiry_chi";
 
 $sfl = $_GET['sfl'];
 $stx = $_GET['stx'];
@@ -56,16 +56,16 @@ if(isset($page)){
             <form id="fm-sch" method="get">
               <div class="sch_wrap">
                 <select name="sfl" id="sfl" class="nc-sel sch-select">
-                  <option value="inq_subj" selected>제목</option>
+                  <option value="inq_subj" selected>题目</option>
                 </select>
-                <input type="text" name="stx" id="stx" class="sch-keyword" value="<?php echo $stx;?>" required placeholder="검색어를 입력하세요.">
+                <input type="text" name="stx" id="stx" class="sch-keyword" value="<?php echo $stx;?>" required placeholder="请输入搜索语。">
                 <button type="submit" class="sch-submit" title="검색하기"></button>
               </div>
               <?php if( isset($sfl) || isset($stx) ){ ?>
-              <a href="/sub/contact" class="return-btn" title="전체검색"></a>
+              <a href="/chi/sub/contact" class="return-btn" title="전체검색"></a>
               <?php } ?>
             </form>
-            <a href="/sub/contact_register" class="write-btn">문의하기</a>
+            <a href="/chi/sub/contact_register" class="write-btn">咨询</a>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@ if(isset($page)){
 
                 <div class="date">
                   <span class="date-text"><?php echo date("Y.m.d", strtotime($row['inq_date'])); ?></span>
-                  <button type="button" class="view-btn more-btn" data-post-id="<?php echo $row['inq_id'];?>" data-post-qstr="<?php echo $qstr;?>">Learn more<img src="/source/img/arrow-right-red.png" alt=""></button>
+                  <button type="button" class="view-btn more-btn" data-post-id="<?php echo $row['inq_id'];?>" data-post-qstr="<?php echo $qstr;?>">学习更多<img src="/source/img/arrow-right-red.png" alt=""></button>
                   <!-- <a href="/sub/contact_view/<?php echo $row['inq_id'];?>?<?php echo $qstr;?>" class="more-btn">Learn more<img src="/source/img/arrow-right-red.png" alt=""></a> -->
                 </div>
               </div>
@@ -102,7 +102,7 @@ if(isset($page)){
               }
               ?>
             </div>
-            <?php echo get_paging(5, $page, $total_page, '/sub/contact?'.$qstr.'&amp;page='); ?>
+            <?php echo get_paging(5, $page, $total_page, '/chi/sub/contact?'.$qstr.'&amp;page='); ?>
           </div>
         </div>
       </div>
@@ -113,16 +113,16 @@ if(isset($page)){
 <div class="password_dim">
   <div class="password_ct">
     <button type="button" class="password_close"><i class="fa fa-times" aria-hidden="true"></i></button>
-    <p class="password_tit">비밀번호 체크</p>
+    <p class="password_tit">输入密码</p>
     <p class="password_cau">
-      문의글 작성시 입력하신 비밀번호를 입력해주세요.<br/>
-      비밀번호를 모르는 경우 열람할 수 없으며, 관리자에게 문의해주시기 바랍니다.
+      填写咨询文章时，请输入您的密码。<br>
+      不知道密码时不能阅览,请咨询管理者。
     </p>
 
     <form id="password_fm" action="" method="post">
       <input type="hidden" name="return_url" value="<?php echo G5_URL.$_SERVER[ "REQUEST_URI" ];?>">
       <input type="password" name="contact_check_pw" required id="contact_check_pw" class="form-input full">
-      <button type="submit" class="contact_check_pw_submit">열람하기</button>
+      <button type="submit" class="contact_check_pw_submit">阅览</button>
     </form>
   </div>
 </div>
@@ -137,7 +137,7 @@ $(document).ready(function(){
   $(".view-btn").on('click', function(){
     post_id = $(this).data('post-id');
     post_qstr = $(this).data('post-qstr');
-    post_link = `/sub/contact_view/${post_id}?${post_qstr}`;
+    post_link = `/chi/sub/contact_view/${post_id}?${post_qstr}`;
 
     $("#password_fm").attr('action', post_link);
     $passwordPop.fadeIn(200);

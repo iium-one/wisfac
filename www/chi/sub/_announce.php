@@ -1,5 +1,5 @@
 <?php 
-include_once(G5_INCLUDE_PATH.'/sub_top.php');
+include_once('/home/wespec/www/chi/include/sub_top.php');
 ?>
 
 <div id="announce" class="contents">
@@ -12,10 +12,10 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
         <div class="wrapper">
           <div class="sec_ct">
             <div class="sb_top-title">
-              <p class="sb_top-title-text1"><b>자유로운 소통과 능동적인 태도로</b> <br/><span class="highlight"><b>함께할 인재</b></span><b>를 기다립니다.</b></p>
-              <p class="sb_top-title-text2">위스팩에서는 능동적인 행동양식과 바른 인간성, 관련분야의 기본지식을 겸비한 우수한 신입사원 또는 관련분야의 전문지식과 경험을 겸비하여 책임감을 가지고 기업을 이끌어갈 고급인재인 경력사원을 채용하고자 합니다.모집기간은 수시모집을 원칙으로 하고 있으나 현재 모집중인 채용공고를 통하여 입사지원을 하실 수 있습니다. 세계 최고의 기술과 젊은 인재가 중심인 위스팩과 함께 꿈을 키워 나가세요. 자세한 사항은 안내전화 또는 이메일을 통해 문의바랍니다.</p>
+              <p class="sb_top-title-text1"><b>我们等待以自由沟通和</b> <br/><span class="highlight"><b>主动态度共同合作的人才。</b></span></p>
+              <p class="sb_top-title-text2">WISFAC将聘用兼备能动的行动方式和正直的人性、相关领域基本知识的优秀新职员或兼备相关领域的专业知识和经验，带着责任感引领企业的高级人才经历职员。 招聘期间以随时招生为原则，但可以通过目前正在招募的招聘公告申请入职。 请与以世界最高技术和年轻人才为中心的WISFAC一起培养梦想吧。 详细事项请通过咨询电话或电子邮件咨询。</p>
               <div class="announce_contact">
-                <p class="announce_contact-text">Tel. 042-936-6500(내선0번)</p>
+                <p class="announce_contact-text">电话：042-936-6500(内线 0 )</p>
                 <p class="announce_contact-text">E-mail. (추후전달예정)</p>
               </div>
               <!-- <a href="" class="i-arrow-btn01 apply-more">입사지원하기<span class="icon"></span></a> -->
@@ -35,34 +35,34 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 <div class="icon">
                   <img src="/source/img/announce-step-graphic1.png" alt="">
                 </div>
-                <div class="text">입사지원</div>
+                <div class="text">入职申请</div>
               </div>
               <div class="announce-step_graphic-item">
                 <div class="icon">
                   <img src="/source/img/announce-step-graphic2.png" alt="">
                 </div>
-                <div class="text">서류전형</div>
+                <div class="text">资格审查</div>
               </div>
               <div class="announce-step_graphic-item">
                 <div class="icon">
                   <img src="/source/img/announce-step-graphic3.png" alt="">
                 </div>
-                <div class="text">1차면접</div>
+                <div class="text">一次面试</div>
               </div>
               <div class="announce-step_graphic-item">
                 <div class="icon">
                   <img src="/source/img/announce-step-graphic4.png" alt="">
                 </div>
-                <div class="text">2차면접</div>
+                <div class="text">二次面试</div>
               </div>
               <div class="announce-step_graphic-item">
                 <div class="icon">
                   <img src="/source/img/announce-step-graphic5.png" alt="">
                 </div>
-                <div class="text">최종면접</div>
+                <div class="text">最终面试</div>
               </div>
             </div>
-            <div class="announce-step_text">서류전형 합격자에 한하여 1차 면접을 실시합니다. 최종합격자는 개인별 유선 연락을 드립니다.</div>
+            <div class="announce-step_text">仅限于资料审核合格者进行第一次面试。最终合格者按个人电话联系。</div>
           </div>
         </div>
       </div>
@@ -74,67 +74,67 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
         <div class="wrapper">
           <div class="sec_ct">
             <div class="announce-department-top">
-              <p class="announce-department-tit">위스팩의 각 분야별 채용 내용을 확인하세요.</p>
-              <a href="" class="i-arrow-btn01 apply-more">입사지원하기<span class="icon"></span></a>
+              <p class="announce-department-tit">请确认WISFAC 在各领域的招聘内容。</p>
+              <a href="" class="i-arrow-btn01 apply-more">应聘<span class="icon"></span></a>
             </div>
             <div class="announce-department-tb_wrap">
               <table class="announce-department-tb">
                 <thead>
                   <tr>
-                    <th>지원분야</th>
-                    <th>지원부서</th>
-                    <th>직무</th>
-                    <th>제출서류</th>
+                    <th>支援领域</th>
+                    <th>支援部门</th>
+                    <th>职务</th>
+                    <th>提交文件</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td rowspan="2">기술연구소</td>
-                    <td class="bl">하드웨어</td>
+                    <td rowspan="2">技术研究所</td>
+                    <td class="bl">硬件</td>
                     <td class="bl tl">
-                      아날로그 및 디지털 회로설계<br/>
-                      DSP/FPGA 설계<br/>
-                      로봇 및 인터페이스 응용
+                      模拟和数字电路设计<br/>
+                      DSP/FPGA设计<br/>
+                      机器人与接口应用
                     </td>
                     <td rowspan="5" class="bl">
-                      입사지원서<br/>
-                      자기소개서<br/>
-                      졸업증명서(대학/대학원)<br/>
-                      성적증명서(대학/대학원)<br/>
-                      건강진단서<br/>
-                      기타(논문 및 수행 프로젝트)
+                      入职申请书<br/>
+                      自我介绍书<br/>
+                      毕业证书（大学/研究生院）<br/>
+                      成绩证明书（大学/研究生院）<br/>
+                      健康诊断书<br/>
+                      其他（论文及随行项目）
                     </td>
                   </tr>
                   <tr>
-                    <td class="bl">소프트웨어</td>
+                    <td class="bl">软件</td>
                     <td class="bl tl">
-                      윈도우 디바이스 드라이버 개발<br/>
+                      开发Windows设备驱动程序<br/>
                       Visual C++ / Borland C++ / Builder<br/>
-                      Visual Basic 등 응용소프트웨어 개발
+                      开发Visual Basic等应用软件
                     </td>
                   </tr>
                   <tr>
-                    <td>경영기획본부</td>
-                    <td class="bl">기획/재무</td>
-                    <td class="bl tl">회계 및 총무</td>
+                    <td>经营企划本部</td>
+                    <td class="bl">企划/财务</td>
+                    <td class="bl tl">会计及总务</td>
                   </tr>
                   <tr>
-                    <td rowspan="2">영업부</td>
-                    <td class="bl">국내영업</td>
-                    <td class="bl tl">국내외 기술 영업</td>
+                    <td rowspan="2">营业部</td>
+                    <td class="bl">国内营业</td>
+                    <td class="bl tl">国内外技术营业</td>
                   </tr>
                   <tr>
-                    <td class="bl">해외영업</td>
-                    <td class="bl tl">해외 기술 영업 및 마케팅</td>
+                    <td class="bl">海外营业</td>
+                    <td class="bl tl">海外技术营销</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <div class="announce-cautn">
-              <p class="announce-cautn-text">- 병역필 혹은 면제자로서 해외여행에 결격사유가 없는자</p>
-              <p class="announce-cautn-text">- 전문연구요원 가능</p>
-              <p class="announce-cautn-text">- 각 모집 분야별 자격요건을 충족하는자</p>
-              <p class="announce-cautn-text">- 외국어 능통자 우대(관련서류첨부)</p>
+              <p class="announce-cautn-text">- 作为服完兵役或免除兵役者，没有海外旅行不合格理由的人</p>
+              <p class="announce-cautn-text">- 专业研究人员可</p>
+              <p class="announce-cautn-text">- 符合各招生领域资格条件者</p>
+              <p class="announce-cautn-text">- 外语精通者优待（附加相关文件）</p>
             </div>
           </div>
         </div>

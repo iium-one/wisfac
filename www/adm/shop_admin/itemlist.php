@@ -126,11 +126,11 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
         <select class="comcose_acs" size="<?php echo $he_size ?>" name="ca_id1" onChange="comcose_acs(this)">
             <option style="color:#333;font-weight:bold;padding-bottom:10px;margin-bottom:10px;border-bottom:solid 1px #bbb;" value="" >1차 카테고리</option>
             <?php
-            $sql_ca_id1="SELECT ca_id, ca_name FROM {$g5['g5_shop_category_table']} where length(ca_id) = '2' order by ca_id ";
+            $sql_ca_id1="SELECT ca_id, ca_name, ca_lang FROM {$g5['g5_shop_category_table']} where length(ca_id) = '2' order by ca_id ";
             $result_ca_id1 = sql_query($sql_ca_id1);
             for($i=0; $row_ca_id1 = sql_fetch_array($result_ca_id1); $i++){
             ?>
-            <option value=<?php echo $row_ca_id1['ca_id']; ?> <?php if($row_ca_id1['ca_id'] == substr($sca, 0, 2)) echo 'selected'?>><?php echo $row_ca_id1['ca_name']; ?></option>
+            <option value=<?php echo $row_ca_id1['ca_id']; ?> <?php if($row_ca_id1['ca_id'] == substr($stx, 0, 2)) echo 'selected'?>>[<?php echo $row_ca_id1['ca_lang']; ?>]<?php echo $row_ca_id1['ca_name']; ?></option>
             <?php } ?>
         </select>
     </div>
@@ -237,7 +237,7 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
         </td>
         <td rowspan="2" class="td_img"><?php echo get_it_image($row['it_id'], 50, 50); ?></td>
         <td class="td_sort" style="text-align: left;">
-          <?php echo $row['ca_name'];?>
+          [<?php echo $row['ca_lang'];?>]<?php echo $row['ca_name'];?>
         </td>
         <td rowspan="2" class="td_num">
           <?php echo $row['it_order']; ?>

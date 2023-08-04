@@ -83,6 +83,7 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
           <div class="match-height prod-cate_wrap">
             <?php
             $prod_cate_table = G5_TABLE_PREFIX.'shop_category';
+            $prod_cate_where = 'ca_lang = "KOR"';
             $prod_cate_sql = " select 
                                 ca_id,
                                 ca_name,
@@ -90,7 +91,8 @@ include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
                                 ca_img1,
                                 ca_img2,
                                 ca_img3
-                               from {$cate_table} 
+                                from {$cate_table}
+                                where {$prod_cate_where}
                               ";
             $prod_cate_result = sql_query($prod_cate_sql);
             for($i=0; $prod_cate=sql_fetch_array($prod_cate_result); $i++){

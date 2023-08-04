@@ -84,11 +84,11 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
         <select class="comcose_acs" size="<?php echo $he_size ?>" name="ca_id1" onChange="comcose_acs(this)">
             <option style="color:#333;font-weight:bold;padding-bottom:10px;margin-bottom:10px;border-bottom:solid 1px #bbb;" value="" >1차 카테고리</option>
             <?php
-            $sql_ca_id1="SELECT ca_id, ca_name FROM {$g5['g5_shop_category_table']} where length(ca_id) = '2' order by ca_id ";
+            $sql_ca_id1="SELECT ca_id, ca_name, ca_lang FROM {$g5['g5_shop_category_table']} where length(ca_id) = '2' order by ca_id ";
             $result_ca_id1 = sql_query($sql_ca_id1);
             for($i=0; $row_ca_id1 = sql_fetch_array($result_ca_id1); $i++){
             ?>
-            <option value=<?php echo $row_ca_id1['ca_id']; ?> <?php if($row_ca_id1['ca_id'] == substr($stx, 0, 2)) echo 'selected'?>><?php echo $row_ca_id1['ca_name']; ?></option>
+            <option value=<?php echo $row_ca_id1['ca_id']; ?> <?php if($row_ca_id1['ca_id'] == substr($stx, 0, 2)) echo 'selected'?>>[<?php echo $row_ca_id1['ca_lang']; ?>]<?php echo $row_ca_id1['ca_name']; ?></option>
             <?php } ?>
         </select>
     </div>
@@ -158,6 +158,7 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
     <tr>
         <th scope="col" ><?php echo subject_sort_link("ca_id"); ?>분류코드</a></th>
         <th scope="col" id="sct_cate"><?php echo subject_sort_link("ca_name"); ?>분류명</a></th>
+        <th scope="col" id="sct_lang">언어</th>
         <th scope="col" id="sct_amount">상품수</th>
         <!--
         <th scope="col" id="sct_hpcert">본인인증</th>
@@ -243,6 +244,7 @@ $listall = '<a href="'.$_SERVER['SCRIPT_NAME'].'" class="ov_listall">전체목�
             <a href="/sub/prod_list/<?php echo $row['ca_id']; ?>" target="_blank"><?php echo $row['ca_id']; ?></a>
         </td>
         <td headers="sct_cate" class="sct_name<?php echo $level; ?>"><?php echo get_text($row['ca_name']); ?></td>
+        <td headers="sct_lang"><?php echo get_text($row['ca_lang']); ?></td>
         <td headers="sct_amount" class="td_amount"><a href="./itemlist.php?sca=<?php echo $row['ca_id']; ?>"><?php echo $row1['cnt']; ?></a></td>
         <td class="td_mng td_mng_s">
             <?php echo $s_vie; ?>

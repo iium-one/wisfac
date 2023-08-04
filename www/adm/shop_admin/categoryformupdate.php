@@ -134,7 +134,8 @@ if( $ca_skin && ! is_include_path_check($ca_skin) ){
 $ca_5_subj_arr = implode("||",$ca_5_subj);
 $ca_6_subj_arr = implode("||",$ca_6_subj);
 
-$sql_common = " ca_order                = '$ca_order',
+$sql_common = " ca_lang                 = '$ca_lang',
+                ca_order                = '$ca_order',
                 ca_skin_dir             = '$ca_skin_dir',
                 ca_mobile_skin_dir      = '$ca_mobile_skin_dir',
                 ca_skin                 = '$ca_skin',

@@ -1,5 +1,5 @@
 <?php 
-include_once(G5_INCLUDE_PATH.'/sub_top.php');
+include_once('/home/wespec/www/chi/include/sub_top.php');
 ?>
 
 <div id="welfare" class="contents">
@@ -12,8 +12,8 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
         <div class="wrapper">
           <div class="sec_ct">
             <div class="sb_top-title">
-              <p class="sb_top-title-text1"><b>위스팩의 </b><span class="highlight"><b>인사/복지 제도</b></span><b>를 <br/>확인하세요.</b></p>
-              <a href="" class="i-arrow-btn01 apply-more">입사지원하기<span class="icon"></span></a>
+              <p class="sb_top-title-text1">请确认WISFAC<span class="highlight">的人事/福利制度。</span></p>
+              <a href="" class="i-arrow-btn01 apply-more">应聘<span class="icon"></span></a>
             </div>
           </div>
         </div>
@@ -25,54 +25,54 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
       <div class="container">
         <div class="wrapper">
           <div class="sec_ct personnel-position_ct">
-            <div class="personnel-position_graphic">
+            <div class="personnel-position_graphic chi">
               <div class="personnel-position_graphic-item">
                 <div class="item-inner name">
-                  <div class="text">사원</div>
+                  <div class="text">公司职员</div>
                 </div>
                 <div class="item-inner year">
-                  <div class="text">5년</div>
+                  <div class="text">5年</div>
                 </div>
               </div>
               <div class="personnel-position_graphic-item">
                 <div class="item-inner name">
-                  <div class="text">대리</div>
+                  <div class="text">代理</div>
                 </div>
                 <div class="item-inner year">
-                  <div class="text">4년</div>
+                  <div class="text">4年</div>
                 </div>
               </div>
               <div class="personnel-position_graphic-item">
                 <div class="item-inner name">
-                  <div class="text">과장/팀장</div>
+                  <div class="text">科长<br>/组长</div>
                 </div>
                 <div class="item-inner year">
-                  <div class="text">4년</div>
+                  <div class="text">4年</div>
                 </div>
               </div>
               <div class="personnel-position_graphic-item">
                 <div class="item-inner name">
-                  <div class="text">차장</div>
+                  <div class="text">次长</div>
                 </div>
                 <div class="item-inner year">
-                  <div class="text">4년</div>
+                  <div class="text">4年</div>
                 </div>
               </div>
               <div class="personnel-position_graphic-item">
                 <div class="item-inner name">
-                  <div class="text">부장</div>
+                  <div class="text">部长</div>
                 </div>
                 <div class="item-inner year">
-                  <div class="text">3년</div>
+                  <div class="text">3年</div>
                 </div>
               </div>
               <div class="personnel-position_graphic-item">
                 <div class="item-inner name">
-                  <div class="text">임원</div>
+                  <div class="text">高级管理人员</div>
                 </div>
               </div>
             </div>
-            <div class="personnel-position_text">해당년도 근무성적이 우수한자는 특진 대상이며, 업무 및 직급에 맞는 권한을 부여합니다.</div>
+            <div class="personnel-position_text">当年工作成绩优秀者，实行特聘，并赋予与其业务和岗位相适应的权力。</div>
           </div>
         </div>
       </div>
@@ -84,8 +84,8 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
         <div class="wrapper">
           <div class="sec_ct">
             <div class="major-welfare-top">
-              <p class="major-welfare-tit">주요 복리후생</p>
-              <p class="major-welfare-txt">성과 및 능력에 따른 파격적인 인센티브 지급(연봉제) 최대 30%, 사택 및 기숙사 운영, 여름/겨울 휴가비 별도 지급, 출퇴근 보조금 지급 및 생일 축하금 지급 등 다양한 복리후생이 있습니다.</p>
+              <p class="major-welfare-tit">主要福利</p>
+              <p class="major-welfare-txt">根据成果及能力,破格支付奖励(年薪制)最多30%,有运营住宅及宿舍、单独支付夏/冬休假费、上下班补助金及生日祝贺金等多种福利。</p>
             </div>
             <div class="match-height major-welfare-list_wrap">
               <div class="major-welfare-list-item">
@@ -93,84 +93,84 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                   <img src="/source/img/major-welfare1.png" alt="">
                 </div>
                 <div class="num">01.</div>
-                <div class="text">4대보험 및 퇴직연금보험 의무가입, <br/>내일채움 가입</div>
+                <div class="text">义务加入四大保险及退休年金保险，<br/>运营职员金融支援制度</div>
               </div>
               <div class="major-welfare-list-item">
                 <div class="icon">
                   <img src="/source/img/major-welfare2.png" alt="">
                 </div>
                 <div class="num">02.</div>
-                <div class="text">주택자금 및 생활안정자금 <br/>대출 지원</div>
+                <div class="text">住宅资金及生活稳定资金贷款支援</div>
               </div>
               <div class="major-welfare-list-item">
                 <div class="icon">
                   <img src="/source/img/major-welfare3.png" alt="">
                 </div>
                 <div class="num">03.</div>
-                <div class="text">장기근속 포상금 지급 및 <br/>포상휴가 실시(3년 이상 근속자)</div>
+                <div class="text">长期工作奖金支付及实施奖励休假 <br>(3年以上工作者)。</div>
               </div>
               <div class="major-welfare-list-item">
                 <div class="icon">
                   <img src="/source/img/major-welfare4.png" alt="">
                 </div>
                 <div class="num">04.</div>
-                <div class="text">근속장려금 지급 <br/>(3년 이상 근속자)</div>
+                <div class="text">发放工龄奖金 <br>（连续工作3年以上者）</div>
               </div>
               <div class="major-welfare-list-item">
                 <div class="icon">
                   <img src="/source/img/major-welfare5.png" alt="">
                 </div>
                 <div class="num">05.</div>
-                <div class="text">각종 경조사비 지원 및 <br/>경조휴가 실시</div>
+                <div class="text">支援各种红白喜事费用及<br>实施红白喜事休假</div>
               </div>
               <div class="major-welfare-list-item">
                 <div class="icon">
                   <img src="/source/img/major-welfare6.png" alt="">
                 </div>
                 <div class="num">06.</div>
-                <div class="text">설/추석 명절비 및 <br/>동/하계 휴가비 지원</div>
+                <div class="text">支援春节/中秋节及冬季<br>/夏季休假费</div>
               </div>
               <div class="major-welfare-list-item">
                 <div class="icon">
                   <img src="/source/img/major-welfare7.png" alt="">
                 </div>
                 <div class="num">07.</div>
-                <div class="text">생일 축하금 <br/>지급</div>
+                <div class="text">发放生日祝贺金</div>
               </div>
               <div class="major-welfare-list-item">
                 <div class="icon">
                   <img src="/source/img/major-welfare8.png" alt="">
                 </div>
                 <div class="num">08.</div>
-                <div class="text">중식대 추가지원 및 <br/>환경관리비(미화) 지급</div>
+                <div class="text">追加支援中餐台及<br>支付环境管理费（美化）</div>
               </div>
               <div class="major-welfare-list-item">
                 <div class="icon">
                   <img src="/source/img/major-welfare9.png" alt="">
                 </div>
                 <div class="num">09.</div>
-                <div class="text">회사 보유 콘도/리조트 이용, <br/>동호회 활동 지원</div>
+                <div class="text">利用公司拥有的公寓/度假村，<br>支援同好会活动</div>
               </div>
               <div class="major-welfare-list-item">
                 <div class="icon">
                   <img src="/source/img/major-welfare10.png" alt="">
                 </div>
                 <div class="num">10.</div>
-                <div class="text">휴게실, 샤워실, 회의실, <br/>카페테리아, 체력단련실 운영</div>
+                <div class="text">运营休息室、浴室、会议室、<br>自助餐厅、体力锻炼室</div>
               </div>
               <div class="major-welfare-list-item">
                 <div class="icon">
                   <img src="/source/img/major-welfare11.png" alt="">
                 </div>
                 <div class="num">11.</div>
-                <div class="text">기숙사, 사택운영 <br/>(대전 및 세종지역)</div>
+                <div class="text">宿舍、私宅运营<br>（大田及世宗地区）</div>
               </div>
               <div class="major-welfare-list-item">
                 <div class="icon">
                   <img src="/source/img/major-welfare12.png" alt="">
                 </div>
                 <div class="num">12.</div>
-                <div class="text">출퇴근 보조금 <br/>지급</div>
+                <div class="text">发放上下班补贴金</div>
               </div>
             </div>
           </div>
@@ -185,14 +185,14 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
           <div class="sec_ct">
             <div class="facilities-guide-top">
               <div class="facilities-guide-inf">
-                <p class="facilities-guide-text1">사택 및 기숙사 제도 / 주택, 가계자금 대출지원 운영</p>
-                <p class="facilities-guide-text2">• 임직원의 주거문제 해결</p>
-                <p class="facilities-guide-text2">• 위치 : 대전 및 세종 (대전 도심에 위치한 20평대 빌라 / 세종 호수공원에 위치한 30평대 APT)</p>
+                <p class="facilities-guide-text1">私宅及宿舍制度/住宅、家庭资金贷款支援运营</p>
+                <p class="facilities-guide-text2">• 解决职员的居住问题</p>
+                <p class="facilities-guide-text2">• 位置:大田及世宗（位于大田市中心的20坪别墅/位于世宗湖水公园的30坪APT）</p>
               </div>
               <div class="facilities-guide-inf">
-                <p class="facilities-guide-text1">차량제공 및 출퇴근 보조금 지원  / 체력단련실, 실내골프,탁구장</p>
-                <p class="facilities-guide-text2">• 실적, 직급에 따라 법인차량 제공  /  • 출퇴근 보조금 월20만원 지급  /  • 출장용 차량 및 여비 지원</p>
-                <p class="facilities-guide-text2">• 체력단련실 이용, 실내골프, 탁구장 이용, 임직원 전용식당</p>
+                <p class="facilities-guide-text1">提供车辆及上下班补贴 / 体力锻炼室、室内高尔夫、乒乓球馆</p>
+                <p class="facilities-guide-text2">• 根据业绩、级别提供法人车辆 / • 每月支付20万韩元上下班补贴 /• 出差用车辆及旅费支援</p>
+                <p class="facilities-guide-text2">• 利用体力锻炼室，室内高尔夫，乒乓球馆，职员专用餐厅</p>
               </div>
             </div>
             <div class="facilities-guide-bot">
@@ -200,19 +200,19 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 <div class="facilities-guide-img">
                   <img src="/source/img/facilities-guide-img1.jpg" alt="">
                 </div>
-                <p class="facilities-guide-img-text">[전용주차장/법인차량]</p>
+                <p class="facilities-guide-img-text">[专用停车场/法人车辆]</p>
               </div>
               <div class="facilities-guide-img-item">
                 <div class="facilities-guide-img">
                   <img src="/source/img/facilities-guide-img2.jpg" alt="">
                 </div>
-                <p class="facilities-guide-img-text">[세종시 사택 전경]</p>
+                <p class="facilities-guide-img-text">[世宗市住宅全景]</p>
               </div>
               <div class="facilities-guide-img-item">
                 <div class="facilities-guide-img">
                   <img src="/source/img/facilities-guide-img3.jpg" alt="">
                 </div>
-                <p class="facilities-guide-img-text">[체력단련실/실내골프,탁구]</p>
+                <p class="facilities-guide-img-text">[体力锻炼室/室内高尔夫，乒乓球]</p>
               </div>
             </div>
           </div>
@@ -227,8 +227,8 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
           <div class="sec_ct dg-slogan_ct">
             <div class="double-dot-open"><img src="/source/img/double-dot-open.png" alt=""></div>
             <p class="dg-slogan-text">
-              5년, 10년 뒤에 자신의 모습을 그려보고 <br/>
-              <b>목표를 세우고 달성하기 위해 끊임없이 달려가는 직원</b>이 되었으면 좋겠습니다.
+              希望5年、10年后能成为描绘自己的样子、<br>
+              为了制定目标并实现而不断努力的职员。
             </p>
             <div class="double-dot-close"><img src="/source/img/double-dot-close.png" alt=""></div>
           </div>

@@ -3,7 +3,7 @@ include_once $_SERVER["DOCUMENT_ROOT"] . '/common.php';
 if (!defined('_INDEX_')) define('_INDEX_', true); //index 상수 설정
 
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
- include_once(G5_THEME_PATH.'/head.php'); //header 파일 연결
+ include_once(G5_THEME_PATH.'/head_chi.php'); //header 파일 연결
 ?>
 
 <!-- Contents { -->
@@ -17,7 +17,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <div class="container main-visual_ct">
               <div class="wrapper">
                 <div class="main-visual_ct_inner">
-                  <p class="main-visual-stxt">미래 세계를 위한 첨단 기술을 개발하는 기업</p>
+                  <p class="main-visual-stxt">一家开发面向未来世界的尖端技术的公司</p>
                   <p class="main-visual-btxt"><span class="highlight">Create advanced technology</span> <br/>for the future world</p>
                 </div>
               </div>
@@ -27,7 +27,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <div class="container main-visual_ct">
               <div class="wrapper">
                 <div class="main-visual_ct_inner">
-                  <p class="main-visual-stxt">정확도와 정밀성의 혁신적인 제품과 기술</p>
+                  <p class="main-visual-stxt">有准确度和精度的创新产品和技术</p>
                   <p class="main-visual-btxt">Innovation in <span class="highlight">Silicon Wafer</span> <br/><span class="highlight">Inspection System</span></p>
                 </div>
               </div>
@@ -37,7 +37,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <div class="container main-visual_ct">
               <div class="wrapper">
                 <div class="main-visual_ct_inner">
-                  <p class="main-visual-stxt">글로벌 웨이퍼 검사 장비 기업</p>
+                  <p class="main-visual-stxt">全球晶片检测设备公司</p>
                   <p class="main-visual-btxt"><span class="highlight">Wisdom Factory</span> <br/>of new technology</p>
                 </div>
               </div>
@@ -76,14 +76,15 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
           <div class="main_sec-top">
             <h2 class="main_sec-title1">WISFAC <span class="highlight">Product</span></h2>
             <p class="main_sec-expl1">
-              전 세계가 주목하고 있는 위스팩의 Wafer 검사 장비들은 자동화 시스템이 잘 갖춰졌으며 <br/>검사/검출의 신기술들이 집약되어 운용의 편리함과 고객의 니즈를 충족하여 전 세계 고객사들로부터 극찬을 받고 있습니다. <br/>
-              지금 위스팩의 검사 장비들을 만나보시고 문의해 주세요.
-              우리는 언제든 여러분을 만날 준비가 되어있습니다.
+              全世界瞩目的WISFAC的Wafer检查设备具备了完善的自动化系统。 <br/>
+              集检验/检测新技术于一身，满足操作便利和客户需求,受到全球客户高度赞扬。<br/>
+              现在请看完WISFAC的检查设备后再咨询。 我们随时准备与大家见面。
             </p>
           </div>
           <div class="match-height prod-cate_wrap">
             <?php
             $prod_cate_table = G5_TABLE_PREFIX.'shop_category';
+            $prod_cate_where = 'ca_lang = "CHI"';
             $prod_cate_sql = " select 
                                 ca_id,
                                 ca_name,
@@ -91,7 +92,8 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                                 ca_img1,
                                 ca_img2,
                                 ca_img3
-                               from {$cate_table} 
+                                from {$cate_table} 
+                                where {$prod_cate_where}
                               ";
             $prod_cate_result = sql_query($prod_cate_sql);
             for($i=0; $prod_cate=sql_fetch_array($prod_cate_result); $i++){
@@ -119,10 +121,10 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     <div class="main-contact_box main-contact_lt" data-aos="fade-right" data-aos-duration="1000">
       <div class="main-contact_ct">
         <div class="main-contact_ct_inner">
-          <p class="main-contact-title">위스팩 소개</p>
-          <p class="main-contact-expl">세계가 인정하는 기술과 제품 <br/><b>위스팩이 궁금</b>하신가요?</p>
+          <p class="main-contact-title">介绍WISFAC</p>
+          <p class="main-contact-expl">想知道世界认可的技术和产品<br><b>WISFAC吗？</b></p>
           <a href="/sub/aboutus?v=vision" class="i-arrow-btn01">
-            회사소개
+            介绍公司
             <span class="icon">
               <img src="/source/img/arrow-right-white.png" alt="회사소개 링크이동">
             </span>
@@ -133,10 +135,10 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     <div class="main-contact_box main-contact_rt" data-aos="fade-left" data-aos-duration="1000">
       <div class="main-contact_ct">
         <div class="main-contact_ct_inner">
-          <p class="main-contact-title">고객문의</p>
-          <p class="main-contact-expl">제품에 대해 <b>궁금한 내용</b>이 <br/>있으신가요?</p>
+          <p class="main-contact-title">客户咨询</p>
+          <p class="main-contact-expl">您对产品有什么疑问吗？</p>
           <a href="/sub/contact" class="i-arrow-btn01">
-            문의하기
+            询问
             <span class="icon">
               <img src="/source/img/arrow-right-white.png" alt="고객문의 링크이동">
             </span>
@@ -151,14 +153,14 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
       <div class="wrapper">
         <div class="main-board_ct">
           <div class="main_sec-top">
-            <h2 class="main_sec-subtitle1">고객지원</h2>
-            <h2 class="main_sec-title1"><b>다양한 소식</b>을 확인하세요.</h2>
+            <h2 class="main_sec-subtitle1">客户支援</h2>
+            <h2 class="main_sec-title1">请确认各种消息。</h2>
             <div class="tabs main-boarad-tabs">
-              <button type="button" class="tabs-btn on" data-board="notice">공지사항</button>
-              <button type="button" class="tabs-btn" data-board="news">회사소식</button>
+              <button type="button" class="tabs-btn on" data-board="notice">公告事项</button>
+              <button type="button" class="tabs-btn" data-board="news">公司消息</button>
             </div>
             <a href="/notice" class="i-arrow-btn01">
-              Learn more
+              学习更多
               <span class="icon"></span>
             </a>
           </div>
@@ -196,9 +198,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
           </div>
           <a href="/sub/global" class="main-banner_box main-banner-company">
             <div class="main-banner_ct_inner">
-              <p class="banner-title">Global WISFAC</p>
-              <p class="banner-subtitle"><b>글로벌기업</b> 위스팩을 만나보세요.</p>
-              <p class="banner-expl">다년간의 기술 개발을 통해 반도체용 웨이퍼 검사 분야에서 순수 국내기술을 기반으로 <br/>첨단 기술 장비들을 개발하여 생산하는 글로벌 전문기업입니다.</p>
+              <p class="banner-title">跨国 WISFAC</p>
+              <p class="banner-subtitle"><b>请见见跨国企业</b>WISFAC。</p>
+              <p class="banner-expl">通过多年的技术开发，在半导体用晶片检查领域，<br/>以纯粹的国内技术为基础是一家开发生产高新技术装备的国际化专业企业。</p>
             </div>
             <div class="main-banner-prod">
               <img src="/source/img/main-company-banner-prod.png" alt="">
@@ -206,9 +208,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
           </a>
           <a href="/sub/business" class="main-banner_box main-banner-business">
             <div class="main-banner_ct_inner">
-              <p class="banner-title">사업소개</p>
-              <p class="banner-subtitle">위스팩의 <b>개발 제품군</b>을 확인하세요.</p>
-              <p class="banner-expl">Si Wafer와 SiC Wafer 등 다양한 Wafer 검사를 위해 순수 국내기술로 개발하여 생산하고 있으며 <br/>다양한 하드웨어 제품군과 이와 관련된 다양한 소프트웨어 제품군을 가지고 있습니다.</p>
+              <p class="banner-title">事业介绍</p>
+              <p class="banner-subtitle">请确认WISFAC<b>的开发产品群。</b></p>
+              <p class="banner-expl">为了进行Si Wafer和SiC Wafer等多种Wafer检查，用纯国内技术开发并生产。<br/>拥有多种硬件产品群和与此相关的多种软件产品群。</p>
             </div>
             <div class="main-banner-prod">
               <img src="/source/img/main-business-banner-prod.png" alt="">
@@ -226,4 +228,4 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 </script>
 
 <?php
-include_once(G5_THEME_PATH.'/tail.php'); //footer 파일 연결
+include_once(G5_THEME_PATH.'/tail_chi.php'); //footer 파일 연결

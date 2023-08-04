@@ -165,7 +165,7 @@ if ((isset($wr_id) && $wr_id) || (isset($wr_seo_title) && $wr_seo_title)) {
 
     if (!isset($page) || (isset($page) && $page == 0)) $page = 1;
 
-    $g5['title'] = $g5['board_title'].' '.$page.' 페이지';
+    $g5['title'] = $g5['board_title'].' '.$page.' page';
 }
 
 $is_auth = $is_admin ? true : false;

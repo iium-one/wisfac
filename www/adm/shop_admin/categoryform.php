@@ -189,6 +189,18 @@ else {
             </td>
         </tr>
         <tr>
+            <th scope="row"><label for="ca_lang">언어</label></th>
+            <td>
+                <select name="ca_lang" id="ca_lang" require>
+                    <option value="">선택</option>
+                    <option value="KOR" <?php echo $ca['ca_lang'] == 'KOR'?'selected':''; ?>>KOR</option>
+                    <option value="ENG" <?php echo $ca['ca_lang'] == 'ENG'?'selected':''; ?>>ENG</option>
+                    <option value="JPN" <?php echo $ca['ca_lang'] == 'JPN'?'selected':''; ?>>JPN</option>
+                    <option value="CHI" <?php echo $ca['ca_lang'] == 'CHI'?'selected':''; ?>>CHI</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
             <th scope="row"><label for="ca_name">분류명</label></th>
             <td><input type="text" name="ca_name" value="<?php echo $ca['ca_name']; ?>" id="ca_name" size="38" required class="required frm_input"></td>
         </tr>

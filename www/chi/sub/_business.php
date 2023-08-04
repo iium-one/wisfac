@@ -1,5 +1,5 @@
 <?php 
-include_once(G5_INCLUDE_PATH.'/sub_top.php');
+include_once('/home/wespec/www/chi/include/sub_top.php');
 ?>
 
 <div id="business" class="contents">
@@ -13,7 +13,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
           <div class="sec_ct">
             <div class="sb_top-title">
               <p class="sb_top-title-text1"><b>Wafer Inspection Equipment System</b></p>
-              <p class="sb_top-title-text2">웨이퍼 생산 공정에서 발생할 수 있는 <b>다양한 웨이퍼 결함을 감지</b>할 수 있습니다. <br/><b>우수한 불량 검출 알고리즘을 적용</b>하여 결함 검출 가능성을 지속적으로 높이고 있습니다.</p>
+              <p class="sb_top-title-text2">可以检测晶圆生产过程中可能发生的各种晶圆缺陷。<br/><b>应用优良的不良检测算法，</b>不断提高缺陷检测的可能性。</p>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
               <div class="large-category">
                 <div class="large-category-top">
                   <p class="large-category-tit">1. Air Pocket Inspection</p>
-                  <a href="/sub/prod_list/20" class="i-arrow-btn01 large-category-more">Learn more<span class="icon"></span></a>
+                  <a href="/sub/prod_list/20" class="i-arrow-btn01 large-category-more">学习更多<span class="icon"></span></a>
                 </div>
                 <div class="business-products">
                   <div class="business-products_wrap">
@@ -65,7 +65,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
               <div class="large-category">
                 <div class="large-category-top">
                   <p class="large-category-tit">2. Edge/Surface Inspection</p>
-                  <a href="/sub/prod_list/10" class="i-arrow-btn01 large-category-more">Learn more<span class="icon"></span></a>
+                  <a href="/sub/prod_list/10" class="i-arrow-btn01 large-category-more">学习更多<span class="icon"></span></a>
                 </div>
                 <div class="business-products">
                   <div class="business-products_wrap">
@@ -93,13 +93,13 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
             <div class="wrapper">
               <div class="large-category">
                 <div class="large-category-top">
-                  <p class="large-category-tit">3. Other</p>
-                  <a href="/sub/prod_list/30" class="i-arrow-btn01 large-category-more">Learn more<span class="icon"></span></a>
+                  <p class="large-category-tit">3. 其他</p>
+                  <a href="/sub/prod_list/30" class="i-arrow-btn01 large-category-more">学习更多<span class="icon"></span></a>
                 </div>
                 <div class="middle-category">
                   <div class="middle-category_box">
                     <p class="middle-category-tit">3-1. Final Sorter</p>
-                    <p class="middle-category-expl">8 Load Port, 7 Load Port-1F, 4/2 Load Port IWS-3000-8L(8개 로드 포트), IWS-3000-7L1F(7개 로드 포트 1개 플리퍼) 반전 로봇을 적용하여 웨이퍼를 반전시킬 수 있습니다. Open Cassette, FOSB, FOUP를 모두 사용할 수 있으며, 사용된 캐리어 유형(Open, FOSB, FOUP)은 다음과 같이 자동으로 구분할 수 있습니다 조작자의 실수를 방지합니다.</p>
+                    <p class="middle-category-expl">应用8Load Port、7Load Port-1F、4/2Load Port IWS-3000-8L（8个晶圆装卸机）、IWS-3000-7L1F（7个晶圆装卸机1个翻盖机）反转机器人可反转晶圆。 Open Cassette、FOSB、FOUP均可使用，使用的载体类型（Open、FOSB、FOUP）可自动区分如下。 防止操作者出错。</p>
                     <div class="business-products">
                       <div class="business-products_wrap">
                         <div class="business-product">
@@ -132,7 +132,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                   </div>
                   <div class="middle-category_box">
                     <p class="middle-category-tit">3-2. Cu-haze, Edge/DSOD, Edge/Cu-haze</p>
-                    <p class="middle-category-expl">CHAC-3000, EDIS-3000, ECIS-3000는 Si Wafer의  Edge 결함과 Surface의 Haze Pattern, COP(Crystal Originated Pits), 헤이즈 패턴을 검출하는 장비입니다.</p>
+                    <p class="middle-category-expl">CHAC-3000、EDIS-3000和ECIS-3000是检测SiWaferEdge缺陷和Surface的HazePattern、COP(CrystalOriginatedPits)、Haze Pattern的设备。</p>
                     <div class="business-products">
                       <div class="business-products_wrap">
                         <div class="business-product">

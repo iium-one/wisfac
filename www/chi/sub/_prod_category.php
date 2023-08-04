@@ -1,5 +1,5 @@
 <?php 
-include_once(G5_INCLUDE_PATH.'/sub_top.php');
+include_once('/home/wespec/www/chi/include/sub_top.php');
 ?>
 
 <div id="product" class="contents">
@@ -14,6 +14,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
             <div class="match-height prod-cate_wrap">
               <?php
               $prod_cate_table = G5_TABLE_PREFIX.'shop_category';
+              $prod_cate_lang = 'CHI';
               $prod_cate_sql = " select 
                                   ca_id,
                                   ca_name,
@@ -22,6 +23,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                                   ca_img2,
                                   ca_img3
                                 from {$cate_table} 
+                                where ca_lang = '{$prod_cate_lang}'
                                 ";
               $prod_cate_result = sql_query($prod_cate_sql);
               for($i=0; $prod_cate=sql_fetch_array($prod_cate_result); $i++){

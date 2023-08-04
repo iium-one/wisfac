@@ -1,5 +1,5 @@
 <?php 
-include_once(G5_INCLUDE_PATH.'/sub_top.php');
+include_once('/home/wespec/www/chi/include/sub_top.php');
 ?>
 
 <div id="contact" class="contents">
@@ -12,14 +12,14 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
         <div class="wrapper">
           <div class="sec_ct">
             <div class="sb_top-title">
-              <p class="sb_top-title-text1"><b>궁금하신 점이 있으신가요? <br/>아래 내용을 입력 후 문의해주세요.</b></p>
+              <p class="sb_top-title-text1"><b>您有什么疑问吗？ <br/>请输入以下内容后咨询。</b></p>
             </div>
 
-            <form action="/api/contact.php" method="post">
+            <form action="/chi/api/contact.php" method="post">
               <div class="form-wrap">
                 <div class="form-box">
                   <div class="form-li form-li-name">
-                    <div class="form-text">이름<span class="required">*</span></div>
+                    <div class="form-text">姓名<span class="required">*</span></div>
                     <div class="form-cont">
                       <input type="text" name="inq_name" required class="form-input">
                     </div>
@@ -27,7 +27,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 </div>
                 <div class="form-box">
                   <div class="form-li form-li-email">
-                    <div class="form-text">이메일<span class="required">*</span></div>
+                    <div class="form-text">电子邮件<span class="required">*</span></div>
                     <div class="form-cont">
                       <div class="mail-input-wrap">
                         <div class="mail-input-li email-id">
@@ -37,13 +37,13 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                         <div class="mail-input-li email-domain">
                           <input type="text" name="inq_mail02" id="inq_mail02" required class="form-input disabled" readonly>
                           <select name="inq_mail03" id="inq_mail03" class="nc-sel form-sel doamin-sel" onchange="emailDomain(this.value)">
-                            <option value="">선택하세요.</option>
+                            <option value="">选择吧。</option>
                             <option value="naver.com">naver.com</option>
                             <option value="gmail.com">gmail.com</option>
                             <option value="hanmail.net">hanmail.net</option>
                             <option value="nate.com">nate.com</option>
                             <option value="kakao.com">kakao.com</option>
-                            <option value="w">직접입력</option>
+                            <option value="w">直接输入</option>
                           </select>
                         </div>
                       </div>
@@ -52,7 +52,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 </div>
                 <div class="form-box">
                   <div class="form-li">
-                    <div class="form-text">지역</div>
+                    <div class="form-text">地区</div>
                     <div class="form-cont">
                       <input type="text" name="inq_area" class="form-input full">
                     </div>
@@ -60,7 +60,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 </div>
                 <div class="form-box">
                   <div class="form-li">
-                    <div class="form-text">회사/학교</div>
+                    <div class="form-text">公司/学校</div>
                     <div class="form-cont">
                       <input type="text" name="inq_company" class="form-input full">
                     </div>
@@ -68,7 +68,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 </div>
                 <div class="form-box">
                   <div class="form-li">
-                    <div class="form-text">부서</div>
+                    <div class="form-text">部门</div>
                     <div class="form-cont">
                       <input type="text" name="inq_depart" class="form-input full">
                     </div>
@@ -76,12 +76,12 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 </div>
                 <div class="form-box">
                   <div class="form-li">
-                    <div class="form-text">전화번호<span class="required">*</span></div>
+                    <div class="form-text">电话号码<span class="required">*</span></div>
                     <div class="form-cont">
                       <div class="i-col-0 phone-input-wrap">
                         <div class="phone-input-li phone1">
                           <select name="inq_phone1" id="" class="nc-sel form-sel tel-sel">
-                            <option value="">선택</option>
+                            <option value="">选择</option>
                             <option value="010">010</option>
                           </select>
                         </div>
@@ -99,22 +99,22 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 </div>
                 <div class="form-box">
                   <div class="form-li">
-                    <div class="form-text">주소</div>
+                    <div class="form-text">地址</div>
                     <div class="form-cont">
                       <div class="address-input-wrap">
                         <div class="address-input-box btn-box">
-                          <input type="text" name="inq_post_num" placeholder="우편번호" readonly id="sample3_postcode" class="form-input">
-                          <button type="button" class="add-btn" onclick="sample3_execDaumPostcode()">주소검색</button>
+                          <input type="text" name="inq_post_num" placeholder="邮政编码" readonly id="sample3_postcode" class="form-input">
+                          <button type="button" class="add-btn" onclick="sample3_execDaumPostcode()">地址搜索</button>
                         </div>
                         <div id="add-wrap"></div>
                         <div class="address-input-box">
-                          <input type="text" name="inq_add1" placeholder="주소를 선택해주세요." id="sample3_address" readonly class="form-input full">
+                          <input type="text" name="inq_add1" placeholder="请选择地址。" id="sample3_address" readonly class="form-input full">
                         </div>
                         <div class="address-input-box">
-                          <input type="text" name="inq_add2" placeholder="상세주소를 입력하세요." id="sample3_detailAddress" class="form-input full">
+                          <input type="text" name="inq_add2" placeholder="请输入详细地址。" id="sample3_detailAddress" class="form-input full">
                         </div>
                         <div class="address-input-box" style="display: none;">
-                          <input type="text" name="inq_add3" placeholder="참고항목을 입력하세요." id="sample3_extraAddress" class="form-input full">
+                          <input type="text" name="inq_add3" placeholder="请输入参考项目。" id="sample3_extraAddress" class="form-input full">
                         </div>
                       </div>
                     </div>
@@ -122,7 +122,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 </div>
                 <div class="form-box">
                   <div class="form-li">
-                    <div class="form-text">제목<span class="required">*</span></div>
+                    <div class="form-text">题目<span class="required">*</span></div>
                     <div class="form-cont">
                       <input type="text" name="inq_subj" required class="form-input full" maxlength="255">
                     </div>
@@ -130,7 +130,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 </div>
                 <div class="form-box">
                   <div class="form-li">
-                    <div class="form-text">문의사항<span class="required">*</span></div>
+                    <div class="form-text">咨询事项<span class="required">*</span></div>
                     <div class="form-cont">
                       <textarea data-lenis-prevent name="inq_content" id="" required class="form-textar full" cols="30" rows="10"></textarea>
                     </div>
@@ -138,16 +138,16 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
                 </div>
                 <div class="form-box">
                   <div class="form-li">
-                    <div class="form-text">비밀번호<span class="required">*</span></div>
+                    <div class="form-text">密码<span class="required">*</span></div>
                     <div class="form-cont">
                       <input type="password" name="inq_pw" required class="form-input" maxlength="255">
-                      <p class="form-cau-text">※문의글 확인시 사용되오니 메모해두시기 바랍니다.</p>
+                      <p class="form-cau-text">※确认咨询内容时使用，请记下来。</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="inquiry-btn-box">
-                <button type="submit" class="submit-btn">문의하기</button>
+                <button type="submit" class="submit-btn">咨询</button>
               </div>
             </form>
           </div>

@@ -10,7 +10,7 @@ parse_str($rq_uri0[2], $getParams);
 $_GET = array_merge($_GET, $getParams);
 unset($_GET['uri']);
 $_GET['qstrUri'] = http_build_query($_GET);
-include_once G5_THEME_PATH . '/head.php';
+include_once G5_THEME_PATH . '/head_chi.php';
 
 $URI['rt'] = $rq_uri[2];
 $URI['pram'] = "";
@@ -33,4 +33,4 @@ if (file_exists("./_{$URI['rt']}.php")) {
   그래서 사용할때는 $idx = $params[0]; 이렇게 처리해서 사용
 */
 
-include_once G5_THEME_PATH . '/tail.php';
+include_once G5_THEME_PATH . '/tail_chi.php';

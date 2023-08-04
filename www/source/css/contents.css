@@ -562,6 +562,7 @@
 .personnel-position_graphic-item .item-inner.year {position: relative; text-align: center;}
 .personnel-position_graphic-item .item-inner.year:after {content: ""; display: block; position: absolute; top: 0; left: 42px; width: 16px; height: 26px; background: url('/source/img/arrow-right-white.png') no-repeat center/contain;}
 .personnel-position_graphic-item .item-inner.year .text {font-size: 22px; font-weight: 400; color: #fff;}
+.chi .personnel-position_graphic-item .item-inner.year .text {font-size: 20px; font-weight: 400; color: #fff;}
 .personnel-position_text {margin-top: 45px; font-size: 20px; font-weight: 400; color: #f7f7f7; text-align: center;}
 
 .major-welfare {margin-top: 86px;}

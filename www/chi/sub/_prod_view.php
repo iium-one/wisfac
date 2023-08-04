@@ -1,5 +1,5 @@
 <?php 
-include_once(G5_INCLUDE_PATH.'/sub_top.php');
+include_once('/home/wespec/www/chi/include/sub_top.php');
 
 $prod_it_idx = $params[0];
 $prod_cate_table = G5_TABLE_PREFIX.'shop_category';
@@ -71,7 +71,7 @@ for($i=1; $i<=4; $i++) {
   <div id="sb-contents">
     <div class="container">
       <div class="wrapper">
-        <a href="/sub/prod_list/<?php echo $prod_item['ca_id'];?>" class="prod_detail_back"><img src="/source/img/arrow-left-gray.png" alt=""><?php echo $prod_item['ca_1_subj'];?> 전체보기</a>
+        <a href="/chi/sub/prod_list/<?php echo $prod_item['ca_id'];?>" class="prod_detail_back"><img src="/source/img/arrow-left-gray.png" alt=""><?php echo $prod_item['ca_1_subj'];?> 整体视图</a>
       </div>
     </div>
     <section class="prod-def">

@@ -1,5 +1,5 @@
 <?php 
-include_once(G5_INCLUDE_PATH.'/sub_top.php');
+include_once('/home/wespec/www/chi/include/sub_top.php');
 ?>
 
 <div id="global" class="contents">
@@ -13,7 +13,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
           <div class="sec_ct">
             <div class="sb_top-title">
               <p class="sb_top-title-text1"><b>Partner with WISFAC</b></p>
-              <p class="sb_top-title-text2">우리 회사는 고객을 만족시키기 위해 <b>전 세계에 위치한 파트너 협력사와 계약을 맺고 긴밀한 관계를 유지</b>하고 있습니다. <br/>우리의 기술이 세계로 진출할 수 있도록 최선을 다하고 있습니다. <br/>현재 아시아 지역을 넘어 곧 미국, 유럽 고객들을 만날 것입니다.</p>
+              <p class="sb_top-title-text2">我们公司为了满足客户需求，与位于世界各地的合作伙伴公司签订了合同,关系非常密切。<br/>我们正在竭尽全力使我们的技术走向世界。<br/>我们即将跨越亚洲地区，与欧美客户见面。</p>
             </div>
           </div>
         </div>
