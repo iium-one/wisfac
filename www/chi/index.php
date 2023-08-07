@@ -98,7 +98,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             $prod_cate_result = sql_query($prod_cate_sql);
             for($i=0; $prod_cate=sql_fetch_array($prod_cate_result); $i++){
             ?>
-            <a href="/sub/prod_list/<?php echo $prod_cate['ca_id'];?>" class="prod-cate-item">
+            <a href="/chi/sub/prod_list/<?php echo $prod_cate['ca_id'];?>" class="prod-cate-item">
               <span class="more"></span>
               <p class="ctg_name"><?php echo $prod_cate['ca_name'];?></p>
               <p class="ctg_expl"><?php echo $prod_cate['ca_2_subj'];?></p>
@@ -123,7 +123,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         <div class="main-contact_ct_inner">
           <p class="main-contact-title">介绍WISFAC</p>
           <p class="main-contact-expl">想知道世界认可的技术和产品<br><b>WISFAC吗？</b></p>
-          <a href="/sub/aboutus?v=vision" class="i-arrow-btn01">
+          <a href="/chi/sub/aboutus?v=vision" class="i-arrow-btn01">
             介绍公司
             <span class="icon">
               <img src="/source/img/arrow-right-white.png" alt="회사소개 링크이동">
@@ -137,7 +137,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         <div class="main-contact_ct_inner">
           <p class="main-contact-title">客户咨询</p>
           <p class="main-contact-expl">您对产品有什么疑问吗？</p>
-          <a href="/sub/contact" class="i-arrow-btn01">
+          <a href="/chi/sub/contact" class="i-arrow-btn01">
             询问
             <span class="icon">
               <img src="/source/img/arrow-right-white.png" alt="고객문의 링크이동">
@@ -156,10 +156,10 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <h2 class="main_sec-subtitle1">客户支援</h2>
             <h2 class="main_sec-title1">请确认各种消息。</h2>
             <div class="tabs main-boarad-tabs">
-              <button type="button" class="tabs-btn on" data-board="notice">公告事项</button>
-              <button type="button" class="tabs-btn" data-board="news">公司消息</button>
+              <button type="button" class="tabs-btn on" data-board="notice_chi">公告事项</button>
+              <button type="button" class="tabs-btn" data-board="news_chi">公司消息</button>
             </div>
-            <a href="/notice" class="i-arrow-btn01">
+            <a href="/notice_chi" class="i-arrow-btn01">
               学习更多
               <span class="icon"></span>
             </a>
@@ -196,7 +196,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
           <div class="main_sec-top">
             <h2 class="sound_only">회사소개, 사업소개 배너</h2>
           </div>
-          <a href="/sub/global" class="main-banner_box main-banner-company">
+          <a href="/chi/sub/global" class="main-banner_box main-banner-company">
             <div class="main-banner_ct_inner">
               <p class="banner-title">跨国 WISFAC</p>
               <p class="banner-subtitle"><b>请见见跨国企业</b>WISFAC。</p>
@@ -206,7 +206,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
               <img src="/source/img/main-company-banner-prod.png" alt="">
             </div>
           </a>
-          <a href="/sub/business" class="main-banner_box main-banner-business">
+          <a href="/chi/sub/business" class="main-banner_box main-banner-business">
             <div class="main-banner_ct_inner">
               <p class="banner-title">事业介绍</p>
               <p class="banner-subtitle">请确认WISFAC<b>的开发产品群。</b></p>

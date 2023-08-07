@@ -30,7 +30,7 @@ include_once(G5_PATH.'/chi/include/sub_top.php');
               <div class="large-category">
                 <div class="large-category-top">
                   <p class="large-category-tit">1. Air Pocket Inspection</p>
-                  <a href="/sub/prod_list/20" class="i-arrow-btn01 large-category-more">学习更多<span class="icon"></span></a>
+                  <a href="/chi/sub/prod_list/50" class="i-arrow-btn01 large-category-more">学习更多<span class="icon"></span></a>
                 </div>
                 <div class="business-products">
                   <div class="business-products_wrap">
@@ -65,7 +65,7 @@ include_once(G5_PATH.'/chi/include/sub_top.php');
               <div class="large-category">
                 <div class="large-category-top">
                   <p class="large-category-tit">2. Edge/Surface Inspection</p>
-                  <a href="/sub/prod_list/10" class="i-arrow-btn01 large-category-more">学习更多<span class="icon"></span></a>
+                  <a href="/chi/sub/prod_list/40" class="i-arrow-btn01 large-category-more">学习更多<span class="icon"></span></a>
                 </div>
                 <div class="business-products">
                   <div class="business-products_wrap">
@@ -94,7 +94,7 @@ include_once(G5_PATH.'/chi/include/sub_top.php');
               <div class="large-category">
                 <div class="large-category-top">
                   <p class="large-category-tit">3. 其他</p>
-                  <a href="/sub/prod_list/30" class="i-arrow-btn01 large-category-more">学习更多<span class="icon"></span></a>
+                  <a href="/chi/sub/prod_list/60" class="i-arrow-btn01 large-category-more">学习更多<span class="icon"></span></a>
                 </div>
                 <div class="middle-category">
                   <div class="middle-category_box">
