@@ -15,7 +15,7 @@ include_once(G5_LIB_PATH.'/visit.lib.php');
 include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
 
-include '/home/wespec/www/chi/include/menus.php';
+include G5_PATH.'/chi/include/menus.php';
 ?>
 
 <?php

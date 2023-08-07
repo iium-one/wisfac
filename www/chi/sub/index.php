@@ -6,7 +6,7 @@ $rq_uri = explode("/", $rq_uri0[0]);
 $rq_uri = array_values(array_filter($rq_uri));
 
 // GET 파라미터
-parse_str($rq_uri0[2], $getParams);
+parse_str($rq_uri0[1], $getParams);
 $_GET = array_merge($_GET, $getParams);
 unset($_GET['uri']);
 $_GET['qstrUri'] = http_build_query($_GET);

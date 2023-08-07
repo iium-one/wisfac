@@ -1,6 +1,6 @@
 <?php
 include_once('./_common.php');
-include '/home/wespec/www/chi/include/menus.php';
+include G5_PATH.'/chi/include/menus.php';
 
 function sub_top($sb_menus, $sb_id, $pg_id){
   foreach ($sb_menus as $menu) {

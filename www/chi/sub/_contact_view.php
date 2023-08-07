@@ -1,5 +1,5 @@
 <?php 
-include_once('/home/wespec/www/chi/include/sub_top.php');
+include_once(G5_PATH.'/chi/include/sub_top.php');
 
 $inquery_table = G5_TABLE_PREFIX."inquiry_chi";
 $idx = $params[0];

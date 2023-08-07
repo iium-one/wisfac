@@ -1,6 +1,6 @@
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
-include_once('/home/wespec/www/chi/include/sub_top.php');
+include_once(G5_PATH.'/chi/include/sub_top.php');
 // 선택옵션으로 인해 셀합치기가 가변적으로 변함
 $colspan = 5;
 

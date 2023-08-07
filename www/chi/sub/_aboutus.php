@@ -1,5 +1,5 @@
 <?php 
-include_once('/home/wespec/www/chi/include/sub_top.php');
+include_once(G5_PATH.'/chi/include/sub_top.php');
 ?>
 
 <div id="aboutus" class="contents">
@@ -53,7 +53,7 @@ include_once('/home/wespec/www/chi/include/sub_top.php');
           <div class="sec_ct">
             <p class="aboutus-tab-text1">
               Wisdom Factory of New Technology, <br/>
-              <span class="highlight2"><b>WISFAC</b></span>
+              <span class="highlight2"><b>WISFAC<?php echo $_GET['v'];?></b></span>
             </p>
             <div class="tabs tabs2 aboutus-pg-tabs">
               <?php
