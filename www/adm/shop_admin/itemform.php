@@ -135,7 +135,7 @@ $script = '';
 $sql = " select * from {$g5['g5_shop_category_table']} ";
 if ($is_admin != 'super')
     $sql .= " where ca_mb_id = '{$member['mb_id']}' ";
-$sql .= " order by ca_order, ca_id ";
+$sql .= " order by ca_lang desc, ca_order, ca_id ";
 $result = sql_query($sql);
 for ($i=0; $row=sql_fetch_array($result); $i++)
 {
@@ -145,7 +145,8 @@ for ($i=0; $row=sql_fetch_array($result); $i++)
     for ($i=0; $i<$len; $i++)
         $nbsp .= "&nbsp;&nbsp;&nbsp;";
 
-    $category_select .= "<option value=\"{$row['ca_id']}\">$nbsp{$row['ca_name']}</option>\n";
+    // $category_select .= "<option value=\"{$row['ca_id']}\">$nbsp{$row['ca_lang']}{$row['ca_name']}</option>\n";
+    $category_select .= "<option value=\"{$row['ca_id']}\">$nbsp"."["."{$row['ca_lang']}"."]"."{$row['ca_name']}</option>\n";
 
     $script .= "ca_use['{$row['ca_id']}'] = {$row['ca_use']};\n";
     $script .= "ca_stock_qty['{$row['ca_id']}'] = {$row['ca_stock_qty']};\n";
