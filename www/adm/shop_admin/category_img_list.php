@@ -185,7 +185,7 @@ table.table_category_img_list td.td_ca_img .category_filebox.wf60p label {width:
         </td>
 
         <td headers="sct_cate" class="sct_name<?php echo $level; ?>">
-			<?php echo $s_level; ?> <?php echo get_text($row['ca_name']); ?>
+			<?php echo $s_level; ?> <?php echo "[".$row['ca_lang']."]".get_text($row['ca_name']); ?>
 		</td>
 
 	<?php 
