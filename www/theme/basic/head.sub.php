@@ -141,7 +141,8 @@ if(!defined('G5_IS_ADMIN'))
 
 
 </head>
-<body<?php echo isset($g5['body_script']) ? $g5['body_script'] : ''; ?>>
+<?php $lang = trim(preg_replace("`\/[^/]*\.php$`i", "/", $_SERVER['PHP_SELF']), '/'); ?>
+<body id="<?php echo $lang; ?>" <?php echo isset($g5['body_script']) ? $g5['body_script'] : ''; ?>>
 <?php
 if ($is_member) { // 회원이라면 로그인 중이라는 메세지를 출력해준다.
     $sr_admin_msg = '';

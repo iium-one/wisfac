@@ -351,13 +351,13 @@
 .organ-2dp:before {content: ""; display: block; position: absolute; top: -85px; left: 50%; z-index: 1; margin-left: -0.5px; height: 43px; border-left: 1px solid #999;}
 .organ-2dp:after {content: ""; display: block; position: absolute; top: -43px; left: 366px; z-index: 1; width: 641px; border-top: 1px solid #999;}
 .organ-2dp > li {position: relative;}
-.organ-2dp > li > span {display: flex; align-items: center; justify-content: center; position: relative; z-index: 5; width: 200px; height: 60px; line-height: 58px; margin: 0 auto; padding: 0 10px; border: 1px solid var(--sub-color1); border-radius: 10px; font-size: 18px; font-weight: 500; color: #0f0f0f; background-color: #fff;}
+.organ-2dp > li > span {display: flex; align-items: center; justify-content: center; position: relative; z-index: 5; width: 200px; height: 60px; line-height: 1.2; margin: 0 auto; padding: 0 10px; border: 1px solid var(--sub-color1); border-radius: 10px; font-size: 18px; font-weight: 500; color: #0f0f0f; background-color: #fff;}
 .organ-2dp > li:nth-child(1) {margin-right: 56px;}
 .organ-2dp > li > span:after {content: ""; display: block; position: absolute; top: -43px; left: 50%; z-index: 1; margin-left: -0.5px; height: 43px; border-left: 1px solid #999;}
 
 .organ-3dp {position: relative; z-index: 1; display: flex; flex-flow: row wrap; justify-content: center; align-items: flex-start; margin-top: 36px;}
 .organ-3dp > li {position: relative;}
-.organ-3dp > li > span {display: flex; align-items: center; justify-content: center; position: relative; z-index: 5; width: 200px; height: 60px; line-height: 58px; margin: 0 auto; padding: 0 10px; border: 1px solid var(--sub-color1); border-radius: 10px; font-size: 18px; font-weight: 500; color: #0f0f0f; background-color: #fff;}
+.organ-3dp > li > span {display: flex; align-items: center; justify-content: center; position: relative; z-index: 5; width: 200px; height: 60px; line-height: 1.2; margin: 0 auto; padding: 0 10px; border: 1px solid var(--sub-color1); border-radius: 10px; font-size: 18px; font-weight: 500; color: #0f0f0f; background-color: #fff;}
 .organ-3dp > li > span.none {border: 0; background-color: transparent;}
 .organ-3dp > li > span:after {content: ""; display: block; position: absolute; top: -37px; left: 50%; z-index: 1; margin-left: -0.5px; height: 37px; border-left: 1px solid #999;}
 

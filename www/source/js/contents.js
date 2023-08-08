@@ -3,6 +3,8 @@
 import { formatDate } from './modules/format-date';
 import { tabAddOnClass } from './common';
 
+const lang = document.querySelector("body").getAttribute('id');
+
 // [plugin-lenis] scroll animation
 const lenis = new Lenis()
 function raf(time) {
@@ -97,7 +99,15 @@ const mainBoardData = async(board) =>{
 }
 
 if(mainBoardWrap){
-  mainBoardData('notice'); //초기 데이터
+  if(lang == 'eng'){
+    mainBoardData('notice_eng'); //초기 데이터
+  } else if (lang == 'chi') {
+    mainBoardData('notice_chi'); //초기 데이터
+  } else if (lang == 'jpn') {
+    mainBoardData('notice_jpn'); //초기 데이터
+  } else {
+    mainBoardData('notice'); //초기 데이터
+  }
 }
 
 // 메인 게시글 영역 탭 버튼 클릭 이벤트 처리
