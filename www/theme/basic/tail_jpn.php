@@ -12,12 +12,12 @@ if(G5_COMMUNITY_USE === false) { // Shop
   <div class="container">
     <div class="wrapper2">
       <div class="ft_info">
-        <a href="/chi" class="ft-logo">
+        <a href="/jpn" class="ft-logo">
           <img src="/source/img/logo-gray.svg" alt="WISFAC 로고, 메인으로 이동">
         </a>
         <div class="ft_info-text">
-          <span class="full">【邮编34036】 大田广域市儒城区Techno二路314</span>
-          <span>电话.  042-936-6505</span>
+          <span class="full">〒３４０３６　大田広域市　儒城区　テクノ2路　314</span>
+          <span>Tel. 042-936-6505</span>
           <!-- <span>Fax. 042-234-5678</span> -->
           <!-- <span>E-mail.abcd@naver.com</span> -->
         </div>

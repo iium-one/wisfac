@@ -24,8 +24,7 @@ if(G5_COMMUNITY_USE === false) { // Shop
       </div>
       <div class="ft_util">
         <div class="fnb">
-          <a href="">이용약관</a>
-          <a href="">개인정보 처리방침</a>
+          <a href="/sub/privacy">개인정보 처리방침</a>
         </div>
         <p class="ft-copyright">Copyright 2023 WISFAC. All Rights Reserved.</p>
       </div>

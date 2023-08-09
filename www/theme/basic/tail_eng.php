@@ -23,10 +23,6 @@ if(G5_COMMUNITY_USE === false) { // Shop
         </div>
       </div>
       <div class="ft_util">
-        <div class="fnb">
-          <a href="">Terms of service</a>
-          <a href="">Privacy policy</a>
-        </div>
         <p class="ft-copyright">Copyright 2023 WISFAC. All Rights Reserved.</p>
       </div>
     </div>

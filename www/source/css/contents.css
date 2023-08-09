@@ -184,6 +184,9 @@
 
 .sb_top-title .apply-more {position: absolute; top: 24px; right: 0;}
 
+#privacy .sb_top-title {margin-bottom: 50px;}
+#privacy .sb_top-title-text1 {text-align: center;}
+
 .board-top {position: relative; z-index: 100;}
 .board-top .sec_ct {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center;}
 .board-top #fm-sch {display: flex; align-items: center;}
@@ -596,6 +599,23 @@
 .facilities-guide-img-text {margin-top: 10px; font-size: 18px; font-weight: 400; color: #333;}
 
 .employee-slogan {margin-top: 80px;}
+
+/* 개인정보처리방침 */
+#sir_terms_sec1 {line-height: 1.5;}
+.fc_se{margin:20px 0; line-height: 1.5;}
+.fc_se ol{margin-top: 15px; margin-bottom: 15px; padding-left: 40px;}
+.fc_se h2{font-size: 16px; font-weight: 500; margin-bottom:4px;}
+.fc_se p{padding-left:15px;}
+.fc_se dl{margin-top: 15px; margin-bottom: 15px; padding-left:15px;}
+.fc_se dl dd{margin-left:13px;}
+#fc_pl{margin-bottom:100px}
+.po{overflow:hidden; margin: 15px 25px;}
+.po table tr th{background:#f1f1f1; font-weight:500;border:1px solid #ccc; padding:7px}
+.po table tr td{border:1px solid #ccc; padding:10px}
+
+.po_agree{margin-top:10px;}
+.po_agree .rq{font-size:15px;}
+.po_agree .iq_txt{font-size:15px; color:#f50000; vertical-align: bottom;}
 
 
 @media screen and (max-width:1600px){
