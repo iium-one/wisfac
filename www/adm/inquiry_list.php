@@ -7,7 +7,14 @@ include_once('./admin.head.php');
 
 $colspan = 5;
 
-$inquery_table = G5_TABLE_PREFIX."inquiry";
+$lang_code = $_GET['lang'];
+
+if(!isset($lang_code) || $lang_code == '' || $lang_code == 'kor') {
+  $inquery_table = G5_TABLE_PREFIX."inquiry";
+} else {
+  $inquery_table = G5_TABLE_PREFIX."inquiry_".$lang_code;
+}
+
 
 $sfl = $_REQUEST['sfl'];
 $stx = $_REQUEST['stx'];
@@ -37,6 +44,13 @@ $from_record = ($page - 1) * $rows;
 $sql = " select * {$sql_common} {$sql_search} {$sql_order} limit {$from_record}, {$rows} ";
 $result = sql_query($sql);
 ?>
+
+<div class="local_ov01 local_ov">
+  <a href="<?php echo $_SERVER['SCRIPT_NAME']."?lang=kor";?>" class="btn_ov03 <?php echo $lang_code == 'kor' || !$lang_code ? 'on' : ''; ?>">국문</a>
+  <a href="<?php echo $_SERVER['SCRIPT_NAME']."?lang=eng";?>" class="btn_ov03 <?php echo $lang_code == 'eng' ? 'on' : ''; ?>">영문</a>
+  <a href="<?php echo $_SERVER['SCRIPT_NAME']."?lang=chi";?>" class="btn_ov03 <?php echo $lang_code == 'chi' ? 'on' : ''; ?>">중문</a>
+  <a href="<?php echo $_SERVER['SCRIPT_NAME']."?lang=jpn";?>" class="btn_ov03 <?php echo $lang_code == 'jpn' ? 'on' : ''; ?>">일문</a>
+</div>
 
 <form name="fsearch" id="fsearch" class="local_sch01 local_sch" method="get">
   <label for="sfl" class="sound_only">검색대상</label>
@@ -79,7 +93,7 @@ $result = sql_query($sql);
         <td><?php echo $row['inq_date']; ?></td>
         <td class="inq_check"><?php echo $row['inq_check'] == '0'?'-':'읽음'; ?></td>
         <td class="td_mng td_mng_m">
-          <button class="btn btn_03" onclick="inq_check(<?php echo $row['inq_id'];?>)">보기</button>
+          <button class="btn btn_03" onclick="inq_check('<?php echo $lang_code;?>', <?php echo $row['inq_id'];?>)">보기</button>
           <!-- <a href="./inquiry_form.php?inq_id=<?php echo $row['inq_id'];?>" class="btn btn_03" onclick="inq_check(<?php echo $row['inq_id'];?>)">보기</a> -->
           <!--
           <form name="product_delete" id="product_delete" action="./product_form_update.php" onsubmit="return fboardform_submit(this)" method="post" style="display: inline-block;">
@@ -136,13 +150,13 @@ function fboardform_submit(f)
   }
 }
 
-function inq_check(inqId){
+function inq_check(lang, inqId){
   $.ajax({
     url: './inquiry_check.php',
     method: 'POST',
-    data: { inqId: inqId },
+    data: { lang: lang, inqId: inqId },
     success: function(response) {
-      window.location.href = './inquiry_form.php?inq_id='+inqId;
+      window.location.href = './inquiry_form.php?lang='+lang+'&inq_id='+inqId;
     }
   });
 }

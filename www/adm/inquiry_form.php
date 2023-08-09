@@ -6,7 +6,13 @@ $g5['title'] = '문의내역 상세보기';
 
 include_once('./admin.head.php');
 
-$inquery_table = G5_TABLE_PREFIX."inquiry";
+$lang_code = $_GET['lang'];
+
+if(!isset($lang_code) || $lang_code == '' || $lang_code == 'kor') {
+  $inquery_table = G5_TABLE_PREFIX."inquiry";
+} else {
+  $inquery_table = G5_TABLE_PREFIX."inquiry_".$lang_code;
+}
 
 $row = sql_fetch(" select * from {$inquery_table} where inq_id = '".$_GET['inq_id']."'" );
 ?>
