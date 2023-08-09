@@ -3,6 +3,9 @@
   --sub-color1: #ff3139;
 }
 
+#jpn *,
+#chi * {word-break: break-all;}
+
 /* header height */
 .contents {margin-top: 100px; padding-bottom: 155px;}
 
@@ -286,6 +289,9 @@
 .form-wrap .form-text .required {margin-left: 3px; font-size: 12px; font-weight: 400; color: #f00; vertical-align: middle; background: none !important;}
 .form-wrap .form-cont {width: calc(100% - 123px);}
 .form-wrap .form-cau-text {margin-top: 5px; font-size: 13px; font-weight: 400; color: #f00;}
+
+#jpn .form-wrap .form-text {width: 200px;}
+#jpn .form-wrap .form-cont {width: calc(100% - 200px);}
 
 /*.form-wrap .form-li.bl:after {content: ""; display: block; position: absolute; top: 50%; left: 40px; z-index: 1; height: 50px; margin-top: -25px; border-left: 2px solid #eee;}*/
 .form-wrap .form-li.bl .form-text {padding-left: 80px; width: 174px;}
@@ -1160,6 +1166,21 @@
   .form-wrap .phone-input-li.phone-sym {width: 25px !important;}
   .form-wrap .address-input-box.btn-box .form-input {width: calc(100% - 75px);}
   .form-wrap .address-input-box.btn-box .add-btn {width: 70px;}
+
+  #eng .form-wrap .form-text {display: block; width: 100%; padding: 10px; background-color: #fafafa;}
+  #eng .form-wrap .form-cont {display: block; width: 100%; padding: 10px;}
+  #eng .form-wrap .email-domain .form-input {width: 100%;}
+  #eng .form-wrap .doamin-sel {width: 100%; margin-top: 5px;}
+
+  #chi .form-wrap .form-text {display: block; width: 100%; padding: 10px; background-color: #fafafa;}
+  #chi .form-wrap .form-cont {display: block; width: 100%; padding: 10px;}
+  #chi .form-wrap .email-domain .form-input {width: 100%;}
+  #chi .form-wrap .doamin-sel {width: 100%; margin-top: 5px;}
+
+  #jpn .form-wrap .form-text {display: block; width: 100%; padding: 10px; background-color: #fafafa;}
+  #jpn .form-wrap .form-cont {display: block; width: 100%; padding: 10px;}
+  #jpn .form-wrap .email-domain .form-input {width: 100%;}
+  #jpn .form-wrap .doamin-sel {width: 100%; margin-top: 5px;}
 
   /* 위스팩소개 */
   /* > 회사소개 */
