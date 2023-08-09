@@ -1,7 +1,7 @@
 <?php 
 include_once(G5_PATH.'/eng/include/sub_top.php');
 
-$inquery_table = G5_TABLE_PREFIX."inquiry";
+$inquery_table = G5_TABLE_PREFIX."inquiry_eng";
 $idx = $params[0];
 $inq = sql_fetch(" select * from {$inquery_table} where inq_id='{$idx}' ");
 
