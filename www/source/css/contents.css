@@ -118,6 +118,7 @@
 .main-contact_ct_inner {width: 100%; padding: 0 5% 0 20%;}
 .main-contact-title {font-size: 20px; font-weight: 600; color: #fff;}
 .main-contact-expl {margin: 13px 0 34px; font-size: 42px; font-weight: 300; color: #fff;}
+.main-contact-expl.jpn {font-size: 36px;}
 .main-contact-expl b {font-weight: 700;}
 
 .main-board {margin-top: 88px;}
@@ -173,7 +174,7 @@
 #sb-contents {padding-top: 120px;}
 
 .sb_top-title {position: relative;}
-.sb_top-title-text1 {font-size: 50px; font-weight: 300; color: #0f0f0f; line-height: 1.24;}
+.sb_top-title-text1 {font-size: 50px; font-weight: 300; color: #0f0f0f; line-height: 1.24; word-break: break-all;}
 .sb_top-title-text1 b {font-weight: 700;}
 .sb_top-title-text2 {margin-top: 18px; font-size: 20px; font-weight: 300; color: #666; line-height: 1.6;}
 .sb_top-title-text2 b {font-weight: 500;}
@@ -556,6 +557,7 @@
 /* > 인사/복지제도 */
 .personnel-position {display: flex; align-items: center; justify-content: center; margin-top: 48px; padding: 100px 0; background: url('/source/img/announce-step-bg.jpg') no-repeat center/cover;}
 .personnel-position_graphic {display: flex; flex-flow: row wrap; justify-content: center; align-items: flex-start; gap: 70px;}
+.personnel-position_graphic.jpn {gap: 50px;}
 .personnel-position_graphic-item {display: flex; flex-flow: row wrap; justify-content: center; align-items: center; gap: 40px;}
 .personnel-position_graphic-item .item-inner.name {display: flex; justify-content: center; align-items: center; width: 130px; height: 130px; border: 2px solid #fff; border-radius: 50%; text-align: center;}
 .personnel-position_graphic-item .item-inner.name .text {font-size: 22px; font-weight: 600; color: #fff;}
