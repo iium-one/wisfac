@@ -5,7 +5,7 @@ include_once('./_common.php');
 $g5['title'] = '문의내역';
 include_once('./admin.head.php');
 
-$colspan = 5;
+$colspan = 6;
 
 $lang_code = $_GET['lang'];
 
@@ -53,6 +53,7 @@ $result = sql_query($sql);
 </div>
 
 <form name="fsearch" id="fsearch" class="local_sch01 local_sch" method="get">
+  <input type="hidden" name="lang" value="<?php echo $lang_code;?>">
   <label for="sfl" class="sound_only">검색대상</label>
   <select name="sfl" id="sfl">
       <option value="inq_name"<?php echo get_selected($sfl, "inq_name"); ?>>이름</option>
