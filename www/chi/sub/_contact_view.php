@@ -10,7 +10,7 @@ $inq_check_pw = $_POST['contact_check_pw'];
 $inq_pw = $inq['inq_pw'];
 
 if( !check_password($inq_check_pw, $inq_pw) ) {
-  alert("비밀번호가 일치하지 않습니다.", $inq_return);
+  alert("密码不一致。", $inq_return);
 }
 
 $sfl = $_GET['sfl'];
@@ -49,13 +49,13 @@ if (! (isset($next['inq_id']) && $next['inq_id'])) {
 // 이전글 링크
 $prev_href = '';
 if (isset($prev['inq_id']) && $prev['inq_id']) {
-  $prev_href = '/sub/contact_view/'.$prev['inq_id'].'?'.$qstr;
+  $prev_href = '/chi/sub/contact_view/'.$prev['inq_id'].'?'.$qstr;
 }
 
 // 다음글 링크
 $next_href = '';
 if (isset($next['inq_id']) && $next['inq_id']) {
-  $next_href = '/sub/contact_view/'.$next['inq_id'].'?'.$qstr;
+  $next_href = '/chi/sub/contact_view/'.$next['inq_id'].'?'.$qstr;
 }
 ?>
 
@@ -109,7 +109,7 @@ if (isset($next['inq_id']) && $next['inq_id']) {
               </div>
             </div>
             <div class="board-v-btn_group">
-              <a href="/sub/contact<?php echo $qstr!=''?'?'.$qstr:'';?>" class="board-v-golist-btn">目录</a>
+              <a href="/chi/sub/contact<?php echo $qstr!=''?'?'.$qstr:'';?>" class="board-v-golist-btn">目录</a>
               <?php if($prev_href || $next_href) { ?>
               <div class="board-v-navi_group">
                 <?php if($prev_href) { ?>

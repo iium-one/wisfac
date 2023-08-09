@@ -78,22 +78,7 @@ include_once(G5_PATH.'/chi/include/sub_top.php');
                   <div class="form-li">
                     <div class="form-text">电话号码<span class="required">*</span></div>
                     <div class="form-cont">
-                      <div class="i-col-0 phone-input-wrap">
-                        <div class="phone-input-li phone1">
-                          <select name="inq_phone1" id="" class="nc-sel form-sel tel-sel">
-                            <option value="">选择</option>
-                            <option value="010">010</option>
-                          </select>
-                        </div>
-                        <div class="phone-input-li phone-sym">-</div>
-                        <div class="phone-input-li">
-                          <input type="text" name="inq_phone2" required class="form-input full" maxlength="4">
-                        </div>
-                        <div class="phone-input-li phone-sym">-</div>
-                        <div class="phone-input-li">
-                          <input type="text" name="inq_phone3" required class="form-input full" maxlength="4">
-                        </div>
-                      </div>
+                      <input type="text" name="inq_phone" required class="form-input">
                     </div>
                   </div>
                 </div>
@@ -101,22 +86,7 @@ include_once(G5_PATH.'/chi/include/sub_top.php');
                   <div class="form-li">
                     <div class="form-text">地址</div>
                     <div class="form-cont">
-                      <div class="address-input-wrap">
-                        <div class="address-input-box btn-box">
-                          <input type="text" name="inq_post_num" placeholder="邮政编码" readonly id="sample3_postcode" class="form-input">
-                          <button type="button" class="add-btn" onclick="sample3_execDaumPostcode()">地址搜索</button>
-                        </div>
-                        <div id="add-wrap"></div>
-                        <div class="address-input-box">
-                          <input type="text" name="inq_add1" placeholder="请选择地址。" id="sample3_address" readonly class="form-input full">
-                        </div>
-                        <div class="address-input-box">
-                          <input type="text" name="inq_add2" placeholder="请输入详细地址。" id="sample3_detailAddress" class="form-input full">
-                        </div>
-                        <div class="address-input-box" style="display: none;">
-                          <input type="text" name="inq_add3" placeholder="请输入参考项目。" id="sample3_extraAddress" class="form-input full">
-                        </div>
-                      </div>
+                      <input type="text" name="inq_add" required class="form-input full">
                     </div>
                   </div>
                 </div>
