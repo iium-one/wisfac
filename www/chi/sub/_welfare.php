@@ -12,7 +12,7 @@ include_once(G5_PATH.'/chi/include/sub_top.php');
         <div class="wrapper">
           <div class="sec_ct">
             <div class="sb_top-title">
-              <p class="sb_top-title-text1">请确认WISFAC<span class="highlight">的人事/福利制度。</span></p>
+              <p class="sb_top-title-text1"><b>请确认WISFAC</b><br/><span class="highlight"><b>的人事/福利制度</b></span></p>
               <a href="" class="i-arrow-btn01 apply-more">应聘<span class="icon"></span></a>
             </div>
           </div>
@@ -107,7 +107,7 @@ include_once(G5_PATH.'/chi/include/sub_top.php');
                   <img src="/source/img/major-welfare3.png" alt="">
                 </div>
                 <div class="num">03.</div>
-                <div class="text">长期工作奖金支付及实施奖励休假 <br>(3年以上工作者)。</div>
+                <div class="text">长期工作奖金支付及实施奖励休假 <br>(3年以上工作者)</div>
               </div>
               <div class="major-welfare-list-item">
                 <div class="icon">

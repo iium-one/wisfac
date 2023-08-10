@@ -122,7 +122,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
       <div class="main-contact_ct">
         <div class="main-contact_ct_inner">
           <p class="main-contact-title">介绍WISFAC</p>
-          <p class="main-contact-expl">想知道世界认可的技术和产品<br><b>WISFAC吗？</b></p>
+          <p class="main-contact-expl">想知道世界认可的技术和产品<br><b>WISFAC吗?</b></p>
           <a href="/chi/sub/aboutus?v=vision" class="i-arrow-btn01">
             介绍公司
             <span class="icon">
@@ -136,7 +136,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
       <div class="main-contact_ct">
         <div class="main-contact_ct_inner">
           <p class="main-contact-title">客户咨询</p>
-          <p class="main-contact-expl">您对产品有什么疑问吗？</p>
+          <p class="main-contact-expl">您对产品有什么疑问吗?</p>
           <a href="/chi/sub/contact" class="i-arrow-btn01">
             询问
             <span class="icon">
@@ -154,7 +154,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         <div class="main-board_ct">
           <div class="main_sec-top">
             <h2 class="main_sec-subtitle1">客户支援</h2>
-            <h2 class="main_sec-title1">请确认各种消息。</h2>
+            <h2 class="main_sec-title1">请确认各种消息</h2>
             <div class="tabs main-boarad-tabs">
               <button type="button" class="tabs-btn on" data-board="notice_chi">公告事项</button>
               <button type="button" class="tabs-btn" data-board="news_chi">公司消息</button>
@@ -199,7 +199,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
           <a href="/chi/sub/global" class="main-banner_box main-banner-company">
             <div class="main-banner_ct_inner">
               <p class="banner-title">跨国 WISFAC</p>
-              <p class="banner-subtitle"><b>请见见跨国企业</b>WISFAC。</p>
+              <p class="banner-subtitle"><b>请见见跨国企业</b>WISFAC</p>
               <p class="banner-expl">通过多年的技术开发，在半导体用晶片检查领域，<br/>以纯粹的国内技术为基础是一家开发生产高新技术装备的国际化专业企业。</p>
             </div>
             <div class="main-banner-prod">

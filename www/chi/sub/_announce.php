@@ -12,7 +12,7 @@ include_once(G5_PATH.'/chi/include/sub_top.php');
         <div class="wrapper">
           <div class="sec_ct">
             <div class="sb_top-title">
-              <p class="sb_top-title-text1"><b>我们等待以自由沟通和</b> <br/><span class="highlight"><b>主动态度共同合作的人才。</b></span></p>
+              <p class="sb_top-title-text1"><b>我们等待以自由沟通和</b> <br/><span class="highlight"><b>主动态度共同合作的人才</b></span></p>
               <p class="sb_top-title-text2">WISFAC将聘用兼备能动的行动方式和正直的人性、相关领域基本知识的优秀新职员或兼备相关领域的专业知识和经验，带着责任感引领企业的高级人才经历职员。 招聘期间以随时招生为原则，但可以通过目前正在招募的招聘公告申请入职。 请与以世界最高技术和年轻人才为中心的WISFAC一起培养梦想吧。 详细事项请通过咨询电话或电子邮件咨询。</p>
               <div class="announce_contact">
                 <p class="announce_contact-text">电话：042-936-6500(内线 0 )</p>
