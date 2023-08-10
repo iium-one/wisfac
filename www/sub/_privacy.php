@@ -22,13 +22,15 @@
                 개인정보 수집방법 : 홈페이지(게시판, 신청서, 문의)
               </p>
               <ol>
-                <li>이름</li>
-                <li>연락처</li>
-                <li>이메일</li>
-                <li>서비스 이용기록</li>
-                <li>접속 로그</li>
-                <li>쿠키</li>
-                <li>접속 IP 정보</li>
+                <li>-이름</li>
+                <li>-연락처</li>
+                <li>-이메일</li>
+                <li>-지역, 주소</li>
+                <li>-회사(학교), 부서</li>
+                <li>-서비스 이용기록</li>
+                <li>-접속 로그</li>
+                <li>-쿠키</li>
+                <li>-접속 IP 정보</li>
               </ol>
             </section>
             <section id="sir_terms_sec2" class="fc_se">
