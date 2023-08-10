@@ -16,7 +16,7 @@ include_once(G5_INCLUDE_PATH.'/sub_top.php');
               <p class="sb_top-title-text2">위스팩에서는 능동적인 행동양식과 바른 인간성, 관련분야의 기본지식을 겸비한 우수한 신입사원 또는 관련분야의 전문지식과 경험을 겸비하여 책임감을 가지고 기업을 이끌어갈 고급인재인 경력사원을 채용하고자 합니다.모집기간은 수시모집을 원칙으로 하고 있으나 현재 모집중인 채용공고를 통하여 입사지원을 하실 수 있습니다. 세계 최고의 기술과 젊은 인재가 중심인 위스팩과 함께 꿈을 키워 나가세요. 자세한 사항은 안내전화 또는 이메일을 통해 문의바랍니다.</p>
               <div class="announce_contact">
                 <p class="announce_contact-text">Tel. 042-936-6500(내선0번)</p>
-                <p class="announce_contact-text">E-mail. (추후전달예정)</p>
+                <!-- <p class="announce_contact-text">E-mail. (추후전달예정)</p> -->
               </div>
               <!-- <a href="" class="i-arrow-btn01 apply-more">입사지원하기<span class="icon"></span></a> -->
             </div>

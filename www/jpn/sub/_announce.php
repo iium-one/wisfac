@@ -16,7 +16,7 @@ include_once(G5_PATH.'/jpn/include/sub_top.php');
               <p class="sb_top-title-text2">ウィスファクでは積極的な行動力と正しい人間性、関連分野の基本知識を兼備した優秀な新入社員または関連分野の専門知識と経験を兼備し責任感を持って企業をリードしていく高級人材である業務経験社員を募集しています。 採用募集期間は随時募集を原則としており、現在募集中の採用広告を通してエントリーしていただけます。 世界最高の技術と若い人材が中心となっているウィスファクと共に夢を成長させていきましょう。詳しい内容は電話またはEメールでお問い合わせください。</p>
               <div class="announce_contact">
                 <p class="announce_contact-text">Tel. +82-42-936-6500(内線番号０)</p>
-                <p class="announce_contact-text">E-mail. (추후전달예정)</p>
+                <!-- <p class="announce_contact-text">E-mail. (추후전달예정)</p> -->
               </div>
               <!-- <a href="" class="i-arrow-btn01 apply-more">입사지원하기<span class="icon"></span></a> -->
             </div>

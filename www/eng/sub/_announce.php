@@ -16,7 +16,7 @@ include_once(G5_PATH.'/eng/include/sub_top.php');
               <p class="sb_top-title-text2">Wisfac wants to hire experienced employees who have active behavior, good humanity, and basic knowledge in related fields, or excellent new employees who will lead the company with responsibility with expertise and experience in related fields. <br/>The recruitment period is based on occasional recruitment, but you can apply for a job through the recruitment announcement currently being recruited.Grow your dream with Wisfac, which is centered on the world's best technology and young talent.For more information, please contact us by phone or email.</p>
               <div class="announce_contact">
                 <p class="announce_contact-text">Tel. 042-936-6500(extension 0)</p>
-                <p class="announce_contact-text">E-mail. (To be delivered later)</p>
+                <!-- <p class="announce_contact-text">E-mail. (To be delivered later)</p> -->
               </div>
               <!-- <a href="" class="i-arrow-btn01 apply-more">입사지원하기<span class="icon"></span></a> -->
             </div>
