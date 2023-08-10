@@ -31,7 +31,7 @@ include_once(G5_PATH.'/eng/include/sub_top.php');
               <div class="dgtxt-list">
                 <div class="dgtxt-list-in">
                   <p class="dgtxt-text1">Global Corporate Growth</p>
-                  <p class="dgtxt-text2">Beyond Asia, Europe Secures Customers in the Americas</p>
+                  <p class="dgtxt-text2">Beyond Asia, Secures customers in the Americas and Europe</p>
                 </div>
               </div>
               <div class="dgtxt-list">

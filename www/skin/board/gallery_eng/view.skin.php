@@ -97,10 +97,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
               <?php if($prev_href || $next_href) { ?>
               <div class="board-v-navi_group">
                 <?php if($prev_href) { ?>
-                <a href="<?php echo $prev_href;?>" class="board-v-navi-btn prev"><span class="icon"></span>PREV</a>
+                <a href="<?php echo $prev_href;?>" class="board-v-navi-btn prev"><span class="icon"></span>Back</a>
                 <?php } ?>
                 <?php if($next_href) { ?>
-                <a href="<?php echo $next_href;?>" class="board-v-navi-btn next">NEXT<span class="icon"></span></a>
+                <a href="<?php echo $next_href;?>" class="board-v-navi-btn next">Next<span class="icon"></span></a>
                 <?php } ?>
               </div>
               <?php } ?>

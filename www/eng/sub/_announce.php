@@ -132,7 +132,7 @@ include_once(G5_PATH.'/eng/include/sub_top.php');
             </div>
             <div class="announce-cautn">
               <p class="announce-cautn-text">- A person who has not been disqualified from overseas travel as a person who has completed or exempted from military service</p>
-              <p class="announce-cautn-text">- Professional researchers are available</p>
+              <p class="announce-cautn-text">- Professional researchers</p>
               <p class="announce-cautn-text">- A person who meets the qualifications for each field of recruitment</p>
               <p class="announce-cautn-text">- Preferential treatment for foreign language proficiency (attached documents)</p>
             </div>
