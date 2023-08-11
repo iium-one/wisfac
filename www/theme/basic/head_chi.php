@@ -16,8 +16,6 @@ include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
 
 include G5_PATH.'/chi/include/menus.php';
-
-// add_stylesheet('<link rel="stylesheet" href="/source/css/contents_chi.css">', 0);
 ?>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -622,6 +622,11 @@
   /* UI */
   .dg-slogan-text {font-size: 26px;}
 
+  /* Header */
+  #jpn #hd_top-inner .gnb-dep1 {gap: 0 25px;}
+  #jpn #hd_top-inner .gnb-dep1 > li > a {font-size: 16px;}
+  #jpn #hd_top-inner .gnb-dep2 > li > a {font-size: 16px;}
+
   /* Main(메인) */
   .main-visual-item {height: 600px;}
 

@@ -16,6 +16,7 @@ include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
 
 include G5_PATH.'/jpn/include/menus.php';
+add_stylesheet('<link rel="stylesheet" href="/source/css/contents_jpn.css">', 0);
 ?>
 
 <?php
