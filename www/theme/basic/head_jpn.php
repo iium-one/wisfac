@@ -52,12 +52,11 @@ if(defined('_INDEX_')) { // index에서만 실행
           </ul>
         </nav>
         <div class="hd-sub">
-          <!-- onchange="window.open(value,'_self');" -->
-          <select class="nc-sel lang-sel">
-            <option value="kor">KOR</option>
-            <option value="eng">ENG</option>
-            <option value="jpn" selected>JPN</option>
-            <option value="chi">CHI</option>
+          <select class="nc-sel lang-sel" onchange="window.open(value,'_self');">
+            <option value="/">KOR</option>
+            <option value="/eng">ENG</option>
+            <option value="/jpn" selected>JPN</option>
+            <option value="/chi">CHI</option>
           </select>
           <button type="button" class="all_menu-btn">
             <span></span>
