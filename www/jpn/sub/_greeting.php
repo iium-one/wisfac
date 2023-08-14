@@ -13,7 +13,7 @@ include_once(G5_PATH.'/jpn/include/sub_top.php');
           <div class="sec_ct">
             <div class="greeting-lt">
               <div class="sb_top-title">
-                <p class="sb_top-title-text1">半導体用ウェハ検査システム市場を先導する技術集約型のグローバル一流企業</p>
+                <p class="sb_top-title-text1">半導体用ウェハ検査システム市場を先導する<br/>技術集約型のグローバル一流企業</p>
               </div>
               <div class="greeting-ct">
                 <div class="greeting-text-box">
@@ -28,7 +28,7 @@ include_once(G5_PATH.'/jpn/include/sub_top.php');
                 </div>
                 <div class="greeting-sign-box">
                   <p class="greeting-sign-text1">株式会社ウィスファク</p>
-                  <p class="greeting-sign-text2">代表理事　ミン・ギョンフン</p>
+                  <p class="greeting-sign-text2">CEO代表理事　ミン・ギョンフン </p>
                 </div>
               </div>
             </div>

@@ -12,7 +12,7 @@ include_once(G5_PATH.'/jpn/include/sub_top.php');
         <div class="wrapper">
           <div class="sec_ct">
             <div class="sb_top-title">
-              <p class="sb_top-title-text1">全世界の半導体用ウェハ検査装置市場を先導す<br/>るグローバル企業、<span class="highlight"><b>ウィスファクです。</b></span></p>
+              <p class="sb_top-title-text1">全世界の半導体用ウェハ検査装置市場を先導する<br/>グローバル企業、<span class="highlight"><b>ウィスファクです。</b></span></p>
               <p class="sb_top-title-text2">技術集約型の世界一流企業を目標として2018年に設立されたウィスファクはウェハ検査装置技術を国産化するために長年にわたって技術開発を行っており、<br/>半導体用ウェハ検査分野において韓国技術をベースに先端技術を適用したWafer Inspection装置を開発・生産するグローバル専門企業として成長しています。</p>
             </div>
             <div class="match-height dgtxt-wrap aboutus-slo cd4">
@@ -25,19 +25,19 @@ include_once(G5_PATH.'/jpn/include/sub_top.php');
               <div class="dgtxt-list">
                 <div class="dgtxt-list-in">
                   <p class="dgtxt-text1">製品の多様化</p>
-                  <p class="dgtxt-text2">様々なWafer Inspectionに合った装置を生産</p>
+                  <p class="dgtxt-text2">様々なWafer Inspectionに合った<br/>装置を生産</p>
                 </div>
               </div>
               <div class="dgtxt-list">
                 <div class="dgtxt-list-in">
                   <p class="dgtxt-text1">グローバル企業としての成長</p>
-                  <p class="dgtxt-text2">アジアを超え、欧州、米州の顧客先を確保</p>
+                  <p class="dgtxt-text2">アジアを超え、欧州、米州の<br/>顧客先を確保</p>
                 </div>
               </div>
               <div class="dgtxt-list">
                 <div class="dgtxt-list-in">
                   <p class="dgtxt-text1">企業の人材</p>
-                  <p class="dgtxt-text2">体系的な人材選抜と育成を通した企業の力量強化</p>
+                  <p class="dgtxt-text2">体系的な人材選抜と育成を通した<br/>企業の力量強化</p>
                 </div>
               </div>
             </div>

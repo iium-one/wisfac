@@ -121,7 +121,7 @@ include_once(G5_THEME_PATH.'/head_jpn.php'); //header 파일 연결
       <div class="main-contact_ct">
         <div class="main-contact_ct_inner">
           <p class="main-contact-title">ウィスファクについて</p>
-          <p class="main-contact-expl jpn">世界が認める技術と製品 <br/><b>ウィスファクについてもっと知りたいですか？</p>
+          <p class="main-contact-expl jpn">世界が認める技術と製品 <br/><b>ウィスファクについて<br/>もっと知りたいですか？</p>
           <a href="/jpn/sub/aboutus?v=vision" class="i-arrow-btn01">
             会社紹介
             <span class="icon">
@@ -135,7 +135,7 @@ include_once(G5_THEME_PATH.'/head_jpn.php'); //header 파일 연결
       <div class="main-contact_ct">
         <div class="main-contact_ct_inner">
           <p class="main-contact-title">お問い合わせ</p>
-          <p class="main-contact-expl jpn">製品についてもっと詳しく知りたいですか？</p>
+          <p class="main-contact-expl jpn">製品についてもっと<br/>詳しく知りたいですか？</p>
           <a href="/jpn/sub/contact" class="i-arrow-btn01">
             問い合わせる
             <span class="icon">
@@ -198,7 +198,7 @@ include_once(G5_THEME_PATH.'/head_jpn.php'); //header 파일 연결
           <a href="/jpn/sub/global" class="main-banner_box main-banner-company">
             <div class="main-banner_ct_inner">
               <p class="banner-title">Global WISFAC</p>
-              <p class="banner-subtitle">グローバル企業であるウィスファクをご紹介します。</p>
+              <p class="banner-subtitle">グローバル企業であるウィスファクを<br/>ご紹介します。</p>
               <p class="banner-expl">半導体用ウェハ検査分野において長年にわたる研究開発を通した<br/>先端技術装置を開発・生産する韓国技術ベースのグローバル専門企業です。</p>
             </div>
             <div class="main-banner-prod">
@@ -208,8 +208,8 @@ include_once(G5_THEME_PATH.'/head_jpn.php'); //header 파일 연결
           <a href="/jpn/sub/business" class="main-banner_box main-banner-business">
             <div class="main-banner_ct_inner">
               <p class="banner-title">事業紹介</p>
-              <p class="banner-subtitle">ウィスファクの開発製品群をご確認ください。</p>
-              <p class="banner-expl">Si WaferとSiC Waferなど、色々な種類のWaferの検査ができる装置を韓国の技術を用いて開発・生産しており、 <br/>様々なハードウェア製品群と関連ソフトウェア製品群を取り揃えています。</p>
+              <p class="banner-subtitle">ウィスファクの開発製品群を<br/>ご確認ください。</p>
+              <p class="banner-expl">Si WaferとSiC Waferなど、色々な種類のWaferの検査ができる装置を韓国の技術を用いて開発・生産しており、様々なハードウェア製品群と関連ソフトウェア製品群を取り揃えています。</p>
             </div>
             <div class="main-banner-prod">
               <img src="/source/img/main-business-banner-prod.png" alt="">
