@@ -199,7 +199,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
           <a href="/chi/sub/global" class="main-banner_box main-banner-company">
             <div class="main-banner_ct_inner">
               <p class="banner-title">跨国 WISFAC</p>
-              <p class="banner-subtitle"><b>请见见跨国企业</b>WISFAC</p>
+              <p class="banner-subtitle"><b>请见跨国企业</b>WISFAC</p>
               <p class="banner-expl">通过多年的技术开发，在半导体用晶片检查领域，<br/>以纯粹的国内技术为基础是一家开发生产高新技术装备的国际化专业企业。</p>
             </div>
             <div class="main-banner-prod">
@@ -209,7 +209,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
           <a href="/chi/sub/business" class="main-banner_box main-banner-business">
             <div class="main-banner_ct_inner">
               <p class="banner-title">事业介绍</p>
-              <p class="banner-subtitle">请确认WISFAC<b>的开发产品群。</b></p>
+              <p class="banner-subtitle">请确认WISFAC<b>的开发产品群</b></p>
               <p class="banner-expl">为了进行Si Wafer和SiC Wafer等多种Wafer检查，用纯国内技术开发并生产。<br/>拥有多种硬件产品群和与此相关的多种软件产品群。</p>
             </div>
             <div class="main-banner-prod">

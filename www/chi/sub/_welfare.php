@@ -12,7 +12,7 @@ include_once(G5_PATH.'/chi/include/sub_top.php');
         <div class="wrapper">
           <div class="sec_ct">
             <div class="sb_top-title">
-              <p class="sb_top-title-text1"><b>请确认WISFAC</b><br/><span class="highlight"><b>的人事/福利制度</b></span></p>
+              <p class="sb_top-title-text1"><b>请确认WISFAC的</b><br/><span class="highlight"><b>人事/福利制度</b></span></p>
               <a href="" class="i-arrow-btn01 apply-more">应聘<span class="icon"></span></a>
             </div>
           </div>
