@@ -28,7 +28,7 @@ include_once(G5_PATH.'/chi/include/sub_top.php');
               $prod_cate_result = sql_query($prod_cate_sql);
               for($i=0; $prod_cate=sql_fetch_array($prod_cate_result); $i++){
               ?>
-              <a href="/sub/prod_list/<?php echo $prod_cate['ca_id'];?>" class="prod-cate-item">
+              <a href="/chi/sub/prod_list/<?php echo $prod_cate['ca_id'];?>" class="prod-cate-item">
                 <span class="more"></span>
                 <p class="ctg_name"><?php echo $prod_cate['ca_name'];?></p>
                 <p class="ctg_expl"><?php echo $prod_cate['ca_2_subj'];?></p>

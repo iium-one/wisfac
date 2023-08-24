@@ -105,6 +105,9 @@
 #mobile_menu .mobile_menu-dep3 > li:hover > a {color: var(--sub-color1);}
 #mobile_menu .mobile_menu-dep3 > li:hover > a:before {background-color: var(--sub-color1);}
 
+/* 일본어 헤더 */
+.jpn #hd_top-inner .gnb-dep1 {gap: 0 50px;}
+
 @media screen and (max-width:1600px){
 
 } /* End meaia 1600 */
