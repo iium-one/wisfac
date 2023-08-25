@@ -28,7 +28,7 @@ include_once(G5_PATH.'/chi/include/sub_top.php');
                 </div>
                 <div class="greeting-sign-box">
                   <p class="greeting-sign-text1">株式会社 WISFAC</p>
-                  <p class="greeting-sign-text2">代表理事 &nbsp; 민경훈</p>
+                  <p class="greeting-sign-text2">代表理事 KyungHoon, Min</p>
                 </div>
               </div>
             </div>

@@ -28,7 +28,7 @@ include_once(G5_PATH.'/eng/include/sub_top.php');
                 </div>
                 <div class="greeting-sign-box">
                   <p class="greeting-sign-text1">Wisfac Inc.</p>
-                  <p class="greeting-sign-text2">CEO &nbsp;Min Kyunghoon</p>
+                  <p class="greeting-sign-text2">CEO. KyungHoon, Min</p>
                 </div>
               </div>
             </div>
